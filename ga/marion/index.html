@@ -1,0 +1,560 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Marion Wineries</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/style.css">
+        <!--<link rel="stylesheet" href="/css/flickity.css">-->
+        <!--<link rel="stylesheet" href="">-->
+		
+		<!-- load js scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+		<!--<script type="text/javascript" src="/scripts/jquery-1.11.3.min.js"></script>-->
+		<script src="/scripts/main.js"></script>
+		<!--<script type="text/javascript" src="/scripts/querytolocalstore.js"></script>-->
+		
+		<!--<script src="/scripts/flickity.js"></script>-->
+		
+		<!--[if lt IE 9] -->
+		<script type="text/javascript">
+			document.createElement('header');
+			document.createElement('nav');
+			document.createElement('section');
+			document.createElement('article');
+			document.createElement('aside');
+			document.createElement('footer');
+			document.createElement('hgroup');
+		</script>
+		
+		
+		<!-- Google Analytics -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			
+			ga('create', 'UA-2461133-23', 'auto');
+			ga('require', 'displayfeatures');
+			ga('send', 'pageview');
+		
+		</script>
+		
+		<!-- start Mixpanel -->
+		<!--<script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+		for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+		mixpanel.init("a6e16b825ae307f81762c094dc8bcdeb");</script>-->
+		
+	
+	<body>
+		<div class="content ">
+			<header>
+	<div class="menu-button">
+		<span class="one"></span>
+		<span class="two"></span>
+		<span class="three"></span>
+	</div>
+	<div class="logo">
+		<a href="/">
+			<img src="/images/logos/logo.png" alt="" />
+			<!--Utah<div>Big Trucks</div>-->
+		</a>
+	</div>
+	<nav>
+	<a href="/">Home</a>
+	
+	
+	<a href="/blog/" >Blog</a>
+	
+</nav>
+	<!--<div class="base">
+		<p>Provided by: <img src="/images/logos/mimis-logo.jpg" alt="mimis dispatch" /></p>
+	</div>-->
+</header>
+				
+
+
+<div id='map'></div>
+
+<div class="wineries disable-selection">
+	<h1 class="disable-selection">Marion Wineries</h1>
+	<nav class="disable-selection">
+		
+		<!-- USA -->
+		<a href="/">USA</a>
+		
+		<!-- States -->
+				
+		
+			<a href="/states/georgia/">georgia</a>
+		
+		
+		<!-- County -->
+		<a href="#">marion</a>
+		
+		<!-- Cities -->
+		<a class="pop-up-toggle"> Cities</a>
+	</nav>
+	
+	<div class="pop-up-menu">
+		<ul>
+			<span class="pop-up-toggle">X</span>
+			
+					
+			
+			<li>
+				<a href="/ga/marion/mauk/">
+					mauk
+					(
+								
+						
+							
+							   <span>1</span>
+							
+						
+					)
+				</a>
+			</li>
+			
+		</ul>
+	</div>
+	
+	<script type="text/javascript">
+		$(function() {  
+			$(".pop-up-toggle").click(function(){
+				$(".pop-up-menu").toggleClass("visible"); 
+			});
+		});
+		
+	</script>
+				
+	<ul class="disable-selection">
+		<!-- Featured -->
+				
+		
+		
+		
+		<div></div>
+		
+		
+		<!-- Premium -->
+				
+		
+		
+		
+		
+		
+		<div></div>
+		
+		
+		
+		<!-- Claimed -->
+				
+		
+		
+		
+		<div></div>
+		
+		
+		<!-- Basic -->
+				
+		
+			<li class="basic">
+				<a href="/or/marion/scotts-mills/abiqua-wind-vineyard/">
+					abiqua wind vineyard
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/or/marion/salem/ankeny-winery/">
+					ankeny winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/in/marion/indianapolis/ash-&-elm-cider-co/">
+					ash & elm cider co.
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/or/marion/aurora/aurora-colony-vineyards/">
+					aurora colony vineyards
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/in/marion/indianapolis/buck-creek-winery/">
+					buck creek winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/or/marion/aurora/champoeg-wine-cellars/">
+					champoeg wine cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ia/marion/knoxville/de-boer-winery/">
+					de boer winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/in/marion/indianapolis/easley-enterprises/">
+					easley enterprises
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ga/marion/mauk/five-points-berries-llc/">
+					five points berries llc.
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/or/marion/salem/gms-winery-llc/">
+					gms winery llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ia/marion/pleasantville/grape-escape-vineyard-and-winery-inc/">
+					grape escape vineyard and winery inc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/or/marion/woodburn/hanson-vineyards-llc/">
+					hanson vineyards llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/wv/marion/fairmont/heston-farm-winery/">
+					heston farm winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/or/marion/salem/honeywood-winery/">
+					honeywood winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/or/marion/salem/hunters-moon-wines/">
+					hunters moon wines
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/or/marion/silverton/j-albin-winery/">
+					j. albin winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/or/marion/st.-paul/jowenwine/">
+					jowenwine
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tn/marion/guild/lookout-winery-inc/">
+					lookout winery inc.
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ia/marion/knoxville/nearwood-winery/">
+					nearwood winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/in/marion/indianapolis/new-day-meadery/">
+					new day meadery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/il/marion/alma/orchard-view-winery/">
+					orchard view winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/or/marion/salem/pudding-river-wine-cellars-llc/">
+					pudding river wine cellars llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/il/marion/centralia/roundhouse-wine-company-llc/">
+					roundhouse wine company l.l.c.
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/oh/marion/waldo/shamrock-vineyard/">
+					shamrock vineyard
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/or/marion/sublimity/silver-falls-vineyards/">
+					silver falls vineyards
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/or/marion/silverton/silverton-cellars-llc/">
+					silverton cellars llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/fl/marion/summerfield/sue-bea-vineyards-inc/">
+					sue bea vineyards inc.
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/fl/marion/ocala/the-corkscrew-winery-llc/">
+					the corkscrew winery llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/or/marion/salem/the-traditional-company/">
+					the traditional company
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/or/marion/salem/twin-fir-vineyards/">
+					twin fir vineyards
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ks/marion/marion/vinduska-meadery-llc/">
+					vinduska meadery llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/or/marion/salem/vitae-springs-vineyard-llc/">
+					vitae springs vineyard llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/or/marion/turner/willamette-valley-vineyards/">
+					willamette valley vineyards
+				</a>
+			</li>
+		
+	</ul>
+</div>
+<div class="infowindow"></div>
+
+
+
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyCcJFPhkoOBXSK_JPqpIyHXfQlPIQGI5ag&sensor=false"></script>
+<script>
+    // Define your locations: HTML content for the info window, latitude, longitude
+    var locations = [
+		// Featured
+			
+		
+		
+		// Premium
+			
+		
+		
+		// Claimed
+			
+		
+		
+		// Basic
+			
+		
+			['<a href="/fl/marion/ocala/the-corkscrew-winery-llc/" class="infowindow basic"><h4>the corkscrew winery llc</h4><h5>16 sw broadway st ocala fl</h5></a>', 29.186078, -82.137418,'/images/icons/gps/circle.png'],
+		
+			['<a href="/fl/marion/summerfield/sue-bea-vineyards-inc/" class="infowindow basic"><h4>sue bea vineyards inc.</h4><h5>11025 se highway 42 summerfield fl</h5></a>', 28.983003, -81.970253,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ga/marion/mauk/five-points-berries-llc/" class="infowindow basic"><h4>five points berries llc.</h4><h5>749 johnson cemetery rd mauk ga</h5></a>', 32.461617, -84.458895,'/images/icons/gps/circle.png'],
+		
+			['<a href="/il/marion/alma/orchard-view-winery/" class="infowindow basic"><h4>orchard view winery</h4><h5>307 2nd st alma il</h5></a>', 38.719304, -88.917154,'/images/icons/gps/circle.png'],
+		
+			['<a href="/il/marion/centralia/roundhouse-wine-company-llc/" class="infowindow basic"><h4>roundhouse wine company l.l.c.</h4><h5>1938 dogwood ln centralia il</h5></a>', 38.544776, -89.09275,'/images/icons/gps/circle.png'],
+		
+			['<a href="/in/marion/indianapolis/ash-&-elm-cider-co/" class="infowindow basic"><h4>ash &amp; elm cider co.</h4><h5>2112 e washington st indianapolis in</h5></a>', 39.768051, -86.124831,'/images/icons/gps/circle.png'],
+		
+			['<a href="/in/marion/indianapolis/buck-creek-winery/" class="infowindow basic"><h4>buck creek winery</h4><h5>11747 indian creek rd s indianapolis in</h5></a>', 39.674367, -85.957737,'/images/icons/gps/circle.png'],
+		
+			['<a href="/in/marion/indianapolis/easley-enterprises/" class="infowindow basic"><h4>easley enterprises</h4><h5>205 n college ave indianapolis in</h5></a>', 39.769822, -86.145152,'/images/icons/gps/circle.png'],
+		
+			['<a href="/in/marion/indianapolis/new-day-meadery/" class="infowindow basic"><h4>new day meadery</h4><h5>1125 brookside ave indianapolis in</h5></a>', 39.783093, -86.135636,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ia/marion/knoxville/de-boer-winery/" class="infowindow basic"><h4>de boer winery</h4><h5>1082 highway s71 knoxville ia</h5></a>', 41.366505, -93.023993,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ia/marion/knoxville/nearwood-winery/" class="infowindow basic"><h4>nearwood winery</h4><h5>1211 keokuk knoxville ia</h5></a>', 41.348405, -93.113613,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ia/marion/pleasantville/grape-escape-vineyard-and-winery-inc/" class="infowindow basic"><h4>grape escape vineyard and winery inc</h4><h5>1185 40th place pleasantville ia</h5></a>', 41.351756, -93.273299,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ks/marion/marion/vinduska-meadery-llc/" class="infowindow basic"><h4>vinduska meadery llc</h4><h5>2857 230th marion ks</h5></a>', 38.406022, -96.976023,'/images/icons/gps/circle.png'],
+		
+			['<a href="/oh/marion/waldo/shamrock-vineyard/" class="infowindow basic"><h4>shamrock vineyard</h4><h5>111 c.h. 25 rengert rd waldo oh</h5></a>', 40.473856, -83.039943,'/images/icons/gps/circle.png'],
+		
+			['<a href="/or/marion/aurora/aurora-colony-vineyards/" class="infowindow basic"><h4>aurora colony vineyards</h4><h5>21338 oak lane ne aurora or</h5></a>', 45.229124, -122.771277,'/images/icons/gps/circle.png'],
+		
+			['<a href="/or/marion/aurora/champoeg-wine-cellars/" class="infowindow basic"><h4>champoeg wine cellars</h4><h5>10375 champoeg rd ne aurora or</h5></a>', 45.25052, -122.850519,'/images/icons/gps/circle.png'],
+		
+			['<a href="/or/marion/salem/ankeny-winery/" class="infowindow basic"><h4>ankeny winery</h4><h5>2565 riverside dr s salem or</h5></a>', 44.819429, -123.081269,'/images/icons/gps/circle.png'],
+		
+			['<a href="/or/marion/salem/gms-winery-llc/" class="infowindow basic"><h4>gms winery llc</h4><h5>9092 jackson hill rd se salem or</h5></a>', 44.823603, -123.026965,'/images/icons/gps/circle.png'],
+		
+			['<a href="/or/marion/salem/honeywood-winery/" class="infowindow basic"><h4>honeywood winery</h4><h5>1350 hines st se salem or</h5></a>', 44.92629, -123.028373,'/images/icons/gps/circle.png'],
+		
+			['<a href="/or/marion/salem/hunters-moon-wines/" class="infowindow basic"><h4>hunters moon wines</h4><h5>249 ne liberty st salem or</h5></a>', 44.941682, -123.038218,'/images/icons/gps/circle.png'],
+		
+			['<a href="/or/marion/salem/pudding-river-wine-cellars-llc/" class="infowindow basic"><h4>pudding river wine cellars llc</h4><h5>9374 sunnyview rd ne salem or</h5></a>', 44.956809, -122.867975,'/images/icons/gps/circle.png'],
+		
+			['<a href="/or/marion/salem/the-traditional-company/" class="infowindow basic"><h4>the traditional company</h4><h5>4070 fairview industrial dr se salem or</h5></a>', 44.893831, -122.996267,'/images/icons/gps/circle.png'],
+		
+			['<a href="/or/marion/salem/twin-fir-vineyards/" class="infowindow basic"><h4>twin fir vineyards</h4><h5>7501 twin fir ln s salem or</h5></a>', 44.846537, -123.066935,'/images/icons/gps/circle.png'],
+		
+			['<a href="/or/marion/salem/vitae-springs-vineyard-llc/" class="infowindow basic"><h4>vitae springs vineyard llc</h4><h5>3675 vitae springs rd salem or</h5></a>', 44.870803, -123.105253,'/images/icons/gps/circle.png'],
+		
+			['<a href="/or/marion/scotts-mills/abiqua-wind-vineyard/" class="infowindow basic"><h4>abiqua wind vineyard</h4><h5>19822 mckillop rd scotts mills or</h5></a>', 45.004275, -122.654224,'/images/icons/gps/circle.png'],
+		
+			['<a href="/or/marion/silverton/j-albin-winery/" class="infowindow basic"><h4>j. albin winery</h4><h5>990 n first st silverton or</h5></a>', 45.013953, -122.784561,'/images/icons/gps/circle.png'],
+		
+			['<a href="/or/marion/silverton/silverton-cellars-llc/" class="infowindow basic"><h4>silverton cellars llc</h4><h5>6685 meridian rd ne silverton or</h5></a>', 45.022854, -122.768017,'/images/icons/gps/circle.png'],
+		
+			['<a href="/or/marion/st.-paul/jowenwine/" class="infowindow basic"><h4>jowenwine</h4><h5>8400 champoeg rd st. paul or</h5></a>', 45.245624, -122.888048,'/images/icons/gps/circle.png'],
+		
+			['<a href="/or/marion/sublimity/silver-falls-vineyards/" class="infowindow basic"><h4>silver falls vineyards</h4><h5>4972 cascade hwy se sublimity or</h5></a>', 44.882282, -122.796957,'/images/icons/gps/circle.png'],
+		
+			['<a href="/or/marion/turner/willamette-valley-vineyards/" class="infowindow basic"><h4>willamette valley vineyards</h4><h5>8800 enchanted way se turner or</h5></a>', 44.827453, -123.011076,'/images/icons/gps/circle.png'],
+		
+			['<a href="/or/marion/woodburn/hanson-vineyards-llc/" class="infowindow basic"><h4>hanson vineyards llc</h4><h5>34948 s barlow rd woodburn or</h5></a>', 45.098494, -122.742848,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tn/marion/guild/lookout-winery-inc/" class="infowindow basic"><h4>lookout winery inc.</h4><h5>11848 highway 41 guild tn</h5></a>', 35.036792, -85.534957,'/images/icons/gps/circle.png'],
+		
+			['<a href="/wv/marion/fairmont/heston-farm-winery/" class="infowindow basic"><h4>heston farm winery</h4><h5>1602 tulip ln fairmont wv</h5></a>', 39.451908, -80.137114,'/images/icons/gps/circle.png'],
+		
+    ];
+    
+    
+    
+    
+	// Map options
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: new google.maps.LatLng(39.5,-98.35),
+      zoom: 2,
+      zoomControl: true,
+      zoomControlOptions: {
+          style: google.maps.ZoomControlStyle.DEFAULT,
+          position: google.maps.ControlPosition.RIGHT_TOP
+      },
+      disableDoubleClickZoom: true,
+      mapTypeControl: false,
+      mapTypeControlOptions: {
+          style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+      },
+      scaleControl: false,
+      scrollwheel: false,
+      panControl: true,
+      streetViewControl: false,
+      draggable : true,
+      overviewMapControl: false,
+      overviewMapControlOptions: {
+          opened: false,
+      },
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles:[{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative.country","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.locality","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":"-100"},{"lightness":"30"}]},{"featureType":"administrative.neighborhood","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"simplified"},{"gamma":"0.00"},{"lightness":"74"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"lightness":"3"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+      maxWidth: 240
+    });
+
+    var markers = new Array();
+    
+    // Add the markers and infowindows to the map
+    for (var i = 0; i < locations.length; i++) {  
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map,
+        icon: locations[i][3]
+      });
+      
+
+      markers.push(marker);
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+
+    function autoCenter() {
+      //  Create a new viewpoint bound
+      var bounds = new google.maps.LatLngBounds();
+      //  Go through each...
+      for (var i = 0; i < markers.length; i++) {  
+				bounds.extend(markers[i].position);
+      }
+      //  Fit these bounds to the map
+      map.fitBounds(bounds);
+    }
+    autoCenter();
+  </script> 
+			<footer class="footer">
+	<section>
+		<a href="/"><img src="/images/logos/logo.png" alt="Custom Cut Shirts Logo" class="footer-logo"/></a>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+		<div class="social">
+			<a href="https://www.facebook.com/wineryguild" target="_blank"><span class="fa fa-facebook-official"></span></a>
+			<a href="https://instagram.com/wineryguild/" target="_blank"><span class="fa fa-instagram"></span></a>
+			<a href="https://www.pinterest.com/wineryguild/" target="_blank"><span class="fa fa-pinterest"></span></a>
+			<a href="https://twitter.com/wineryguild" target="_blank"><span class="fa fa-twitter"></span></a>
+			<a href="https://www.youtube.com/channel/UCwgdbeR916av8TWQoZ4F_lA" target="_blank"><span class="fa fa-youtube"></span></a>
+			<a href="#" class="snapchat-button"><span class="fa fa-snapchat-square"></span></a>
+		</div>
+		
+		<!--<nav>
+	<a href="/">Home</a>
+	
+	
+	<a href="/blog/" >Blog</a>
+	
+</nav>-->
+		
+		<p class="copyright">© Copyright 2016. Winery Guild. All Rights Reserved.</p>
+		
+		<div class="contact">
+			<p>Winery Guild</p>
+			<!--<p><i class="fa fa-map-marker" aria-hidden="true"></i><br /></p>-->
+			<p><i class="fa fa-phone" aria-hidden="true"></i>1 (858) 609-9394</p>
+			<p><i class="fa fa-envelope" aria-hidden="true"></i>kevin@wineryguild.com</p>
+			<!--<p><i class="fa fa-fax" aria-hidden="true"></i></p>-->
+		</div>
+	</section>
+</footer>
+		</div>
+	</body>
+</html>

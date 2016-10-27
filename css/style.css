@@ -1,0 +1,3932 @@
+/* @override http://0.0.0.0:4000/css/style.css */
+
+/* @group General */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+	background: #2b2b2b;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	font: 900 36px/48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #b23636;
+}
+h2 {
+	font:900  30px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #b23636;
+	left: 1px;
+}
+h3 {
+	font: 500 24px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+	letter-spacing: 1px;
+}
+h4 {
+	font: 500 18px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+	letter-spacing: 1px;
+}
+p {
+	font: 200 18px/1.9em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+}
+ul {
+	font: 200 18px/1.9em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+}
+a {
+	font: 200 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+}
+a:hover {
+	color: #b23636;
+}
+
+/* @end */
+
+/* @group Butons */
+
+.button {
+	display: inline-block;
+	position: relative;
+	/*height: 48px;*/
+	width: ;
+	margin:0;
+	padding: 12px 36px;
+	background: #b23636;
+	border: none;
+	border-radius: 3px;	
+	font: 700 12px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 2px;
+	color: #fff;
+	cursor: pointer;
+	text-transform: uppercase;
+	text-decoration: none;	
+}
+
+.button.border {
+	border: 2px solid #b23636;
+	background: none;
+	color: #b23636;
+}
+.button.border:hover {
+	background: #b23636;
+	color: #fff;
+}
+
+.button.white {
+	background: none;
+	border: 3px solid #fff;
+}
+.button.white:hover {
+	background: #fff;
+	color: #444;
+}
+.button.grey {
+	background: #999;
+}
+.button:hover {
+	color: #fff;
+}
+
+
+.button > .attention {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: 1px solid rgba(178, 54, 54, 1);
+	border-radius: 3px;
+	-webkit-animation: buttonpulse 1.5s ease-out infinite;
+	        animation: buttonpulse 1.5s ease-out infinite;
+}
+.button.white > .attention {
+	border-color: #fff;
+}
+
+
+
+.disable-selection {
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer */
+   -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+/* @end */
+
+
+
+@-webkit-keyframes buttonpulse {
+	0% {
+		width: 100%;
+		height: 100%;
+		left: 0%;
+		top: 0%;
+		border-color: rgba(255,255,255 1);
+	}
+	100% {
+		width: 110%;
+		height: 150%;
+		left: -5%;
+		top: -25%;
+		border-color: rgba(255,255,255, 0);
+	}
+}
+	
+@keyframes buttonpulse {
+	0% {
+		width: 100%;
+		height: 100%;
+		left: 0%;
+		top: 0%;
+		border-color: rgba(255,255,255, 1);
+	}
+	100% {
+		width: 110%;
+		height: 150%;
+		left: -5%;
+		top: -25%;
+		border-color: rgba(255,255,255, 0);
+	}
+}
+
+
+
+
+/* @group header */
+header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 250px;
+	padding: 24px;
+	background: -webkit-linear-gradient(15deg, #2d363c, #1e272f) rgba(0,0,0,.05);
+	background: linear-gradient(-135deg, #2d363c 50%, #1e272f 100%) rgba(0,0,0,.05);
+	background: #2b2b2b;
+	text-align: center;
+	border-right: 1px solid rgba(0,0,0,.05);
+	-webkit-transition: all .3s ease-in-out 0s;
+	        transition: all .3s ease-in-out 0s;
+}
+header > .menu-button {
+	display: none;
+	position: relative;
+	left: 100%;
+	top: -12px;
+	width: 48px;
+	height: 36px;
+	margin: 0 0 0 36px;
+	cursor: pointer;
+}
+header > .menu-button > span {
+	position: relative;
+	display: block;
+	background: #fff;
+	height: 8px;
+	margin: 6px 0;
+	border-radius: 3px;
+	-webkit-transition: all 1s ease-in-out 0s;
+	        transition: all 1s ease-in-out 0s;
+	box-shadow: 0px 1px 3px rgba(0,0,0,.5);
+}
+header > .logo {
+	margin: 0;
+	padding: 24px 24px 48px 24px;
+	border-bottom: 1px dotted rgba(0,0,0,.15);
+	box-shadow: 0px 1px 0px rgba(255,255,255,.05);
+}
+
+/* Header */
+header > .logo > a {
+	display: inline-block;
+	margin: 0;
+	font: 100 16px/16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+header > .logo > a > div {
+	display: inline-block;
+	font:900 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 0px;
+}
+header > .logo > a > img {
+	width: 96%;
+	margin: 0 0 12px 0;
+}
+
+
+
+header > nav{
+	list-style: none;
+	margin: 0;
+	/*padding: 48px 0;*/
+	/*text-align: left;*/
+}
+header > nav> a {
+	/*margin: 0 0 12px 0;*/
+	padding: 0;
+	color: #fff;
+	border-bottom: 1px dotted rgba(0,0,0,.15);
+	box-shadow: 0px 1px 0px rgba(255,255,255,.05);
+	
+	display: block;
+	text-decoration: none;
+	font:200 18px/48px"Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+}
+header > nav> a:hover {
+	color: #fff;
+	font-weight: 500;
+}
+header > nav> li.selected > a {
+	
+}
+
+
+header > .base {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 250px;
+	padding: 12px;
+	background: rgba(255,255,255,.05);
+}
+header > .base > p {
+	color: rgba(255,255,255,.5);
+	font: 100 12px/12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+}
+header > .base > p > img {
+	display: block;
+	width: 175px;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+
+
+
+
+
+/*  */
+
+
+
+
+header {
+	position: fixed;
+	z-index: 100000000000000000000;
+	left: -250px;
+}
+header > .menu-button {
+	position: relative;
+	display: block;
+}
+
+header.open {
+	left: 0;
+}
+header.open > .menu-button {
+	
+}
+header.open > .menu-button > span {
+	-webkit-transition: all 1s ease-in-out 0s;
+	        transition: all 1s ease-in-out 0s;	
+}
+header.open > .menu-button > span.one {
+	top: 14px;
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+}
+header.open > .menu-button > span.two {
+	top: 0px;
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+header.open + .content {
+	opacity: .25;
+	filter: alpha(opacity=25);
+}
+header.open > .menu-button > span.three {
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+
+
+/* @end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @group CONTENT */
+.content {
+	position: relative;
+	height: 100%;
+}
+
+
+
+
+/* @group SECTION */
+.content > section {
+	max-width: 800px;
+	margin: 0 auto;	
+	padding: 48px 0;
+}
+.content > div > section:after {
+	content: '\00a0';
+	display: block;
+	clear: both;
+	height: 0;
+}
+.content > div > section > section {
+	float: left;
+	width: 50%;
+	min-width: 320px;
+}
+.content > div > section > section + section {
+	padding-left: 24px;
+}
+.content > div > section > section > img {
+	max-width: 100%;
+}
+
+.content > div > section ul {
+	padding: 0 0 0 24px;
+}
+.content > div > section ul > li {
+	margin: 0 0 12px 0;
+	font: 200 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #666;
+}
+
+.content > div > section > p {
+	margin: 0 0 24px;
+}
+
+.content > div > section > p:first-of-type:first-letter { 
+	float: left; 
+	color: #b23636; 
+	font-size: 75px; 
+	line-height: 60px; 
+	vertical-align: bottom;
+	padding-top: 4px; 
+	padding-right: 8px; 
+	padding-left: 3px; 
+	font-family: Georgia; 
+}
+
+/* @end */
+
+
+
+
+/* @group FULL ALTERNATING */
+.content > div > .full-alternating {
+	max-width: none;
+	padding: 0;
+}
+.content > div > .full-alternating > div {
+	width: 100%;
+	/*min-height: 50%;*/
+	background: #fff;
+	background-size: cover;
+	background-position: bottom right;
+	white-space: nowrap;
+	/*border-bottom: 1px solid #333;*/
+	text-align: left;
+	
+}
+/*.content > div > .full-alternating > div:before {
+	content: '\00a0';
+	display: inline-block;
+	width: 10px;
+	height: 100%;
+	background: #f16;
+	vertical-align: middle;
+}*/
+.content > div > .full-alternating > div:after {
+	display: none;
+}
+.content > div > .full-alternating > div > img {
+	display: inline-block;
+	width: 50%;
+	vertical-align: middle;
+	
+}
+.content > div > .full-alternating > div > hgroup {
+	display: inline-block;
+	width: 50%;
+	max-width: 650px;
+	padding: 0 36px;
+	vertical-align: middle;
+}
+.content > div > .full-alternating > div > hgroup > h2 {
+	white-space: normal;
+	text-align: left;
+}
+.content > div > .full-alternating > div > hgroup > p {
+	white-space: normal;
+	text-align: left;
+}
+
+.content > div > .full-alternating > div:nth-last-of-type(even) {
+	text-align: right;
+	background: none;
+	/*box-shadow: 0 1px ;*/
+}
+.content > div > .full-alternating > div:nth-last-of-type(even) > img {
+	
+}
+.content > div > .full-alternating > div:nth-last-of-type(even) > hgroup {
+	padding: 0 0 0 36px;
+}
+/* @end */
+
+/* @end */
+
+
+
+
+
+
+/* @group ALTERNATING */
+.alternating {
+	padding: 0;
+}
+.alternating > div {
+	position: relative;
+	/*overflow: hidden;*/
+	margin: 96px 0;
+	padding: 96px 0;
+	/*border-bottom: 1px solid #ccc;*/
+}
+.alternating > div:first-of-type {
+	/*margin: 48px 0;*/
+}
+.alternating > div > img {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	height: 100%;
+	margin: 0 0 0 48px;
+}
+
+.alternating > div > hgroup {
+	padding: 0 50% 0 0;
+}
+.alternating > div > hgroup > h2 {
+	margin: 0 0 48px;
+	font: 200 42px/1.0865em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.alternating > div > hgroup > p {
+	font: 400 18px/1.45em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin: 0 0 36px 0;
+	/*float: left;*/
+	/*width: 60%;*/
+	clear: left;
+}
+
+
+.alternating > div:nth-of-type(even) > hgroup {
+	padding: 0 0 0 50%;
+}
+.alternating > div:nth-of-type(even) > img  {
+	left: auto;
+	right: 50%;
+	margin: 0 48px 0 0;
+}
+.alternating > div:nth-of-type(even) > h2 {
+	float: right;
+}
+.alternating > div:nth-of-type(even) > p {
+	float: right;
+	clear: right;
+}
+
+/* @end */
+
+
+
+
+
+
+
+
+
+/* @group BANNER */
+.banner {
+	position: relative;
+	height: 60%;
+	min-height: 320px;
+	padding: 72px 0 0 0;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: top right;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	background-color: #2b2b2b;
+}
+.banner.tall {
+	height: 80%;
+}
+.banner.full {
+	height: 100%;
+}
+/*.banner:before {
+	content: '\00a0';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: -webkit-radial-gradient(circle, rgba(0, 0, 0, .5) 0%, rgba(0,0,0,.75) 100%);
+	background-image: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,1) 100%);
+}*/
+.banner.light:before {
+	background-image: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,.15) 100%);
+	background-image: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,.15) 100%);
+}
+.banner.contrast:before {
+	background-image: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.63) 0%, rgba(0,0,0,1) 100%);
+	background-image: radial-gradient(circle, rgba(0, 0, 0, 0.63) 0%, rgba(0,0,0,1) 100%);
+}
+.banner.video:before {
+	/*background-image: radial-gradient(circle, rgba(0, 0, 0, .5) 69%, rgba(0,0,0,1) 70%);*/
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 63.6%, rgba(0,0,0,1) 100%);
+	background-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 63.6%, rgba(0,0,0,1) 100%);
+}
+.banner:after {
+	content: '\00a0';
+	display: inline-block;
+	width: 0;
+	height: 100%;
+	vertical-align: middle;
+}
+
+
+.banner > img {
+	position: relative;
+	z-index: 1000;
+	display: inline-block;
+	max-width: 540px;
+	max-height: 100%;
+	margin: 0 -.25em;
+	vertical-align: middle;
+	text-align: left;
+	white-space: normal;
+}
+
+.banner > .video-wrapper {
+	position: relative;
+	z-index: 1000;
+	display: inline-block;
+	width: 50%;
+	max-width: 540px;
+	max-height: 100%;
+	margin: 0 -.25em;
+	vertical-align: middle;
+	text-align: left;
+	white-space: normal;
+}
+
+/* @group HGROUP */
+.banner > hgroup {
+	position: relative;
+	z-index: 1000;
+	display: inline-block;
+	width: 50%;
+	max-width: 540px;
+	margin: 0 -.25em;
+	vertical-align: middle;
+	text-align: left;
+	white-space: normal;
+}
+.banner hgroup.center {
+	text-align: center;
+	width: 100%;
+	max-width: 1080px;
+}
+.banner > hgroup > h1 {
+	font: 500 36px/48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 2px;
+	text-shadow: 0 1px 6px rgba(0,0,0,.5);
+	text-transform: uppercase;
+	color: #fff;
+}
+.banner > hgroup > h1.large {
+	font-size: 48px;
+	font-weight: 60px;
+}
+.banner > hgroup > h1.thin {
+	font-weight: 200;
+}
+
+.banner > hgroup > img {
+	width: 100%;
+	max-width: 320px;
+}
+.banner > hgroup > h2 {
+	font: 100 24px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-shadow: 0 1px 3px rgba(0,0,0,.5);
+	letter-spacing: 2px;
+	text-transform: capitalize;
+	color: #fff;
+}
+
+
+
+
+
+/* @group Winery Title */
+.banner > hgroup > h1.winery-title {
+	font: 900 48px/54px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.banner > hgroup.full > h1.winery-title > span {
+	display: block;
+	font: 100 41px/48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-transform: capitalize;
+}
+/* @end */
+
+
+
+/* @group Author */
+.banner > hgroup > .author {
+	padding: 48px 0 0 0;
+}
+.banner > hgroup > .author > .image {
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	/*border: 1px solid rgba(255,255,255,0);*/
+	/*box-shadow: 0 0 0px 1px #fff inset;*/
+	border-radius: 72px;
+	background-size: cover;
+	background-position: center;
+}
+.banner > hgroup > .author > p {
+	color: #fff;
+	font-size: 10px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-style: italic;
+}
+.banner > hgroup > .author > p:before {
+	content: 'by ';
+	font-weight: 100;
+}
+/* @end */
+
+/* @end */
+
+/* @group HGROUP FULL */
+.banner > hgroup.full {
+	width: 100%;
+	max-width: 800px;
+	text-align: center;
+}
+/* @end */
+
+/* @group HGROUP PARTIAL */
+.banner > hgroup.partial{
+	width: 100%;
+	max-width: 960px;
+	text-align: center;
+}
+/* @end */
+
+/* @group HGROUP LEFT */
+.banner > hgroup.left {
+	width: 100%;
+	max-width: 1080px;
+	text-align: left;
+}
+.banner > hgroup.left > h1 {
+	width: 50%;
+}
+/* @end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @group FORM */
+.banner form {
+	position: relative;
+	z-index: 1000;
+	display: inline-block;
+	/*width: 50%;*/
+	max-width: 540px;
+	margin: 0 -.25em;
+	padding: 14px 24px 24px 24px;
+	vertical-align: middle;
+	white-space: normal;
+}
+
+.banner form.dark {
+	background: rgba(0,0,0,1);
+	background: #b23636;
+	border-radius: 6px;
+}
+.banner form > h2 {
+	margin: 0 0 12px 0;
+	font: 200 24px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 2px;
+	text-transform: capitalize;
+	color: #fff;
+}
+.banner form > h3 {
+	margin: 6px 0 0 0;
+	font: 100 16px/16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 2px;
+	color: #fff;
+}
+.banner form > label {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	padding: 0 126px 0 56px;
+	white-space: nowrap;
+	background: #fff;
+	border-radius:3px;
+	-webkit-transition: box-shadow 1s ease-in 0s;
+}
+.banner form > label:hover {
+	box-shadow: 0 0 36px rgba(255,255,255,.75);
+	-webkit-transition: all .3s ease-out 0s;
+}
+.banner form > label > label.error {
+	position: absolute;
+	left: 0;
+	bottom: 100%;
+	padding: 6px 12px;
+	background: #b23636;
+	border-radius: 3px 3px;
+	font: 200 12px/14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+}
+.banner form > label > label.error:after {
+	content: '\00a0';
+	position: absolute;
+	left: 50%;
+	bottom: -6px;
+	width: 12px;
+	height: 12px;
+	margin: 0 0 0 -6px;
+	background: #b23636;
+	-webkit-transform: rotate(45deg);
+}
+.banner form > label > span {
+	position: absolute;
+	left: 6px;
+	top: 6px;
+	width:50px;
+	padding: 6px;
+	color: #999;
+	font: 400 12px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.banner form > label > input[type=text] {
+	display: inline-block;
+	height: 48px;
+	width: 100%;
+	border: none;
+	outline: none;
+	font: 400 16px/18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #000;
+}
+.banner form > label > input[type=submit] {
+	position: absolute;
+	right: 6px;
+	top: 6px;
+	height: 36px;
+	width: 120px;
+	margin: 0;
+	padding: 0 12px;
+	background: #b23636;
+	border: none;
+	border-radius: 3px;	
+	font: 700 12px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 2px;
+	color: #fff;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+/* @end */
+
+/* @end */
+
+
+
+
+
+
+/* @group Banner Home */
+.banner.home {
+	background-position: left top;
+}
+.banner.home:before {
+	
+}
+.banner.home > hgroup {
+	padding-left: 200px;
+	text-align: left;
+}
+.banner.home > hgroup > h1 {
+	font:900 42px/50px Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 2px;
+	/*white-space: nowrap;*/
+	
+}
+.banner.home > hgroup > h1 > strong {
+	/*display: inline-block;*/
+	/*letter-spacing: 15px;*/
+	/*font-size: 60px;*/
+}
+.banner.home > hgroup > h2 {
+	font: 200 22px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 0;
+	/*font-size: 20px;*/
+}
+.banner.home > hgroup > .button {
+	margin: 12px 0 0 0;
+}
+/* @end */
+
+
+
+
+
+
+/* @group BANNER BUTTON*/
+.banner-button {
+	position: relative;
+	z-index: 10000000;
+	max-width: 1080px;
+	margin: -30px auto;
+	text-align: center;
+}
+.banner-button > .button {
+	border: 6px solid #f2f2f2;
+}
+.banner-button.white > .button {
+	border-color: #fff;
+}
+/* @end */
+
+
+
+
+
+
+
+
+
+
+/* @group Main Gallery */
+.main-gallery {
+	height: 84%;
+	padding: 0 0 0 0;
+	min-height: 320px;
+	background: #000;
+}
+.main-gallery.full {
+	height: 100%;
+}
+
+.main-gallery .gallery-cell {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-position: center!important;
+	background-size: cover!important;
+	background-repeat: no-repeat;
+	background: #91d5d3;
+	background: #fff;
+	white-space: nowrap;
+}
+.main-gallery .gallery-cell.first-cell {
+	
+}
+.main-gallery .gallery-cell:before {
+	content: '\00a0';
+	display: inline-block;
+	width: 0px;
+	height: 100%;
+	margin: 0 -.25em 0 0;
+	vertical-align: middle;
+}
+.main-gallery .gallery-cell > img {
+	max-height: 100%;
+	max-width: 100%;
+	vertical-align: middle;
+}
+.main-gallery .gallery-cell > hgroup {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	max-width: 960px;
+}
+.main-gallery .gallery-cell > hgroup > h1 {
+	color: #fff;
+	margin: 0 0 24px 0;
+	text-shadow: none;
+	text-transform: capitalize;
+}
+/* position dots in gallery */
+.main-gallery .flickity-page-dots {
+  bottom: 24px;
+}
+/* white circles */
+.main-gallery .flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.main-gallery .flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
+
+
+/* Hgroup */
+.main-gallery .gallery-cell > hgroup {
+	
+}
+.main-gallery .gallery-cell > hgroup > h1 {
+	font: 700 30px/36px Georgia, "Times New Roman", Times, serif;
+	text-shadow: 0 1px 3px rgba(0,0,0,.5);
+	letter-spacing: 2px;
+}
+.main-gallery .gallery-cell > hgroup > .logo {
+	display: block;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 24px auto;
+	background-size: cover;
+	background-position: center;
+	background-color: #ccc;
+	border: 6px solid #fff;
+	border-radius: 150px;
+	overflow: hidden;
+}
+.main-gallery .gallery-cell > hgroup > .logo > img {
+	width: 100%;
+}
+.main-gallery .gallery-cell > hgroup > .button {
+	margin: 0;
+}
+/* @end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @group Video Control */
+.video-controls {
+	position: relative;
+	display: block!important;
+	width: 96px;
+	height: 96px;
+	margin: 0 auto!important;
+	/*display: inline-block;*/
+	/*width: 100%;*/
+	/*height: 100%;*/
+	/*max-width: 540px;*/
+	margin: 0 -.25em 0 0;
+	cursor: pointer;
+	text-align: center;
+	/*vertical-align: top;*/
+}
+/*.video-controls:after {
+	content: '\00a0';
+	display: inline-block;
+	width: 0;
+	height: 100%;
+	vertical-align: middle;
+}*/
+.video-controls > .video-play {
+	position: relative;
+	display: inline-block;
+	width: 96px;
+	height: 96px;
+	font: 900 72px/80px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #fff;
+	border: 5px solid #fff;
+	border-radius: 96px;
+	cursor: pointer;
+	text-align: center;
+}
+.video-controls > .video-play > .video-cta {
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	margin: 24px auto 0 auto;
+	font: 400 11px/11px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 2px;
+	color: rgba(255,255,255,.5);
+}
+.video-controls > .video-play > .video-button-icon {
+	
+}
+.video-controls > .video-play > .video-button-outline {
+	position: absolute;
+	border: 2px solid #fff;
+	border-radius: 96px;
+	-webkit-animation: pulse 1.5s ease-in-out infinite;
+	        animation: pulse 1.5s ease-in-out infinite;
+}
+@-webkit-keyframes pulse {
+  0% {
+  	top: -5px;
+  	left: -5px;
+	width: 96px;
+	height: 96px;
+	opacity: .5;
+	filter: alpha(opacity=50);
+  }
+  100% {
+  	top: -32px;
+  	left: -32px;
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+@keyframes pulse {
+  0% {
+  	top: -5px;
+  	left: -5px;
+	width: 96px;
+	height: 96px;
+	opacity: .5;
+	filter: alpha(opacity=50);
+  }
+  100% {
+  	top: -32px;
+  	left: -32px;
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+
+
+
+.video-controls:hover > .video-play {
+	/*width: 120px;
+	height: 120px;*/
+	background: #fff;
+	color: #000;
+	/*font: 900 84px/96px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;*/
+}
+.video-controls:active > .video-play {
+	background: #000;
+	color: #fff;
+}
+
+
+/* @end */
+
+
+
+
+
+
+
+/* @group Article */
+article {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0px 0px 60px 0;
+}
+
+
+article > hgroup {
+	margin: 72px 0 48px 0;
+	text-align: center;
+}
+article > h1 {
+	margin: 36px 0;
+}
+article > h2 {
+	margin: 36px 0;
+}
+article > p+h3  {
+	margin: 72px 0 0 0;
+}
+
+
+article > blockquote > p {
+	margin: 72px;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 100;
+	letter-spacing: 1px;
+	color: #b23636;
+}
+article > blockquote > p:before,
+article > blockquote > p:after {
+	content: '"';
+}
+article img {
+	width: 100%;
+}
+
+
+article p {
+	position: relative;
+	margin: 36px 0;
+	font-size: 20px;
+	overflow: hidden;
+}
+article > h3+p {
+	margin: 0 0 36px 0;
+}
+article p:first-of-type {
+	margin-top: 0;
+}
+article > p:first-of-type:first-letter { 
+	float: left; 
+	color: #b23636; 
+	font-size: 120px; 
+	line-height: 96px; 
+	vertical-align: top;
+	padding-top: 12px; 
+	padding-right: 24px; 
+	padding-left: 3px; 
+	font-family: Georgia; 
+}
+article > hr {
+	height: 48px;
+	border: none;
+	border-top: 1px dotted #ccc;
+}
+
+
+article > ul {
+	padding: 0 0 0 24px;
+}
+article > ul > li{
+	margin: 36px 0;
+	/*padding: 50px;*/
+	font-size: 20px;
+}
+/* @end */
+
+
+
+
+
+/* @group Claim Winery Form */
+
+.claim-winery-form {
+	text-align: center;
+	padding:24px 24px 150px 24px!important;
+}
+.claim-winery-form > h3 {
+	margin: 0 0 24px;
+	font: 900 24px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-transform: capitalize;
+	color: rgba(255,255,255,.95);
+}
+.claim-winery-form > h4 {
+	font: 100 16px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgba(255,255,255,.75);
+}
+.claim-winery-form > form {
+	width: 100%;
+	max-width: 480px;
+	margin: 0 auto;
+}
+.claim-winery-form > form > label {
+	position: relative;
+	display: block;
+	margin: 0 0 12px 0;
+	text-align: left;
+	border: 1px solid #ccc;
+}
+.claim-winery-form > form > label > span {
+	position: absolute;
+	display: inline-block;
+	padding: 0 12px;
+	font: 400 15px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.claim-winery-form > form > label > span > i {
+	margin: 0 12px 0 0;
+}
+.claim-winery-form > form > label > input{
+	padding: 0 0 0 96px;
+	border: none;
+	width: 100%;
+	height: 36px;
+	font: 200 16px/16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.claim-winery-form > form > label > textarea {
+	display: inline-block;
+	width: 100%;
+	height: 150px;
+	padding: 36px 12px 12px 12px;
+	border: none;
+	vertical-align: top;
+	font: 200 16px/16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+/* @end */
+
+
+
+/* @group Contact Form */
+
+.contact-form {
+	text-align: center;
+	padding: 96px 24px!important;
+}
+.contact-form > h3 {
+	margin: 0 0 24px;
+	font: 900 24px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-transform: capitalize;
+}
+.contact-form > h4 {
+	font: 100 16px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.contact-form > form {
+	width: 100%;
+	max-width: 480px;
+	margin: 0 auto;
+}
+.contact-form > form > label {
+	position: relative;
+	display: block;
+	margin: 0 0 12px 0;
+	text-align: left;
+	border: 1px solid #ccc;
+}
+.contact-form > form > label > span {
+	position: absolute;
+	display: inline-block;
+	padding: 0 12px;
+	font: 400 15px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.contact-form > form > label > span > i {
+	margin: 0 12px 0 0;
+}
+.contact-form > form > label > input{
+	padding: 0 0 0 96px;
+	border: none;
+	width: 100%;
+	height: 36px;
+	font: 200 16px/16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.contact-form > form > label > textarea {
+	display: inline-block;
+	width: 100%;
+	height: 150px;
+	padding: 36px 12px 12px 12px;
+	border: none;
+	vertical-align: top;
+	font: 200 16px/16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+/* @end */
+
+
+
+
+/* @group Outline */
+.outline {
+	background: #e5e5e5;
+	padding: 96px 48px;
+	overflow: hidden;
+	text-align: center;
+	
+	background-image: url('/images/patterns/grunge2.png');
+	background-attachment: scroll;
+	background-repeat: repeat no-repeat;
+	background-size: auto;
+	background-position: bottom center;
+}
+.outline > section {
+	display: inline-block;
+	width: 50%;
+	max-width: 320px;
+	margin: 0 auto;
+	text-align: center;
+}
+.outline > section > h2 {
+	
+}
+.outline > section:before {
+	content: '\00a0';
+	display: block;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	border: 3px solid #333;
+	border-radius: 320px;
+}
+/* @end */
+
+
+
+
+/* @group Overlay */
+.overlay {
+	position: fixed;
+	z-index: 100000000000;
+	width: 100%;
+	height: 100%;
+	left: 300%;
+	top: 0;
+	padding: 48px;
+	background: rgba(0,0,0,.75);
+	text-align: center;
+	white-space: nowrap;
+}
+.overlay.visible {
+	left: 0;
+}
+.overlay > .close-overlay {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	border: 2px solid #fff;
+	border-radius: 24px;
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	font: 400 24px/42px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #fff;
+	cursor: pointer;
+}
+.overlay > .close-overlay:hover {
+	background: #fff;
+	color: #000;
+}
+.overlay > .close-overlay:active {
+	background: #000;
+	color: #fff;
+}
+.overlay > .video-wrapper {
+	display: inline-block;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+.overlay:after {
+	content: '\00a0';
+	display: inline-block;
+	width: 0px;
+	height: 100%;
+	/*background: red;*/
+	vertical-align: middle;
+}
+.overlay > .video-wrapper > iframe {
+	/*top: 0;
+	left: 0;
+	width: 100%;*/
+}
+/* @end */
+
+
+
+
+
+
+ 
+ 
+ 
+/* @group Map */
+#map {
+	position: relative;
+ 	height:72%;
+ 	width: 100%;
+}
+#map:after {
+	content: '\00a0';
+	position: absolute;
+	bottom: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 72px;
+	background: linear-gradient(to bottom, rgba(43,43,43,0) 0%, rgba(43,43,43,100)72%);
+}
+
+.gm-style * {
+	padding: 0!important;
+}
+.gm-style > div > div > div > div {
+	padding: 0;
+	background: #fff;
+}
+.gm-style > div > div > div > div > div > div {
+	background: none!important;
+}
+.gm-style-iw {
+	overflow: visible!important;
+}
+.gm-style-iw * {
+	display: block;
+	/*width: 100%;*/
+ 	padding: 0;
+	background: none;
+	overflow: visible!important;
+}
+.gm-style-iw h4, 
+.gm-style-iw p {
+ 	margin: 0;
+ 	padding: 0;
+
+}
+.gm-style-iw a {
+ 	color: #4272db;
+}
+
+
+
+/* Info Window */
+.infowindow {
+	position: relative;
+	display: block;
+	padding: 0px 0 0px 48px!important;
+	text-decoration: none;
+}
+.infowindow.basic {
+	padding: 0!important;
+}
+/*.infowindow::after {
+	content: '>';
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	right: -36px;
+	height: 36px;
+	color: #ccc;
+	font: 900 24px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}*/
+.infowindow > img {
+	position: absolute;
+	left: -15px;
+	top: -9px;
+	float: left;
+	width: 52px;
+}
+.infowindow > h4 {
+	font: 900 14px/18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-transform: capitalize;
+}
+.infowindow > h5 {
+	font: 400 12px/16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #999;
+	text-transform: capitalize;
+}
+/* @end */
+
+
+
+
+
+
+
+
+
+
+
+/* @group Wineries */
+
+.wineries {
+	position: relative;
+	z-index: 1000000;
+	width: 100%;
+	margin: 0px 0 0 0;
+	padding: 0 0px 96px 0px;
+	position: relative;
+	background: none;
+}
+
+.wineries > .pop-up-menu {
+	display: none;
+	position: fixed;
+	z-index: 100;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.75);
+}
+.wineries > .pop-up-menu.visible {
+	display: block;
+}
+.wineries > .pop-up-menu > ul {
+	position: relative;
+	background: #fff;
+	width: 100%;
+	max-width: 320px;
+	max-height: 100%;
+	margin: 0 auto;
+	padding: 24px;
+	list-style: none;
+	overflow-y: auto;
+}
+.wineries > .pop-up-menu > ul > .pop-up-toggle {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 6px 12px;
+	cursor: pointer;
+	font: 200 24px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	/*border: 1px solid #333;*/
+	/*border-radius: 36px;*/
+}
+.wineries > .pop-up-menu > ul > li {
+	border-bottom: 1px solid #ccc;
+}
+.wineries > .pop-up-menu > ul > li:last-of-type {
+	border-bottom: none;
+}
+.wineries > .pop-up-menu > ul > li > a {
+	text-decoration: none;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+}
+
+
+
+/*.wineries > header {
+	padding: 48px 0 0 0;
+	text-align: center;
+}*/
+.wineries > h1 {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	margin: 24px 0 0 -25%;
+	text-transform: uppercase;
+	text-align: center;
+	font: 400 24px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 2px;
+	color: #fff;
+}
+
+
+
+
+
+.wineries > nav {
+	/*position: fixed;
+	top: 0px;*/
+	width: 100%;
+	margin: -48px 0 24px 0;
+	padding: 12px 0 0 0;
+	text-align: center;
+	white-space: normal;
+	text-align: center;
+	/*background: #f16;*/
+}
+.wineries > nav > h1 {
+	margin: 0 0 6px 0;
+	font: 400 24px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+}
+.wineries > nav > a {
+	position: relative;
+	display: inline-block;
+	margin: 0 0 0 -4px;
+	padding: 0 6px 0 24px;
+	border: 1px solid #fff;
+	border-right: none;
+	border-left: none;
+	color: #fff;
+	font: 400 12px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.wineries > nav > a:first-of-type {
+	border-left: 1px solid #fff;
+	padding: 0 6px 0 18px;
+}
+
+.wineries > nav > a:after {
+	content: '\00a0';
+	position: absolute;
+	top: 3px;
+	right: -9px;
+	width: 17px;
+	height: 17px;
+	margin: 0 0 0 6px;
+	border: 1px solid #fff;
+	border-left: none;
+	border-bottom: none;
+	transform: rotate(45deg);
+}
+.wineries > nav > a:hover {
+	color: #f16;
+}
+.wineries > nav > a:hover:after {
+
+}
+
+.wineries > nav > a:last-of-type {
+	padding: 0 36px;
+	border-right: 1px solid #fff;
+}
+.wineries > nav > a:last-of-type:after {
+	right: 0;
+	top: 0;
+	content: '\0025BE';
+	border: none;
+	transform: none;
+}
+.wineries > nav > a.final {
+	padding: 0 6px 0 24px;
+}
+.wineries > nav > a.final:after {
+	display: none;
+}
+
+
+
+.wineries > nav > .chooser {
+	display: inline-block;
+	position: relative;
+	width: 150px;
+	text-align: left;
+}
+.wineries > nav > .chooser > .button {
+	display: block;
+	width: 100%;
+	margin: 0 0 0 -5px;
+	padding: 0 0 0 24px;
+	background: none;
+	border: 1px solid #fff;
+	border-left: none;
+	border-radius: 3px 3px 0 0;
+	font: 400 12px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.wineries > nav > .chooser > .button:hover {
+	color: #f16;
+}
+.wineries > nav > .chooser > .button:after {
+	content: '\0025BE';
+}
+.wineries > nav > .chooser > ul {
+	display: none;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	max-height: 100px;
+	overflow-y: scroll;
+	/*background: #fff;*/
+	text-align: left;
+	/*padding: 6px;*/
+	border: 1px solid #fff;
+	border-top: none;
+	border-radius: 0 0 3px 3px;
+}
+.wineries > nav > .chooser > ul > li {
+	margin: 0;
+	padding: 0 6px;
+	color: #fff;
+}
+.wineries > nav > .chooser > ul > li:hover {
+	background: #fff;
+	color: #333;
+}
+.wineries > nav > .chooser > ul > li > a {
+	display: block;
+	margin: 0;
+	padding: 0;
+	font: 11px/12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: inherit;
+	text-decoration: none;
+	text-transform: capitalize;
+	letter-spacing: 1;
+}
+.wineries > nav > .chooser > ul > li > a > span {
+	
+}
+
+
+
+
+
+.wineries > ul {
+	/*padding: 24px;*/
+	max-width: 960px;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+	overflow: hidden;
+} 
+.wineries > ul > li {
+	display: inline-block;
+	width: 31%;
+	margin: 0 0 12px  1%;
+	background-size: cover;
+}
+/*.wineries > ul > li:nth-last-of-type(2n) {
+	margin-right:2%;
+	margin-left: 2%;
+}*/
+.wineries > ul > li > a {
+	display: block;
+	padding: 200px 0 0 0;
+	text-decoration: none;
+}
+.wineries > ul > li > a > hgroup {
+	position: relative;
+	padding: 12px 60px 12px 12px;
+	background: #fff;
+	text-align: left;
+}
+.wineries > ul > li > a > hgroup > h3 {
+	font:400 16px/18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-transform: capitalize;
+}
+.wineries > ul > li > a > hgroup > h4 {
+	font: 200 12px/18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #666;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+}
+.wineries > ul > li > a > hgroup > img {
+	position: absolute;
+	top: 50%;
+	right: 6;
+	width: 48px;
+	margin: -24px 0 0 0;
+	border-radius: 96px;
+}
+
+
+.wineries > ul > li.claimed > a {
+	padding: 0;
+}
+
+
+.wineries > ul > li.basic{
+	float: left;
+	width: 25%;
+	max-width: none;
+	margin: 12px 0 0 0;
+	text-align: left;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+}
+.wineries > ul > li.basic > a {
+	padding: 0 12px 0 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+
+
+@media all and (max-width: 720px) {
+.wineries > ul {
+	padding: 12px;
+}
+.wineries > ul > li {
+	width: 48%;
+	margin: 0 0 6px 0;
+}
+.wineries > ul > li:nth-last-of-type(3n) {
+	margin-left: 0;
+	margin-right: 0;
+}
+.wineries > ul > li:nth-last-of-type(odd){
+	margin-right: 2%;
+}
+}
+
+@media all and (max-width: 480px) {
+.wineries > ul > li {
+	width: 100%;
+	margin: 0 0 12px 0!important;
+}
+
+.wineries > ul > li.basic {
+	width: 50%!important;
+}
+}
+/* @end */
+
+
+/* @group WINERY MAP INFO WINDOW */
+.winery-map-info-window {
+	display: block;
+	max-width: 320px;
+	padding: 12px;
+	text-decoration: none;
+}
+.winery-map-info-window > h4 {
+	font: 700 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+}
+.winery-map-info-window > p {
+	color: #666;
+}
+.winery-map-info-window > .button {
+	text-align: center;
+	margin: 12px 0 0 0;
+}
+/* @end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* WINERY */
+
+
+
+
+
+
+
+
+/* @group General Winery Info */
+.general-winery-info {
+	background: #fff;
+}
+.general-winery-info > section {
+	max-width: 800px;
+	position: relative;
+	margin: 0px auto 0 auto;
+	padding: 24px 0;
+	text-align: center;
+	/*display: none;*/
+}
+.general-winery-info > section > span {
+	font: 200 16px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.general-winery-info > section > span > img {
+	width: 36px;
+	vertical-align: middle;
+}
+.general-winery-info > section > span+span {
+	margin: 0 0 0 24px;
+}
+/*.general-winery-info > .logo {
+	/*float: left;*!/
+	position: relative;
+	display: inline-block;
+	width: 240px;
+	/*margin: 0 24px 0 0;*!/
+	/*margin: -84px 0 0 0;*!/
+	/*padding: 24px;*!/
+	border: 3px solid #fff;
+	border-radius: 240px;
+	overflow: hidden;
+}
+.general-winery-info > .logo > img {
+	width: 100%;
+}
+.general-winery-info > h1 {
+	/*padding: 18px 0;*!/
+	font: 200 12px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	/*text-align: left;*!/
+	/*color: #fff!important;*!/
+}*/
+/* @end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @group Winery Address */
+.winery-address {
+	position: relative;
+	z-index: 100000;
+	max-width: 800px;
+	margin: 0 auto 0 auto;
+	padding: 24px;
+	background: #fff;
+	text-align: center;
+}
+
+/* @end */
+
+
+
+
+
+
+/* @group WINERY PAGE */
+.winery-page {
+	position: relative;
+	padding: 48px 0px;
+	overflow: visible;
+}
+
+
+.winery-page > article {
+	/*float: left;*/
+	width: 70%;
+	margin: 0;
+	padding: 0 48px 0 0px;	
+}
+.winery-page > article > p:first-of-type {
+	margin-top: none!important;
+}
+.winery-page > article > p {
+	
+	font: 200 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #555;
+	clear: none;
+}
+
+
+
+.winery-page > aside {
+	float: right;
+	width: 29%;
+	/*margin: -96px 0 36px 0;*/
+	/*padding: 24px;*/
+	/*background: #fff;*/
+	/*box-shadow: 0 1px 5px rgba(0,0,0,.25);*/
+	/*border-left: 1px solid #ccc;*/
+}
+.winery-page > aside > .logo {
+	position: relative;
+	/*box-shadow: 0px -5px 5px -5px rgba(0,0,0,.25)inset;*/
+}
+.winery-page > aside > .logo > img {
+	width: 100%;
+}
+.winery-page > aside > .logo.transperant {
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+
+.winery-page > aside > .call-to-action > h3 {
+	text-align: center;
+}
+
+
+.winery-page > aside > ul.winery-info {
+	/*margin: 0 0 24px 0;*/
+	padding:24px;
+	list-style: none;
+	clear: right;
+}
+.winery-page > aside > ul.winery-info > li {
+	clear: both;
+	overflow: hidden;
+	margin: 0 0 12px 0;
+	font: 500 14px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.winery-page > aside > ul.winery-info > li > img {
+	float: left;
+	width: 36px;
+	height: 36px;
+	/*border: 2px solid #444;*/
+	/*background: #444;*/
+	border-radius: 100;
+}
+.winery-page > aside > ul.winery-info > li > h3 {
+	margin: 0;
+	padding: 6px 0 0 48px;
+	font: inherit;
+	color: #444;
+}
+.winery-page > aside > ul.winery-info > li > h3 > a {
+	display: block;
+	color: #337da9;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font: inherit;
+}
+/* @end */
+
+
+
+
+
+/* WINE */
+
+
+
+
+
+
+
+/* @group Wine List */
+.wine-list {
+	padding: 0;
+	max-width: 800px;
+	margin: 0 auto;
+	/*background: #e5e5e5;*/
+}
+.wine-list > ul {
+	/*max-width: 800px;*/
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+}
+.wine-list > ul > li {
+	position: relative;
+	display: inline-block;
+	width: 200px;
+	margin: 0 -.25em 24px 0;
+	padding: 12px;
+	vertical-align: top;
+}
+.wine-list > ul > li:before {
+	content: '\00a0';
+	position: absolute;
+	z-index: -0;
+	left: 0px;
+	top: 0px;
+	padding: 2px;
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	border-bottom: none;
+	width: 100%;
+	height: 12px;
+}
+.wine-list > ul > li:hover > a > img {
+	top: -24px;
+}
+.wine-list > ul > li > a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+.wine-list > ul > li > a > img {
+	position: relative;
+	/*margin: -100px 0 0 0;*/
+	height: 200px;
+	-webkit-transition: top .3s ease-out 0s;
+}
+.wine-list > ul > li > a > hgroup {
+	position: relative;
+	z-index: 100;
+}
+.wine-list > ul > li > a > hgroup > h2 {
+	margin: 24px 0 0 0;
+	font: 500 16px/24px Georgia, "Times New Roman", Times, serif;
+	color: #333;
+	text-transform: uppercase;
+}
+.wine-list > ul > li > a > hgroup > h2:before {
+	content: attr(data-ava);
+	display: block;
+	font: 200 14px/12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #666;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+}
+/* @end */
+
+
+
+
+
+
+
+
+/* @group Wine Details */
+.main-gallery .gallery-cell.wine-details {
+	background: radial-gradient(ellipse farthest-corner, #4d4c4c 0%, black 100%) #000;
+}
+.wine-details:before {
+	
+}
+
+
+/* Details */
+.wine-details > .details {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	max-width: 800px;
+	padding: 0px 0 0 320px;
+	text-align: left;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+.wine-details > .details:before {
+	content: '\00a0';
+	display: inline-block;
+	width: 0px;
+	height: 100%;
+	margin: 0 -.25em 0 0;
+	vertical-align: middle;
+}
+
+/* IMG */
+.wine-details > .details > img {
+	position: absolute;
+	left: 0px;
+	/*top: 96px;*/
+	bottom: 12px;
+	max-width: 320px;
+	/*max-height: 120%;*/
+}
+
+
+/* Section */
+.wine-details > .details > section {
+	display: inline-block;
+	padding: 0 0 0 48px;
+	vertical-align: middle;
+	white-space: normal;
+}
+
+/* Hgroup */
+.wine-details > .details > section > hgroup {
+	margin: 0 0 36px 0;
+	text-align: left;
+}
+.wine-details > .details > section > hgroup > h1 {
+	margin: 0 0 6px 0;
+	font: 700 40px/48px Georgia, "Times New Roman", Times, serif;
+	color: #fff;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.wine-details > .details > section > hgroup > h1:before {
+	content: attr(data-ava);
+	display: none;
+	font: 100 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-transform: capitalize;
+}
+.wine-details > .details > section > hgroup > h2 {
+	font: 100 18px/24px Georgia, "Times New Roman", Times, serif;
+	color: rgba(255,255,255,.75);
+	letter-spacing: 2px;
+	text-transform: capitalize;
+}
+.wine-details > .details > section > hgroup > p {
+	margin: 24px 0 0 0;
+	font:200 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	white-space: normal;
+	color: rgba(255,255,255,.75);
+}
+
+
+.wine-details > .details > section > section {
+	margin: 12px 0 0 0;
+}
+.wine-details > .details > section > section > h3 {
+	display: inline-block;
+	width: 84px;
+	font:200 18px/18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #fff;
+	vertical-align: middle;
+}
+
+
+/* Vintage */
+.wine-details > .details > section > .vintage {
+	
+}
+.wine-details > .details > section > .vintage > label {
+	display: inline-block;
+	padding:6px 12px;
+	border: 1px solid rgba(255,255,255,0);
+	border-radius: 3px;
+	text-align: center;
+	font:200 18px/18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #fff;
+	vertical-align: middle;
+}
+.wine-details > .details > section > .vintage > label:hover{
+	background: #fff;
+	color: #000;
+	cursor: pointer;
+}
+.wine-details > .details > section > .vintage > label.selected {
+	cursor: pointer;
+	border-color: #fff;
+	/*background: #fff;*/
+	/*color: #000;*/
+}
+.wine-details > .details > section > .vintage > label > input {
+	display: inline-block;
+	margin: 0 12px 0 0;
+}
+
+
+/* Quantity */
+.wine-details > .details > section > .quantity {
+	
+}
+.wine-details > .details > section > .quantity > label {
+	display: inline-block;
+	padding: 0px 0px;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	overflow: hidden;
+	vertical-align: middle;
+}
+.wine-details > .details > section > .quantity > label > input {
+	display: inline-block;
+	float: left;
+	width: 48px;
+	height: 30px;
+	padding: 0px;
+	background: none;
+	border: none;
+	outline: none;
+	font: 200 18px/18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-align: center;
+	color: #fff;
+	/*background: #f16;*/
+}
+.wine-details > .details > section > .quantity > label > span {
+	display: inline-block;
+	float: left;
+	width: 30px;
+	height: 30px;
+	font: 100 16px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	/*background: #f16;*/
+}
+.wine-details > .details > section > .quantity > label > span:hover {
+	cursor: pointer;
+	background: #fff;
+	color: #000;
+}
+
+
+/* Buy */
+.wine-details > .details > section > .buy {
+	margin: 36px 0 0 0;
+}
+.wine-details > .details > section > .buy > div {
+	display: none;
+}
+.wine-details > .details > section > .buy > div.visible {
+	display: block;
+}
+.wine-details > .details > section > .buy > div > h2 {
+	display: inline-block;
+	margin: 0 24px 0 0;
+	vertical-align: middle;
+	font:100 36px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #fff;
+}
+.wine-details > .details > section > .buy > div > h2:before {
+	content: '$';
+}
+.wine-details > .details > section > .buy > div > .button {
+	margin: 0;
+}
+
+.wine-details > .details > section > .buy > div > form {
+	display: inline-block;
+}
+.wine-details > .details > section > .buy > div > form > .button {
+	margin: 0;
+}
+/* @end */
+
+
+
+
+
+
+/* @group Featured Wineries */
+.featured-wineries {
+	position: absolute;
+	width: 100%;
+	margin: 0!important;
+	padding: 0!important;
+	z-index: 10000000000000000;
+	top: -100px;
+	text-align: center;
+}
+.featured-wineries > h2 {
+	margin: 0 0 48px;
+	
+	display: none;
+}
+.featured-wineries > li {
+	display: inline-block;
+	max-width: 320px;
+	/*border: 1px solid #ccc;*/
+}
+.featured-wineries > li > a {
+	text-decoration: none;
+}
+.featured-wineries > li > a > div {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	border: 5px solid #ccc;
+	border-radius: 200px;
+	background-position: center;
+}
+.featured-wineries > li > a > hgroup {
+	padding: 12px 0 0 0;
+}
+.featured-wineries > li > a > hgroup > h2 {
+	font: 200 24px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #000;
+}
+/* @end */
+
+
+/* Other */
+
+
+
+
+
+
+/* @group    Call To Action */
+.call-to-action {
+	padding: 48px;
+	background: #fff;
+	text-align: center;
+}
+.call-to-action > h4 {
+	font: 200 20px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #999;
+	text-transform: capitalize;
+}
+.call-to-action > h3 {
+	margin: 0 0 24px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-transform: uppercase;
+}
+.call-to-action > .button {
+	
+}
+/* @end */
+
+
+
+
+
+
+/* @group Opt In */
+.opt-in {
+	margin: 0 auto 96px auto!important;
+	padding: 48px!important;
+	text-align: center;
+	border: 1px solid #ccc;
+}
+.opt-in .mc-field-group {
+	display: inline-block;
+	margin: 48px 0 0 0;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+.opt-in .mc-field-group > label {
+	padding: 0 12px;
+	font: 500 14px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.opt-in .mc-field-group > label:after {
+	content: ':';
+}
+.opt-in .mc-field-group > input {
+	border: none;
+	width: 200px;
+	height: 48px;
+	padding: 0 12px;
+}
+/* @end */
+
+
+
+
+
+
+/* @group Sign Up */
+.sign-up {
+	
+}
+.sign-up > section {
+	position: relative;
+	padding: 0 36px 36px 36px;
+	border: 24px solid #f2f2f2;
+	background: #fff;
+	/*text-align: center;*/
+}
+.sign-up > section > h2 {
+	position: relative;
+	margin: 0 -24px;
+	padding: 36px ;
+	text-transform: capitalize;
+	font: 200 48px/48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 2px;
+	
+}
+.sign-up > section > p {
+	position: relative;
+	padding: 0 0px 36px 0px;
+	text-align: left;
+}
+.sign-up > section > img {
+	position: absolute;
+	right: -100px;
+	top: -30px;
+	opacity: .05;
+	filter: alpha(opacity=5);
+	width: 400px;
+}
+.sign-up > section > .button {
+	position: relative;
+	z-index: 10000000;
+	width: 100%;
+	/*margin: 24px 0 0 0;*/
+	text-align: center;
+	font: 100 18px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+/* @end */
+
+
+
+
+/* @group Quotes */
+.quotes {
+	position: relative;
+	background: #fff;
+	margin: 0 0 48px;
+	/*padding: 48px;*/
+	white-space: nowrap;
+	text-align: center;
+	box-shadow: 0 0px 5px rgba(0,0,0,.15);
+}
+.quotes:before {
+	content: '\00a0';
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	width: 48px;
+	height: 48px;
+	margin: -24px 0 0 -24px;
+	background: #fff;
+	-webkit-transform: rotate(45deg);
+	box-shadow: 0 0px 5px rgba(0,0,0,.15);
+}
+.quotes > article {
+	position: relative;
+	z-index: 1000;
+	white-space: normal;
+	text-align: left;
+	background: #fff;
+}
+.quotes > article > p {
+	
+}
+.quotes > p {
+	position: relative;
+	z-index: 100;
+	display: inline-block;
+	width: 30%;
+	max-width: 324px;
+	margin: 0 -.25em 0 0;
+	padding: 48px 0;
+	white-space: normal;
+	text-align: center;
+	vertical-align: top;
+	font: 100 24px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+	background: #fff;
+	/*color: #b23636;*/
+}
+.quotes > p.full {
+	display: block;
+	width: 100%;
+	max-width: 840px;
+	margin: 0 auto;
+	padding: 48px 24px;
+}
+.quotes > p:nth-of-type(2) {
+	width: 40%;
+	max-width: 432px;
+	padding: 48px;
+}
+/* @end */
+
+/* @group Quotes - Single */
+.quotes.single {
+	
+}
+.quotes.single > p {
+	width: 100%;
+	max-width: none;
+}
+/* @end */
+
+/* @group Blog Posts */
+.blogposts {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 48px 0;
+	list-style: none;
+}
+.blogposts > li {
+	display: inline-block;
+	max-width: 30%;
+	max-height: 320px;
+	overflow: hidden;
+	margin: 0 -.25em 0 0;
+	background: #fff;
+	vertical-align: top;
+}
+.blogposts > li+li {
+	margin-left: 5%;
+}
+.blogposts > li > a {
+	display: block;
+	/*padding: 24px;*/
+	text-decoration: none;
+}
+.blogposts > li > a > .postbanner {
+	height: 150px;
+	/*margin: -24px -24px 24px -24px;*/
+	margin: 0 0 24px 0;
+	background-color: #000;
+	background-size: cover;
+	background-position: top right;
+}
+.blogposts > li > a > h2 {
+	margin: 0 0 12px;
+	font: 900 24px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	
+}
+.blogposts > li > a > h3 {
+	font: 400 11px/14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #999;
+	font-style: italic;
+}
+.blogposts > li > a > p {
+	height: 96px;
+	padding: 0;
+	overflow: hidden;
+	font: 14px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #666;
+	text-overflow: ellipsis;
+}
+/* @end */
+
+
+
+
+
+
+
+
+
+/* @group GUILD FORM */
+.guild-form {
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+}
+.guild-form.sign-up {
+	display: block;
+	max-width: 480px;
+	margin: 0 auto;
+}
+.guild-form > img {
+	width: 100%;
+}
+.guild-form > h2 {
+	font: 700 30px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+	margin: 0 0 36px 0;
+	color: #b23636;
+	text-shadow: 0 1px 0 #fff;
+}
+.guild-form > h4 {
+	font: 100 24px/48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+	margin: 0 0 0px 0;
+}
+.guild-form > label {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin: 0 0 24px 0;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	white-space: nowrap;
+	/*overflow: hidden;*/
+}
+.guild-form > label > label.error {
+
+	position: absolute;
+	left: -1px;
+	bottom: 100%;
+	margin: 0 0 0 0;
+	padding: 6px 12px;
+	background: #b23636;
+	border-radius: 3px 3px 0 0;
+	font: 200 12px/12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #fff;
+	letter-spacing: 1px;
+}
+.guild-form > label > label.error:after {
+	content: '\00a0';
+	position: absolute;
+	left: 24px;
+	bottom: -6px;
+	width: 12px;
+	height: 12px;
+	/*margin: 0 0 0 -6px;*/
+	background: #b23636;
+	-webkit-transform: rotate(45deg);
+}
+.guild-form > label > span {
+	display: inline-block;
+	width: 19%;
+	padding: 0 12px;
+	border-right: 1px solid #ccc;
+	text-align: left;
+	font: 200 14px/18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #666;
+	letter-spacing: 1px;
+	vertical-align: middle;
+}
+.guild-form > label > input[type=text] {
+	width: 80%;
+	height: 48px;
+	padding: 0 12px;
+	border: none;
+	font: 500 16px/18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	vertical-align: middle;
+}
+.guild-form > label > input[type=text]::-webkit-input-placeholder {
+	font: 200 14px/18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 2px;
+	color: #999;
+}
+.guild-form > label > input:focus {
+	border: none;
+	outline: none;
+	
+}
+.guild-form > .button {
+	float: right;
+}
+/* @end */
+
+/* @group GUILD FORM - SIGNUP */
+.guild-form.sign-up {
+	padding: 48px 0 0 0;
+	text-align: center;
+}
+.guild-form.sign-up > h2 {
+	margin: 0;
+}
+.guild-form.sign-up > h3 {
+	font-size: 22px;
+	font-weight: normal;
+}
+/* @end */
+
+/* @group THE BENEFITS */
+.the-benefits {
+	padding: 36px 0;
+	text-align: center;
+	background: #fff;
+}
+.the-benefits > li {
+	display: inline-block;
+	max-width: 240px;
+	text-align: center;
+}
+.the-benefits > li > img {
+	width: 100%;
+}
+.the-benefits > li > h3 {
+	margin: 0 0 36px 0;
+	font: 400 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+	letter-spacing: 0;
+}
+/* @end */
+
+
+
+
+/* @group THE PROCESS */
+.the-process {
+	width: 100%;
+	padding: 48px 12px!important;
+	text-align: center!important;
+}
+.the-process > h2 {
+	margin: 0 0 24px 0;
+	font: 100 36px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+}
+.the-process > li {
+	display: block;
+	max-width: 320px;
+	margin: 0 auto 36px auto!important;
+	vertical-align: top;
+}
+.the-process > li:after {
+	content: url('/images/icons/arrows/process-arrow.png');
+	
+}
+.the-process > li > img {
+	width: 100%;
+	/*max-width: 240px;*/
+}
+.the-process > li > h3 {
+	white-space: normal;
+	text-align: center;
+	font: 200 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+}
+/* @end */
+
+
+
+
+/* @group WINERY COLLAGE */
+.winery-collage {
+	overflow: hidden;
+	background: #000;
+}
+.winery-collage > a {
+	position: relative;
+	overflow: hidden;
+	-webkit-box-sizing: border-box;
+	float: left;
+	height: 200px;
+	/*border: 1px solid #fff;*/
+	background-size: cover;
+	background-position: center;
+	opacity: .5;
+	filter: alpha(opacity=50);
+	-webkit-transition: all .3s ease-out 0s;
+}
+.winery-collage > a:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+
+.winery-collage > a {
+	width: 20%;
+}
+
+
+/*.winery-collage > a:nth-of-type(1) {
+	width: 30%;
+	height: 400px;
+}
+.winery-collage > a:nth-of-type(2),
+.winery-collage > a:nth-of-type(3) {
+	width: 35%;
+}
+.winery-collage > a:nth-of-type(4) {
+	width: 40%;
+}
+.winery-collage > a:nth-of-type(5) {
+	width: 30%;
+	height: 100px;
+}
+.winery-collage > a:nth-of-type(6),
+.winery-collage > a:nth-of-type(7) {
+	width: 15%;
+	height: 100px;
+}*/
+
+/* @end */
+
+
+
+
+
+
+
+
+
+
+
+/* @group WELCOME */
+.welcome {
+	padding: 72px 0;
+}
+.welcome > h3 {
+	display: block;
+	max-width: 480px;
+	margin: 0 auto 36px auto;
+}
+.welcome > p {
+	display: block;
+	max-width: 480px;
+	margin: 0 auto;
+}
+.welcome > p > strong {
+	display: block;
+}
+/* @end */
+
+
+
+
+/* @group PROMOTIONAL METHODS */
+.promotional-methods {
+	padding: 24px;
+	background: #fff;
+	text-align: center;
+	white-space: nowrap;
+	box-shadow: 0 1px 3px rgba(0,0,0,.15);
+}
+.promotional-methods > a {
+	width: 270px;
+	max-width: 25%;
+	padding: 0 1.5%;
+	display: inline-block;
+	text-decoration: none;
+	white-space: normal;
+}
+.promotional-methods > a > img {
+	position: relative;
+	width: 100%;
+	-webkit-transition: top .3s ease-in .01s;
+}
+.promotional-methods > a:hover > img {
+	top: -24px;
+	-webkit-transition: top .3s ease-out 0s;
+}
+.promotional-methods > a > h4 {
+	margin: 0 0 24px 0;
+	font: 200 16px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+	text-transform: capitalize;
+}
+.promotional-methods > a:hover > h4 {
+	color: #000;
+}
+
+/* @end */
+
+/* @group PROMOTE YOUR WINERY */
+.promote-your-winery {
+	overflow: hidden;
+}
+.promote-your-winery > h2 {
+	
+}
+.promote-your-winery > p {
+	
+	margin: 0 0 48px 0;
+}
+
+.promote-your-winery > div {
+	float: left;
+	width: 50%;
+}
+
+.promote-your-winery > div > ul {
+	
+}
+.promote-your-winery > div > ul > li {
+	margin: 0 0 12px 0;
+}
+.promote-your-winery > div > ul > li > a {
+	font: 200 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+}
+
+
+.promote-your-winery > div > h4 {
+	
+}
+.promote-your-winery > div > a {
+	
+}
+/* @end */
+
+/* @group FREE WINE TASTING */
+.free-wine-tasting {
+	
+}
+.free-wine-tasting > .bottle {
+	position: relative;
+	width: 140px;
+	margin: -250px 0 0 0;
+}
+.free-wine-tasting > .bottle > img {
+	width: 100%;
+}
+/* @end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @group CONTACT US */
+.contact-us {
+	padding: 24px;
+}
+.contact-us > h2 {
+	text-align: center;
+	margin: 0 0 24px 0;
+}
+.contact-us > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+.contact-us > ul > li {
+	display: inline-block;
+	width: 50%;
+	margin: 0;
+	padding: 48px 0;
+	text-align: center;
+}
+.contact-us > ul > li > img {
+	display: block;
+	margin: 0 auto;
+	height: 72px;
+	border: 3px solid #444;
+	border-radius: 100px;
+	vertical-align: top;
+}
+.contact-us > ul > li > h3 {
+	display: inline-block;
+	height: 72px;
+	font: 200 24px/72px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	vertical-align: middle;
+}
+/* @end */
+
+
+
+
+
+
+/* @group PRICING */
+.pricing {
+	margin: 0 0 96px 0;
+	padding: 0 24px;
+	text-align: center;
+}
+.pricing > p {
+	display: block;
+	width: 100%;
+	max-width: 320px;
+	margin: 48 auto;
+	/*padding: 24px;*/
+	/*text-align: left;*/
+	font: 400 14px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #666;
+}
+.pricing > p > strong {
+	display: block;
+	color: #000;
+	/*text-align: center;*/
+}
+.pricing > section {
+	display: inline-block;
+	width: 100%;
+	max-width: 320px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	/*box-shadow: 6px 6px 0px rgba(0,0,0,.05);*/
+	padding: 24px;
+	background: #fff;
+	vertical-align: top;
+}
+.pricing > section > header > h1 {
+	/*margin: -24px -24px 0 -24px;*/
+	/*padding: 24px 0;*/
+	border-radius: 3px 3px 0 0;
+	font: 700 24px/60px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	/*border-bottom: 1px solid #ccc;*/
+	
+	/*border: none;*/
+	/*background: #b23636;*/
+	/*color: #fff;*/
+	
+	margin: -24px -24px 24px -24px;
+	padding: 12px 0;
+	border-bottom: 1px solid #ccc;
+	color: #444;
+}
+.pricing > section > header > p {
+	font: 200 18px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+}
+.pricing > section > h2 {
+	margin: 24px 0;
+	border: 1px dotted #ccc;
+	border-left: none;
+	border-right: none;
+	font: 100 36px/60px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #76a951;
+	/*color: #000;*/
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+.pricing > section > ul {
+	/*list-style: none;*/
+	margin: 0 0 24px 0;
+	padding: 0 0 0 24px;
+	text-align: left;
+	color: #666;
+}
+.pricing > section > ul > li+li {
+	margin: 12px 0 0 0;
+}
+.pricing > section > ul > li:before {
+	
+}
+.button {
+	margin: 48px 0 0 0;
+}
+
+
+
+.pricing > section.featured {
+	position: relative;
+	top: -24px;
+}
+.pricing > section.featured > header > h1 {
+	padding: 24px 0;
+	background: #b23636;
+	color: #fff;
+}
+/* @end */
+
+
+
+
+
+
+/* @group Claim Thank You */
+
+.claim-thank-you {
+	text-align: center;
+	height: 100%;
+	background: none!important;
+}
+.claim-thank-you > h1 {
+	font: 900 72px/72px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+}
+.claim-thank-you > h2 {
+	font: 200 22px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: rgba(255,255,255,.86);
+}
+.claim-thank-you > p {
+	max-width: 320px;
+	margin: 24px auto 0 auto;
+	font: 200 16px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: rgba(255,255,255,.50);
+}
+
+/* @end */
+
+
+
+
+/* @group Offer Banner */
+
+.offer-banner {
+	position: relative;
+	top: -72px;
+	height: 100%;
+	padding: 72px 0 0 0;
+	background: radial-gradient(ellipse farthest-corner, white 0%, #ccc 100%) #000;
+	text-align: center;
+	white-space: nowrap;
+}
+
+
+.offer-banner:before {
+	content: '\00a0';
+	display: inline-block;
+	width: 0%;
+	margin: 0 -.25em 0;
+	height: 100%;
+	vertical-align: middle;
+}
+.offer-banner > section {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1000;
+	width: 100%;
+	max-width: 1080px;
+	padding: 0px;
+	text-align: left;
+	white-space: normal;
+}
+.offer-banner > section > .wine {
+	position: absolute;
+	top: -96px;
+	left: 0;
+	width: 50%;
+	max-width: 480px;
+	text-align: center;
+}
+.offer-banner > section > .wine > img {
+	display: inline-block;
+	max-width: 100%;
+	/*margin: 0 50px 0 0;*/
+}
+
+.offer-banner > section > hgroup {
+	
+}
+.offer-banner > section > hgroup > h1 {
+	color: #444;
+}
+.offer-banner > section > hgroup > h2 {
+	letter-spacing: 1px;
+	color: #4e8fb9;
+}
+.offer-banner > section > hgroup > h2 > span {	
+	margin: 0 0 0 12px;
+	font: 100 24px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.offer-banner > section > hgroup > h3 {
+	font: 200 16px/18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #999;
+	text-decoration: line-through;
+}
+.offer-banner > section > hgroup > p {
+	/*display: none;*/
+	margin: 0 0 48px 0;
+}
+
+
+.offer-banner > section > hgroup > .quantity {
+	position: relative;
+	/*border: 1px solid #000;*/
+	width: 100%;
+	max-width: 175px;
+}
+.offer-banner > section > hgroup > .quantity > input {
+	 width: 100%;
+	 height: 48px;
+	 padding: 0 36px 0 0;
+}
+.offer-banner > section > hgroup > .quantity > span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 36px;
+	height: 24px;
+	border: 1px solid #ccc;
+	background: #f2f2f2;
+	text-align: center;
+	font: 12px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+}
+.offer-banner > section > hgroup > .quantity > span+span {
+	border-top: none;
+	top: auto;
+	bottom: 0;
+}
+.offer-banner > section > hgroup > .quantity > span#up {
+	
+}
+.offer-banner > section > hgroup > .quantity > span#down {
+	
+}
+/* @end */
+
+
+/* @group Footer */
+
+.footer {
+	padding: 96px;
+	/*background: #26292d url('/images/backgrounds/footer.jpg');*/
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: #fff;
+}
+.footer > section {
+	text-align: center;
+}
+
+
+.footer > section > a {
+	display: block;
+	margin: 0 auto 12px auto;
+	max-width: 120px;
+	text-decoration: none;
+}
+
+.footer > section > a > img {
+	width: 50%;
+}
+
+
+.footer > section > .social {
+	margin: 0 0 24px 0;
+}
+.footer > section > .social > a {
+	text-decoration: none;
+	font-size: 24px;
+	color: inherit;
+	margin: 0 12px;
+}
+.footer > section > .social > a:hover {
+	color: #e71d25;
+}
+
+
+.footer > section > nav {
+	
+}
+.footer > section > nav > a {
+	margin: 0 9px;
+	text-decoration: none;
+	color: inherit;
+}
+.footer > section > nav > a:hover {
+	color: #e71d25;
+}
+
+
+
+.footer > section > .copyright {
+	margin: 0 0 24px 0;
+	font: 200 12px/16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+	color: rgba(255,255,255,.5);
+}
+
+
+
+.footer > section > .contact {
+	display: none;
+}
+.footer > section > .contact > p {
+	font:200  14px/14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+/* @end */
+
+
+/*/* @group FOOTER *!/
+body > .content footer {
+	/*position: absolute;*!/
+	width: 100%;
+	bottom: 0px;
+	left: 0;
+	padding: 24px;
+	background: #f2f2f2;
+	/*box-shadow: 0 1px 5px rgba(0,0,0,.15);*!/
+	text-align: center;
+	overflow: hidden;
+}
+body > .content footer > div {
+	max-width: 800px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+body > .content footer > div >  p {
+	font-size: 12px;
+	color: #999;
+}
+
+body > .content footer > div > section {
+	display: inline-block;
+	margin: 0 -.25em 0 0;
+	width: 25%;
+	text-align: left;
+	font: 200 14px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #999;
+	vertical-align: top;
+}
+body > .content footer > div > section > p {
+	font: inherit;
+	color: inherit;
+}
+body > .content footer > div > section > h4 {
+	margin: 36px 0 12px 0;
+ }
+
+
+body > .content footer > div > section > nav {
+}
+body > .content footer > div > section > nav > a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+body > .content footer > div > section > nav > a:hover {
+	color: #000;
+}
+
+
+body > .content footer > div > section.social {
+	/*text-align: center;	*!/
+}
+body > .content footer > div > section.social > a:first-of-type {
+	display: block;
+	margin: 0 0 36px 0;
+	/*text-align: center;*!/
+}
+body > .content footer > div > section.social > br {
+	display: block;
+	clear: both;
+}
+body > .content footer > div > section.social > a {
+	/*background: #000;*!/
+	display: inline-block;
+}
+
+/* @end *!/*/
+
+/* @group Snipcart */
+.snipcart-checkout-container,
+.snip-layout {
+	z-index: 10000000000000000000!important;
+}
+
+
+/* @end */
+
+
+
+
+
+@media all and (max-width: 1080px) {
+
+.content > div > section {
+	padding: 24px;
+}
+
+.alternating {
+	padding: 24px;
+}
+
+
+.winery-page {
+	padding: 24px!important;
+}
+.winery-page > .logo {
+	margin: 0 24px 24px 0;
+}
+.winery-page > p {
+	float: none;
+	width: 100%;
+	margin: 0 0 24px 0;
+	padding: 0;
+}
+.winery-page ul.winery-info {
+	float: none;
+	width: 100%;
+}
+.winery-page ul.winery-info > li {
+	
+}
+
+
+.blogposts {
+	padding: 48px;
+}
+.blogposts > li {
+	max-width: 45%;	
+}
+.blogposts > li+li {
+	margin: 0 -.25em 0 10%;
+}
+
+
+
+.banner.home > hgroup {
+	/*background: #f16;*/
+}
+
+
+
+.banner.home > hgroup {
+	padding-left: 400px;
+	text-align: left;
+	/*background: #f16;*/
+}
+.banner.home > hgroup > h1 {
+	white-space: nowrap;
+	/*font-size: 48px;*/
+	/*line-height: 50px;*/
+	/*font: 900 50px/72px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;*/
+}
+.banner.home > hgroup > h1 > strong {
+ 	display: block;
+ 	letter-spacing: 12px;
+ }
+ .banner.home > hgroup > h2 {
+ 	/*max-width: 320px;*/
+ 	margin: 16px 0 0 0;
+ 	padding: ;
+ 	font: 200 22px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+ 	text-align: inherit;
+ }
+ 
+
+}
+
+
+
+
+
+
+@media all and (max-width: 800px) {
+article {
+	padding: 24px;
+}
+
+
+
+}
+
+
+
+
+
+
+@media all and (max-width: 720px) {
+.banner {
+	/*height: auto;*/
+	/*padding: 72px 12px;*/
+	/*max-height: none;*/
+	/*background-size: cover;*/
+	/*background-attachment: scroll;*/
+	/*background-position: top center;*/
+	/*text-align: center;*/
+}
+.banner.tall {
+	/*height: auto;*/
+}
+.banner:before {
+	content: '\00a0';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: -webkit-radial-gradient(circle, rgba(0, 0, 0, .25) 0%, rgba(0,0,0,1) 100%);
+	background-image: radial-gradient(circle, rgba(0, 0, 0, .25) 0%, rgba(0,0,0,1) 100%);
+}
+.banner:after {
+	/*display: none;*/
+}
+.banner > hgroup {
+	/*display: block;*/
+	width: auto;
+	max-width: 720px;
+	/*min-height: 50%;*/
+	/*max-height: 320px;*/
+	margin: 0 auto;
+	padding: 96px 0;
+}
+.banner > hgroup > h1 {
+	font: 700 30px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.banner > img {
+	display: block;
+	width: 100%;
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+
+
+
+.banner.home {
+	height: 72%;
+}
+.banner.home > hgroup {
+	padding-left: 0;
+	text-align: center;
+}
+.banner.home > hgroup > h1 {
+	white-space: nowrap;
+	/*font: 900 36px/48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;*/
+}
+.banner.home > hgroup > h1 > strong {
+ 	display: block;
+ 	letter-spacing: 12px;
+ }
+ .banner.home > hgroup > h2 {
+ 	max-width: 320px;
+ 	margin: 16px auto 0 auto;
+ 	padding: ;
+ 	font: 200 22px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+ 	text-align: inherit;
+ }
+ .banner.home > hgroup > .button {
+ 	display: none;
+ }
+
+
+
+.banner > .video-wrapper {
+	display: block;
+	width: auto;
+	max-width: 720px;
+	/*max-height: 320px;*/
+	margin: 0 auto;
+	padding: 12px;
+}
+.banner > .video-controls {
+	padding: 48px 0;
+	display: block;
+	width: 100%;
+	height: 150px;
+	max-width: none;
+	margin: 0;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.banner form  {
+	display: block;
+	max-width: 480px;
+	margin: 0 auto;
+}
+.banner form > h2 {
+	font: 200 24px/18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.banner > hgroup.left > h1 {
+	width: 100%;
+}
+
+
+.winery-page > article {
+	float: none;
+	width: 100%;
+	margin: 48px 0;
+	padding: 0;
+}
+.winery-page > article > p {
+	display: block;
+	width: 100%;
+}
+
+.winery-page > aside {
+	float: none;
+	width: 100%;
+	overflow: hidden;
+}
+.winery-page > aside > .logo {
+	float: left;
+	width: 49%;
+	margin: 0 auto;
+}
+.winery-page > aside > .winery-info{
+	float: left;
+	width: 50%;
+}
+
+
+
+
+
+body > .content footer > div {
+	
+}
+/*body > .content footer > div > section {
+	width: 50%;
+	padding: 0 0 24px 0;
+	text-align: center;
+	
+}*/
+body > .content footer > div > section {	
+	display: block;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+
+}
+.content > div > section > section {
+	width: 100%;
+}
+.content > div > section > section+section {
+	margin: 48px 0 0 0;
+	/*padding: 0;*/
+}
+
+
+
+/* @group FULL ALTERNATING */
+.content > div > .full-alternating > div {
+	position: relative;
+}
+.content > div > .full-alternating > div > img {
+	display: none;
+}
+
+.content > div > .full-alternating > div > hgroup {
+	width: 100%;
+	margin: 0;
+	padding: 24px;
+}
+.content > div > .full-alternating > div:nth-last-of-type(even) > hgroup {
+	padding: 24px;
+}
+
+/* @end */
+
+
+.quotes {
+	text-align: center;
+}
+.quotes > p {
+	display: none;
+}
+.quotes > p:nth-of-type(2) {
+	display: block;
+	width: auto!important;
+	max-width: none;
+	margin: 0;
+	padding: 24px;
+}
+
+
+/* @group ALTERNATING */
+.alternating {
+	/*max-width: 480px;*/
+}
+.alternating > div {
+	/*padding: 24px 0;*/
+	
+	padding: 0;
+	text-align: center;
+}
+.alternating > div:first-of-type {
+	margin-top: 0;
+}
+.alternating > div > hgroup {
+	padding: 24px 0!important;
+	text-align: left;
+}
+.alternating > div > hgroup > h2 {
+	margin: 0 0 12px 0;
+}
+.alternating > div > hgroup > p {
+	margin: 0;
+}
+.alternating > div:first-of-type {
+	/*padding-bottom: 24px;*/
+}
+
+.alternating > div > img {
+	position: relative;
+	left: auto;
+	right: auto!important;
+	height: 240px;
+	margin: 0!important;
+	
+	height: auto;
+	width: 100%;
+}
+.alternating > div > hgroup > h2 {
+		font-size: 36px;
+}
+.alternating > div > hgroup > p {
+	
+}
+
+.blogposts {
+	padding: 48px;
+}
+.blogposts > li {
+	max-width: 100%;
+	margin: 0 0 48px;
+}
+.blogposts > li+li {
+	margin: 0;
+}
+
+
+}
+
+
+
+
+@media all and (max-width: 540px) {
+.main-header > div > .menu-button  {
+	display: block;
+	float: right;
+}
+
+/* @group NAV */
+.main-header > div > nav {
+	position: fixed;
+	left: -300px;
+	top: 0px;
+	min-width: 240px;
+	height: 100%;
+	padding: 0 0;
+	background: #fff;
+	/*box-shadow: 0 5px 5px -5px rgba(0,0,0,.25)inset, 0 5px 5px rgba(0,0,0,.25);*/
+	box-shadow: 1px 0 5px rgba(0,0,0,.25);
+	-webkit-transition: left .3s ease-in 0s;
+	
+}
+.main-header > div > nav.visible {
+	z-index: 10000000000000;
+	left: 0px;
+	-webkit-transition: all .3s ease-out 0s;
+}
+.main-header > div > nav > p {
+	text-align: center;
+	font: 900 24px/72px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	border-bottom: 1px solid #ccc;
+	color: #b23636;
+}
+.main-header > div > nav > a {
+	display: block;
+	text-align: left;
+	margin: 0;
+	padding: 12px 24px;
+	border-bottom: 1px dotted #ccc;
+}
+.main-header > div > nav > a.selected:before {
+	top: 50%;
+	left: 2px;
+	margin: -4px 0 0 0;
+}
+.main-header > div > nav > a.selected:after {
+	top: 0;
+	left: 0px;
+	height: 100%;
+	width: 6px;
+}
+
+
+
+
+
+
+
+.winery-page {
+	
+}
+.winery-page > .logo {
+	float: none;
+	width: 100%;
+	max-width: 240px;
+	margin:0 0 24px 0;
+}
+.winery-page > p {
+	display: block;
+	float: none;
+}
+.winery-page > ul {
+	
+}
+
+
+
+
+.winery-page > aside {
+	float: none;
+	width: 100%;
+}
+.winery-page > aside > .logo {
+	float: none;
+	width: 100%;
+	max-width: 320px;
+	margin: 0 auto;
+}
+.winery-page > aside > .winery-info{
+	float: none;
+	width: 100%;
+}
+
+}
+
+
+
+@media all and (max-width: 320px) {
+.guild-form > label >span {
+	width: 30%;
+}
+.guild-form > label > input[type=text] {
+	width: 70%;
+}
+}
+
+

@@ -1,0 +1,6 @@
+_site/
+.sass-cache/
+
+*.psd
+*.ai
+.DS_Store

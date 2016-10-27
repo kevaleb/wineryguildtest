@@ -1,0 +1,466 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Adams Wineries</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/style.css">
+        <!--<link rel="stylesheet" href="/css/flickity.css">-->
+        <!--<link rel="stylesheet" href="">-->
+		
+		<!-- load js scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+		<!--<script type="text/javascript" src="/scripts/jquery-1.11.3.min.js"></script>-->
+		<script src="/scripts/main.js"></script>
+		<!--<script type="text/javascript" src="/scripts/querytolocalstore.js"></script>-->
+		
+		<!--<script src="/scripts/flickity.js"></script>-->
+		
+		<!--[if lt IE 9] -->
+		<script type="text/javascript">
+			document.createElement('header');
+			document.createElement('nav');
+			document.createElement('section');
+			document.createElement('article');
+			document.createElement('aside');
+			document.createElement('footer');
+			document.createElement('hgroup');
+		</script>
+		
+		
+		<!-- Google Analytics -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			
+			ga('create', 'UA-2461133-23', 'auto');
+			ga('require', 'displayfeatures');
+			ga('send', 'pageview');
+		
+		</script>
+		
+		<!-- start Mixpanel -->
+		<!--<script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+		for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+		mixpanel.init("a6e16b825ae307f81762c094dc8bcdeb");</script>-->
+		
+	
+	<body>
+		<div class="content ">
+			<header>
+	<div class="menu-button">
+		<span class="one"></span>
+		<span class="two"></span>
+		<span class="three"></span>
+	</div>
+	<div class="logo">
+		<a href="/">
+			<img src="/images/logos/logo.png" alt="" />
+			<!--Utah<div>Big Trucks</div>-->
+		</a>
+	</div>
+	<nav>
+	<a href="/">Home</a>
+	
+	
+	<a href="/blog/" >Blog</a>
+	
+</nav>
+	<!--<div class="base">
+		<p>Provided by: <img src="/images/logos/mimis-logo.jpg" alt="mimis dispatch" /></p>
+	</div>-->
+</header>
+				
+
+
+<div id='map'></div>
+
+<div class="wineries disable-selection">
+	<h1 class="disable-selection">Adams Wineries</h1>
+	<nav class="disable-selection">
+		
+		<!-- USA -->
+		<a href="/">USA</a>
+		
+		<!-- States -->
+				
+		
+			<a href="/states/colorado/">colorado</a>
+		
+		
+		<!-- County -->
+		<a href="#">adams</a>
+		
+		<!-- Cities -->
+		<a class="pop-up-toggle"> Cities</a>
+	</nav>
+	
+	<div class="pop-up-menu">
+		<ul>
+			<span class="pop-up-toggle">X</span>
+			
+					
+			
+			<li>
+				<a href="/co/adams/brighton/">
+					brighton
+					(
+								
+						
+							
+							   <span>1</span>
+							
+						
+					)
+				</a>
+			</li>
+			
+			<li>
+				<a href="/co/adams/denver/">
+					denver
+					(
+								
+						
+							
+							   <span>3</span>
+							
+						
+							
+						
+							
+						
+					)
+				</a>
+			</li>
+			
+		</ul>
+	</div>
+	
+	<script type="text/javascript">
+		$(function() {  
+			$(".pop-up-toggle").click(function(){
+				$(".pop-up-menu").toggleClass("visible"); 
+			});
+		});
+		
+	</script>
+				
+	<ul class="disable-selection">
+		<!-- Featured -->
+				
+		
+		
+		
+		<div></div>
+		
+		
+		<!-- Premium -->
+				
+		
+		
+		
+		
+		
+		<div></div>
+		
+		
+		
+		<!-- Claimed -->
+				
+		
+		
+		
+		<div></div>
+		
+		
+		<!-- Basic -->
+				
+		
+			<li class="basic">
+				<a href="/co/adams/brighton/bbc-wines/">
+					bbc wines
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/pa/adams/gardners/big-hill-winery-&-ciderworks-llc/">
+					big hill winery & ciderworks llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ia/adams/corning/corning-winery-and-vineyard/">
+					corning winery and vineyard
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/wa/adams/othello/foxy-roxy-wine-company/">
+					foxy roxy wine company
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/pa/adams/gettysburg/good-intent-cider-llc/">
+					good intent cider llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/pa/adams/orrtanna/halbrendts-vineyard-&-winery-llc/">
+					halbrendt's vineyard & winery llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/pa/adams/biglerville/hauser-estate-winery/">
+					hauser estate winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/pa/adams/orrtanna/hiwassee-acres-llc/">
+					hiwassee acres llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/co/adams/denver/ja-balistreri-vineyards/">
+					j.a. balistreri vineyards
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/oh/adams/manchester/moyer-vineyards-restaurant-&-winery/">
+					moyer vineyards restaurant & winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/wa/adams/ritzville/obrien-5-cellars/">
+					o'brien 5 cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ms/adams/natchez/old-south-winery/">
+					old south winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/pa/adams/aspers/ploughman/">
+					ploughman
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/co/adams/denver/queen-bee-brews/">
+					queen bee brews
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/pa/adams/orrtanna/reids-orchard-inc/">
+					reid's orchard inc.
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/wa/adams/othello/silent-owl-winery/">
+					silent owl winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/co/adams/denver/spero-winery/">
+					spero winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/il/adams/ursa/spirit-knob-winery/">
+					spirit knob winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/il/adams/camp-point/the-village-vineyard-&-winery/">
+					the village vineyard & winery
+				</a>
+			</li>
+		
+	</ul>
+</div>
+<div class="infowindow"></div>
+
+
+
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyCcJFPhkoOBXSK_JPqpIyHXfQlPIQGI5ag&sensor=false"></script>
+<script>
+    // Define your locations: HTML content for the info window, latitude, longitude
+    var locations = [
+		// Featured
+			
+		
+		
+		// Premium
+			
+		
+		
+		// Claimed
+			
+		
+		
+		// Basic
+			
+		
+			['<a href="/co/adams/brighton/bbc-wines/" class="infowindow basic"><h4>bbc wines</h4><h5>15090 lansing st brighton co</h5></a>', 39.971775, -104.856592,'/images/icons/gps/circle.png'],
+		
+			['<a href="/co/adams/denver/ja-balistreri-vineyards/" class="infowindow basic"><h4>j.a. balistreri vineyards</h4><h5>1946 e 66th ave denver co</h5></a>', 39.81588, -104.964809,'/images/icons/gps/circle.png'],
+		
+			['<a href="/co/adams/denver/queen-bee-brews/" class="infowindow basic"><h4>queen bee brews</h4><h5>800 e 64th ave denver co</h5></a>', 39.812376, -104.976491,'/images/icons/gps/circle.png'],
+		
+			['<a href="/co/adams/denver/spero-winery/" class="infowindow basic"><h4>spero winery</h4><h5>3316 w 64th ave denver co</h5></a>', 39.811876, -105.030342,'/images/icons/gps/circle.png'],
+		
+			['<a href="/il/adams/camp-point/the-village-vineyard-&-winery/" class="infowindow basic"><h4>the village vineyard &amp; winery</h4><h5>337 n vermont camp point il</h5></a>', 40.047657, -91.062348,'/images/icons/gps/circle.png'],
+		
+			['<a href="/il/adams/ursa/spirit-knob-winery/" class="infowindow basic"><h4>spirit knob winery</h4><h5>2211 e 640th pl ursa il</h5></a>', 40.084331, -91.394345,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ia/adams/corning/corning-winery-and-vineyard/" class="infowindow basic"><h4>corning winery and vineyard</h4><h5>2300 state hwy corning ia</h5></a>', 40.250416, -95.456073,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ms/adams/natchez/old-south-winery/" class="infowindow basic"><h4>old south winery</h4><h5>65 s concord ave natchez ms</h5></a>', 31.562026, -91.382081,'/images/icons/gps/circle.png'],
+		
+			['<a href="/oh/adams/manchester/moyer-vineyards-restaurant-&-winery/" class="infowindow basic"><h4>moyer vineyards restaurant &amp; winery</h4><h5>3859 us route 52 manchester oh</h5></a>', 38.648495, -83.641691,'/images/icons/gps/circle.png'],
+		
+			['<a href="/pa/adams/aspers/ploughman/" class="infowindow basic"><h4>ploughman</h4><h5>1606 bendersville-wenksville rd aspers pa</h5></a>', 39.98603, -77.297959,'/images/icons/gps/circle.png'],
+		
+			['<a href="/pa/adams/biglerville/hauser-estate-winery/" class="infowindow basic"><h4>hauser estate winery</h4><h5>410 cashtown rd biglerville pa</h5></a>', 39.901756, -77.346956,'/images/icons/gps/circle.png'],
+		
+			['<a href="/pa/adams/gardners/big-hill-winery-&-ciderworks-llc/" class="infowindow basic"><h4>big hill winery &amp; ciderworks llc</h4><h5>1365 gablers rd gardners pa</h5></a>', 40.014792, -77.235714,'/images/icons/gps/circle.png'],
+		
+			['<a href="/pa/adams/gettysburg/good-intent-cider-llc/" class="infowindow basic"><h4>good intent cider llc</h4><h5>776 good intent rd gettysburg pa</h5></a>', 39.882098, -77.216106,'/images/icons/gps/circle.png'],
+		
+			['<a href="/pa/adams/orrtanna/halbrendts-vineyard-&-winery-llc/" class="infowindow basic"><h4>halbrendt&#39;s vineyard &amp; winery llc</h4><h5>1150 evergreen way orrtanna pa</h5></a>', 39.884862, -77.372477,'/images/icons/gps/circle.png'],
+		
+			['<a href="/pa/adams/orrtanna/hiwassee-acres-llc/" class="infowindow basic"><h4>hiwassee acres llc</h4><h5>251 peach tree rd orrtanna pa</h5></a>', 39.864672, -77.37303,'/images/icons/gps/circle.png'],
+		
+			['<a href="/pa/adams/orrtanna/reids-orchard-inc/" class="infowindow basic"><h4>reid&#39;s orchard inc.</h4><h5>2135 buchanan valley rd orrtanna pa</h5></a>', 39.938265, -77.380323,'/images/icons/gps/circle.png'],
+		
+			['<a href="/wa/adams/othello/foxy-roxy-wine-company/" class="infowindow basic"><h4>foxy roxy wine company</h4><h5>3744 hwy 26 e othello wa</h5></a>', 46.840917, -119.416138,'/images/icons/gps/circle.png'],
+		
+			['<a href="/wa/adams/othello/silent-owl-winery/" class="infowindow basic"><h4>silent owl winery</h4><h5>1135 s athey rd othello wa</h5></a>', 46.749498, -119.136201,'/images/icons/gps/circle.png'],
+		
+			['<a href="/wa/adams/ritzville/obrien-5-cellars/" class="infowindow basic"><h4>o&#39;brien 5 cellars</h4><h5>302 e 1st ave ritzville wa</h5></a>', 47.127664, -118.376111,'/images/icons/gps/circle.png'],
+		
+    ];
+    
+    
+    
+    
+	// Map options
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: new google.maps.LatLng(39.5,-98.35),
+      zoom: 2,
+      zoomControl: true,
+      zoomControlOptions: {
+          style: google.maps.ZoomControlStyle.DEFAULT,
+          position: google.maps.ControlPosition.RIGHT_TOP
+      },
+      disableDoubleClickZoom: true,
+      mapTypeControl: false,
+      mapTypeControlOptions: {
+          style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+      },
+      scaleControl: false,
+      scrollwheel: false,
+      panControl: true,
+      streetViewControl: false,
+      draggable : true,
+      overviewMapControl: false,
+      overviewMapControlOptions: {
+          opened: false,
+      },
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles:[{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative.country","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.locality","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":"-100"},{"lightness":"30"}]},{"featureType":"administrative.neighborhood","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"simplified"},{"gamma":"0.00"},{"lightness":"74"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"lightness":"3"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+      maxWidth: 240
+    });
+
+    var markers = new Array();
+    
+    // Add the markers and infowindows to the map
+    for (var i = 0; i < locations.length; i++) {  
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map,
+        icon: locations[i][3]
+      });
+      
+
+      markers.push(marker);
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+
+    function autoCenter() {
+      //  Create a new viewpoint bound
+      var bounds = new google.maps.LatLngBounds();
+      //  Go through each...
+      for (var i = 0; i < markers.length; i++) {  
+				bounds.extend(markers[i].position);
+      }
+      //  Fit these bounds to the map
+      map.fitBounds(bounds);
+    }
+    autoCenter();
+  </script> 
+			<footer class="footer">
+	<section>
+		<a href="/"><img src="/images/logos/logo.png" alt="Custom Cut Shirts Logo" class="footer-logo"/></a>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+		<div class="social">
+			<a href="https://www.facebook.com/wineryguild" target="_blank"><span class="fa fa-facebook-official"></span></a>
+			<a href="https://instagram.com/wineryguild/" target="_blank"><span class="fa fa-instagram"></span></a>
+			<a href="https://www.pinterest.com/wineryguild/" target="_blank"><span class="fa fa-pinterest"></span></a>
+			<a href="https://twitter.com/wineryguild" target="_blank"><span class="fa fa-twitter"></span></a>
+			<a href="https://www.youtube.com/channel/UCwgdbeR916av8TWQoZ4F_lA" target="_blank"><span class="fa fa-youtube"></span></a>
+			<a href="#" class="snapchat-button"><span class="fa fa-snapchat-square"></span></a>
+		</div>
+		
+		<!--<nav>
+	<a href="/">Home</a>
+	
+	
+	<a href="/blog/" >Blog</a>
+	
+</nav>-->
+		
+		<p class="copyright">© Copyright 2016. Winery Guild. All Rights Reserved.</p>
+		
+		<div class="contact">
+			<p>Winery Guild</p>
+			<!--<p><i class="fa fa-map-marker" aria-hidden="true"></i><br /></p>-->
+			<p><i class="fa fa-phone" aria-hidden="true"></i>1 (858) 609-9394</p>
+			<p><i class="fa fa-envelope" aria-hidden="true"></i>kevin@wineryguild.com</p>
+			<!--<p><i class="fa fa-fax" aria-hidden="true"></i></p>-->
+		</div>
+	</section>
+</footer>
+		</div>
+	</body>
+</html>

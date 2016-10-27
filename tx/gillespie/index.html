@@ -1,0 +1,518 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Gillespie Wineries</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/style.css">
+        <!--<link rel="stylesheet" href="/css/flickity.css">-->
+        <!--<link rel="stylesheet" href="">-->
+		
+		<!-- load js scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+		<!--<script type="text/javascript" src="/scripts/jquery-1.11.3.min.js"></script>-->
+		<script src="/scripts/main.js"></script>
+		<!--<script type="text/javascript" src="/scripts/querytolocalstore.js"></script>-->
+		
+		<!--<script src="/scripts/flickity.js"></script>-->
+		
+		<!--[if lt IE 9] -->
+		<script type="text/javascript">
+			document.createElement('header');
+			document.createElement('nav');
+			document.createElement('section');
+			document.createElement('article');
+			document.createElement('aside');
+			document.createElement('footer');
+			document.createElement('hgroup');
+		</script>
+		
+		
+		<!-- Google Analytics -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			
+			ga('create', 'UA-2461133-23', 'auto');
+			ga('require', 'displayfeatures');
+			ga('send', 'pageview');
+		
+		</script>
+		
+		<!-- start Mixpanel -->
+		<!--<script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+		for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+		mixpanel.init("a6e16b825ae307f81762c094dc8bcdeb");</script>-->
+		
+	
+	<body>
+		<div class="content ">
+			<header>
+	<div class="menu-button">
+		<span class="one"></span>
+		<span class="two"></span>
+		<span class="three"></span>
+	</div>
+	<div class="logo">
+		<a href="/">
+			<img src="/images/logos/logo.png" alt="" />
+			<!--Utah<div>Big Trucks</div>-->
+		</a>
+	</div>
+	<nav>
+	<a href="/">Home</a>
+	
+	
+	<a href="/blog/" >Blog</a>
+	
+</nav>
+	<!--<div class="base">
+		<p>Provided by: <img src="/images/logos/mimis-logo.jpg" alt="mimis dispatch" /></p>
+	</div>-->
+</header>
+				
+
+
+<div id='map'></div>
+
+<div class="wineries disable-selection">
+	<h1 class="disable-selection">Gillespie Wineries</h1>
+	<nav class="disable-selection">
+		
+		<!-- USA -->
+		<a href="/">USA</a>
+		
+		<!-- States -->
+				
+		
+			<a href="/states/texas/">texas</a>
+		
+		
+		<!-- County -->
+		<a href="#">gillespie</a>
+		
+		<!-- Cities -->
+		<a class="pop-up-toggle"> Cities</a>
+	</nav>
+	
+	<div class="pop-up-menu">
+		<ul>
+			<span class="pop-up-toggle">X</span>
+			
+					
+			
+			<li>
+				<a href="/tx/gillespie/stonewall/">
+					stonewall
+					(
+								
+						
+							
+							   <span>4</span>
+							
+						
+							
+						
+							
+						
+							
+						
+					)
+				</a>
+			</li>
+			
+		</ul>
+	</div>
+	
+	<script type="text/javascript">
+		$(function() {  
+			$(".pop-up-toggle").click(function(){
+				$(".pop-up-menu").toggleClass("visible"); 
+			});
+		});
+		
+	</script>
+				
+	<ul class="disable-selection">
+		<!-- Featured -->
+				
+		
+		
+		
+		<div></div>
+		
+		
+		<!-- Premium -->
+				
+		
+		
+		
+		
+		
+		<div></div>
+		
+		
+		
+		<!-- Claimed -->
+				
+		
+		
+		
+		<div></div>
+		
+		
+		<!-- Basic -->
+				
+		
+			<li class="basic">
+				<a href="/tx/gillespie/fredericksburg/1851-vineyards-llc/">
+					1851 vineyards llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/fredericksburg/alexander-vineyards/">
+					alexander vineyards
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/fredericksburg/armadillos-leap-winery-llc/">
+					armadillo's leap winery llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/stonewall/becker-iconoclast/">
+					becker iconoclast
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/stonewall/becker-vineyards/">
+					becker vineyards
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/fredericksburg/bell-mountain-winery-oberhof-wine-cellars/">
+					bell mountain winery oberhof wine cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/fredericksburg/fat-ass-ranch-and-winery-llc/">
+					fat ass ranch and winery llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/fredericksburg/fiesta-winery-290/">
+					fiesta winery 290
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/fredericksburg/fiesta-winery-fredericksburg/">
+					fiesta winery fredericksburg
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/fredericksburg/fredericksburg-winery/">
+					fredericksburg winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/fredericksburg/grape-creek-vineyard/">
+					grape creek vineyard
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/fredericksburg/hilmy-cellars/">
+					hilmy cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/fredericksburg/inwood-estates/">
+					inwood estates
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/fredericksburg/lost-draw-vineyard/">
+					lost draw vineyard
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/fredericksburg/mcesbren-llc/">
+					mcesbren llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/fredericksburg/messina-hof-wine-cellars-inc/">
+					messina hof wine cellars inc.
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/fredericksburg/narrow-path-winery/">
+					narrow path winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/stonewall/pedernales-cellars/">
+					pedernales cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/fredericksburg/ranch-ponte-vineyard/">
+					ranch ponte vineyard
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/fredericksburg/santamaria-cellars-inc/">
+					santamaria cellar's inc.
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/fredericksburg/signor-vineyards-llc/">
+					signor vineyards llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/fredericksburg/six-shooter-cellars/">
+					six shooter cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/fredericksburg/spring-creek-vineyards/">
+					spring creek vineyards
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/fredericksburg/torre-di-pietra-vineyards-lp/">
+					torre di pietra vineyards l.p.
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/fredericksburg/water-2-wine-tx-4/">
+					water 2 wine tx-4
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/fredericksburg/wedding-oak-winery-llc/">
+					wedding oak winery llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/gillespie/stonewall/woodrose-winery/">
+					woodrose winery
+				</a>
+			</li>
+		
+	</ul>
+</div>
+<div class="infowindow"></div>
+
+
+
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyCcJFPhkoOBXSK_JPqpIyHXfQlPIQGI5ag&sensor=false"></script>
+<script>
+    // Define your locations: HTML content for the info window, latitude, longitude
+    var locations = [
+		// Featured
+			
+		
+		
+		// Premium
+			
+		
+		
+		// Claimed
+			
+		
+		
+		// Basic
+			
+		
+			['<a href="/tx/gillespie/fredericksburg/1851-vineyards-llc/" class="infowindow basic"><h4>1851 vineyards llc</h4><h5>4222 s highway 16 fredericksburg tx</h5></a>', 30.227047, -98.913678,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/fredericksburg/alexander-vineyards/" class="infowindow basic"><h4>alexander vineyards</h4><h5>6360 goehmann ln fredericksburg tx</h5></a>', 30.225301, -98.785331,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/fredericksburg/armadillos-leap-winery-llc/" class="infowindow basic"><h4>armadillo&#39;s leap winery llc</h4><h5>6266 us hwy 290 e fredericksburg tx</h5></a>', 30.224761, -98.793847,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/fredericksburg/bell-mountain-winery-oberhof-wine-cellars/" class="infowindow basic"><h4>bell mountain winery oberhof wine cellars</h4><h5>463 bell mountain rd fredericksburg tx</h5></a>', 30.425019, -98.728161,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/fredericksburg/fat-ass-ranch-and-winery-llc/" class="infowindow basic"><h4>fat ass ranch and winery llc</h4><h5>51 elgins behrend rd fredericksburg tx</h5></a>', 30.229768, -98.700797,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/fredericksburg/fiesta-winery-290/" class="infowindow basic"><h4>fiesta winery 290</h4><h5>6260 us hwy 290 fredericksburg tx</h5></a>', 30.224768, -98.79391,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/fredericksburg/fiesta-winery-fredericksburg/" class="infowindow basic"><h4>fiesta winery fredericksburg</h4><h5>147 a e main st fredericksburg tx</h5></a>', 30.27407, -98.871267,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/fredericksburg/fredericksburg-winery/" class="infowindow basic"><h4>fredericksburg winery</h4><h5>247 w main st fredericksburg tx</h5></a>', 30.276799, -98.875605,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/fredericksburg/grape-creek-vineyard/" class="infowindow basic"><h4>grape creek vineyard</h4><h5>10587 e us highway fredericksburg tx</h5></a>', 30.26195, -98.864825,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/fredericksburg/hilmy-cellars/" class="infowindow basic"><h4>hilmy cellars</h4><h5>12282 e us highway 290 fredericksburg tx</h5></a>', 30.223714, -98.694692,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/fredericksburg/inwood-estates/" class="infowindow basic"><h4>inwood estates</h4><h5>10303 e us highway 290 fredericksburg tx</h5></a>', 30.222879, -98.726698,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/fredericksburg/lost-draw-vineyard/" class="infowindow basic"><h4>lost draw vineyard</h4><h5>113 e park st fredericksburg tx</h5></a>', 30.269421, -98.87609,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/fredericksburg/mcesbren-llc/" class="infowindow basic"><h4>mcesbren llc</h4><h5>10354 e u.s. highway 290 fredericksburg tx</h5></a>', 30.22394, -98.726424,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/fredericksburg/messina-hof-wine-cellars-inc/" class="infowindow basic"><h4>messina hof wine cellars inc.</h4><h5>9996 e us highway 290 fredericksburg tx</h5></a>', 30.223915, -98.73205,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/fredericksburg/narrow-path-winery/" class="infowindow basic"><h4>narrow path winery</h4><h5>115 e main st fredericksburg tx</h5></a>', 30.274525, -98.872079,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/fredericksburg/ranch-ponte-vineyard/" class="infowindow basic"><h4>ranch ponte vineyard</h4><h5>315 ranch rd fredericksburg tx</h5></a>', 30.378617, -98.719148,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/fredericksburg/santamaria-cellars-inc/" class="infowindow basic"><h4>santamaria cellar&#39;s inc.</h4><h5>12044 highway 16 s fredericksburg tx</h5></a>', 30.177903, -99.014258,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/fredericksburg/signor-vineyards-llc/" class="infowindow basic"><h4>signor vineyards llc</h4><h5>166 & 362 livesay ln. fredericksburg tx</h5></a>', 30.224964, -98.71692,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/fredericksburg/six-shooter-cellars/" class="infowindow basic"><h4>six shooter cellars</h4><h5>6264 e us hwy e fredericksburg tx</h5></a>', 30.128239, -99.067643,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/fredericksburg/spring-creek-vineyards/" class="infowindow basic"><h4>spring creek vineyards</h4><h5>rr2 box 139 fredericksburg tx</h5></a>', 30.275201, -98.871984,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/fredericksburg/torre-di-pietra-vineyards-lp/" class="infowindow basic"><h4>torre di pietra vineyards l.p.</h4><h5>10915 e us highway 290 fredericksburg tx</h5></a>', 30.217764, -98.717053,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/fredericksburg/water-2-wine-tx-4/" class="infowindow basic"><h4>water 2 wine tx-4</h4><h5>228 w main st fredericksburg tx</h5></a>', 30.27735, -98.874863,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/fredericksburg/wedding-oak-winery-llc/" class="infowindow basic"><h4>wedding oak winery llc</h4><h5>100 legacy dr fredericksburg tx</h5></a>', 30.222812, -98.767667,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/stonewall/becker-iconoclast/" class="infowindow basic"><h4>becker iconoclast</h4><h5>464 becker farms rd stonewall tx</h5></a>', 30.203814, -98.709952,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/stonewall/becker-vineyards/" class="infowindow basic"><h4>becker vineyards</h4><h5>464 becker farms rd stonewall tx</h5></a>', 30.203814, -98.709952,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/stonewall/pedernales-cellars/" class="infowindow basic"><h4>pedernales cellars</h4><h5>2916 upper albert rd stonewall tx</h5></a>', 30.20101, -98.655119,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/gillespie/stonewall/woodrose-winery/" class="infowindow basic"><h4>woodrose winery</h4><h5>662 woodrose ln stonewall tx</h5></a>', 30.22368, -98.675399,'/images/icons/gps/circle.png'],
+		
+    ];
+    
+    
+    
+    
+	// Map options
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: new google.maps.LatLng(39.5,-98.35),
+      zoom: 2,
+      zoomControl: true,
+      zoomControlOptions: {
+          style: google.maps.ZoomControlStyle.DEFAULT,
+          position: google.maps.ControlPosition.RIGHT_TOP
+      },
+      disableDoubleClickZoom: true,
+      mapTypeControl: false,
+      mapTypeControlOptions: {
+          style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+      },
+      scaleControl: false,
+      scrollwheel: false,
+      panControl: true,
+      streetViewControl: false,
+      draggable : true,
+      overviewMapControl: false,
+      overviewMapControlOptions: {
+          opened: false,
+      },
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles:[{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative.country","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.locality","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":"-100"},{"lightness":"30"}]},{"featureType":"administrative.neighborhood","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"simplified"},{"gamma":"0.00"},{"lightness":"74"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"lightness":"3"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+      maxWidth: 240
+    });
+
+    var markers = new Array();
+    
+    // Add the markers and infowindows to the map
+    for (var i = 0; i < locations.length; i++) {  
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map,
+        icon: locations[i][3]
+      });
+      
+
+      markers.push(marker);
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+
+    function autoCenter() {
+      //  Create a new viewpoint bound
+      var bounds = new google.maps.LatLngBounds();
+      //  Go through each...
+      for (var i = 0; i < markers.length; i++) {  
+				bounds.extend(markers[i].position);
+      }
+      //  Fit these bounds to the map
+      map.fitBounds(bounds);
+    }
+    autoCenter();
+  </script> 
+			<footer class="footer">
+	<section>
+		<a href="/"><img src="/images/logos/logo.png" alt="Custom Cut Shirts Logo" class="footer-logo"/></a>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+		<div class="social">
+			<a href="https://www.facebook.com/wineryguild" target="_blank"><span class="fa fa-facebook-official"></span></a>
+			<a href="https://instagram.com/wineryguild/" target="_blank"><span class="fa fa-instagram"></span></a>
+			<a href="https://www.pinterest.com/wineryguild/" target="_blank"><span class="fa fa-pinterest"></span></a>
+			<a href="https://twitter.com/wineryguild" target="_blank"><span class="fa fa-twitter"></span></a>
+			<a href="https://www.youtube.com/channel/UCwgdbeR916av8TWQoZ4F_lA" target="_blank"><span class="fa fa-youtube"></span></a>
+			<a href="#" class="snapchat-button"><span class="fa fa-snapchat-square"></span></a>
+		</div>
+		
+		<!--<nav>
+	<a href="/">Home</a>
+	
+	
+	<a href="/blog/" >Blog</a>
+	
+</nav>-->
+		
+		<p class="copyright">© Copyright 2016. Winery Guild. All Rights Reserved.</p>
+		
+		<div class="contact">
+			<p>Winery Guild</p>
+			<!--<p><i class="fa fa-map-marker" aria-hidden="true"></i><br /></p>-->
+			<p><i class="fa fa-phone" aria-hidden="true"></i>1 (858) 609-9394</p>
+			<p><i class="fa fa-envelope" aria-hidden="true"></i>kevin@wineryguild.com</p>
+			<!--<p><i class="fa fa-fax" aria-hidden="true"></i></p>-->
+		</div>
+	</section>
+</footer>
+		</div>
+	</body>
+</html>

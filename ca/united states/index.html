@@ -1,0 +1,610 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>United States Wineries</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/style.css">
+        <!--<link rel="stylesheet" href="/css/flickity.css">-->
+        <!--<link rel="stylesheet" href="">-->
+		
+		<!-- load js scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+		<!--<script type="text/javascript" src="/scripts/jquery-1.11.3.min.js"></script>-->
+		<script src="/scripts/main.js"></script>
+		<!--<script type="text/javascript" src="/scripts/querytolocalstore.js"></script>-->
+		
+		<!--<script src="/scripts/flickity.js"></script>-->
+		
+		<!--[if lt IE 9] -->
+		<script type="text/javascript">
+			document.createElement('header');
+			document.createElement('nav');
+			document.createElement('section');
+			document.createElement('article');
+			document.createElement('aside');
+			document.createElement('footer');
+			document.createElement('hgroup');
+		</script>
+		
+		
+		<!-- Google Analytics -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			
+			ga('create', 'UA-2461133-23', 'auto');
+			ga('require', 'displayfeatures');
+			ga('send', 'pageview');
+		
+		</script>
+		
+		<!-- start Mixpanel -->
+		<!--<script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+		for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+		mixpanel.init("a6e16b825ae307f81762c094dc8bcdeb");</script>-->
+		
+	
+	<body>
+		<div class="content ">
+			<header>
+	<div class="menu-button">
+		<span class="one"></span>
+		<span class="two"></span>
+		<span class="three"></span>
+	</div>
+	<div class="logo">
+		<a href="/">
+			<img src="/images/logos/logo.png" alt="" />
+			<!--Utah<div>Big Trucks</div>-->
+		</a>
+	</div>
+	<nav>
+	<a href="/">Home</a>
+	
+	
+	<a href="/blog/" >Blog</a>
+	
+</nav>
+	<!--<div class="base">
+		<p>Provided by: <img src="/images/logos/mimis-logo.jpg" alt="mimis dispatch" /></p>
+	</div>-->
+</header>
+				
+
+
+<div id='map'></div>
+
+<div class="wineries disable-selection">
+	<h1 class="disable-selection">United States Wineries</h1>
+	<nav class="disable-selection">
+		
+		<!-- USA -->
+		<a href="/">USA</a>
+		
+		<!-- States -->
+				
+		
+			<a href="/states/california/">california</a>
+		
+		
+		<!-- County -->
+		<a href="#">united states</a>
+		
+		<!-- Cities -->
+		<a class="pop-up-toggle"> Cities</a>
+	</nav>
+	
+	<div class="pop-up-menu">
+		<ul>
+			<span class="pop-up-toggle">X</span>
+			
+					
+			
+		</ul>
+	</div>
+	
+	<script type="text/javascript">
+		$(function() {  
+			$(".pop-up-toggle").click(function(){
+				$(".pop-up-menu").toggleClass("visible"); 
+			});
+		});
+		
+	</script>
+				
+	<ul class="disable-selection">
+		<!-- Featured -->
+				
+		
+		
+		
+		<div></div>
+		
+		
+		<!-- Premium -->
+				
+		
+		
+		
+		
+		
+		<div></div>
+		
+		
+		
+		<!-- Claimed -->
+				
+		
+		
+		
+		<div></div>
+		
+		
+		<!-- Basic -->
+				
+		
+			<li class="basic">
+				<a href="/ia/united-states/rock-rapids/blonde-hill-vineyard/">
+					blonde hill vineyard
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/pa/united-states/andreas/blue-lizard-vineyard-&-winery-llc/">
+					blue lizard vineyard & winery llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ok/united-states/caddo/blue-river-valley-winery/">
+					blue river valley winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/co/united-states/cripple-creek/byerscellars-wines/">
+					byerscellars wines
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/az/united-states/kingman/cella-winery-llc/">
+					cella winery l.l.c.
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/wa/united-states/spokane/cider-archeticts-llc/">
+					cider archeticts llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ga/united-states/perry/coffee-cup--red-barn-vineyards-inc/">
+					coffee cup- red barn vineyards inc.
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/md/united-states/hagerstown/cool-ridge-vineyard/">
+					cool ridge vineyard
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/or/united-states/salem/coria-estate-wines-inc/">
+					coria estate wines inc.
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/nm/united-states/la-luz/coronado-lodge-winery-inc/">
+					coronado lodge winery inc.
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/mi/united-states/fennville/cranes-winery/">
+					crane''s winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/co/united-states/louisville/culture-club-llc/">
+					culture club llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/in/united-states/marion/downing-vineyard-and-winery-llc/">
+					downing vineyard and winery llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/co/united-states/aurora/dragon-meadery-llc/">
+					dragon meadery llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/or/united-states/dundee/durant-vineyards/">
+					durant vineyards
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/or/united-states/portland/fringe-mead-llc/">
+					fringe mead llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/pa/united-states/portage/germantown-winery/">
+					germantown winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/co/united-states/denver/golden-valley-winery-llc/">
+					golden valley winery llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ia/united-states/anamosa/grant-wood-hills-winery-llc/">
+					grant wood hills winery llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ky/united-states/lebanon/green-acres-vineyard-&-winery/">
+					green acres vineyard & winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/pa/united-states/punxsutawney/groundhog-winery/">
+					groundhog winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/united-states/spring-branch/holy-archangles-greek-orthodox-monastery/">
+					holy archangles greek orthodox monastery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ca/united-states/lompoc/hudson-bellamy-wines-llc/">
+					hudson bellamy wines llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ca/united-states/hopland/jeriko-vineyards-llc/">
+					jeriko vineyards llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/mi/united-states/saint-joseph/lazy-ballerina-winery-llc/">
+					lazy ballerina winery llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/oh/united-states/lake-milton/lil-paws-winery/">
+					lil paws winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/tx/united-states/johnson-city/longhorn-hills-vineyard-&-winery/">
+					longhorn hills vineyard & winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/wa/united-states/la-center/matranga-vineyards/">
+					matranga vineyards
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/wa/united-states/snoqualmie/mount-si-winery/">
+					mount si winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ut/united-states/west-valley-city/planet-party!-cocktail-company/">
+					planet party! cocktail company
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/wa/united-states/mountlake-terrace/prestangelo-winery/">
+					prestangelo winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ca/united-states/sacramento/rail-bridge-cellars/">
+					rail bridge cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/pa/united-states/blairsville/raspberry-acres-winery-llc/">
+					raspberry acres winery llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ga/united-states/west-point/rivers-bend-winery-and-vineyard/">
+					river's bend winery and vineyard
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ca/united-states/livermore/rosa-fierro-cellars/">
+					rosa fierro cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/or/united-states/dundee/roy-vineyard-llc/">
+					roy vineyard llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/in/united-states/chesterton/running-vines/">
+					running vines
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/wa/united-states/seattle/sonny-daze-cellars/">
+					sonny daze cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/nc/united-states/durham/sourwood-brewing-company/">
+					sourwood brewing company
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/or/united-states/salem/walter-scott-wines/">
+					walter scott wines
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ny/united-states/andes/wayside-cider/">
+					wayside cider
+				</a>
+			</li>
+		
+	</ul>
+</div>
+<div class="infowindow"></div>
+
+
+
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyCcJFPhkoOBXSK_JPqpIyHXfQlPIQGI5ag&sensor=false"></script>
+<script>
+    // Define your locations: HTML content for the info window, latitude, longitude
+    var locations = [
+		// Featured
+			
+		
+		
+		// Premium
+			
+		
+		
+		// Claimed
+			
+		
+		
+		// Basic
+			
+		
+			['<a href="/az/united-states/kingman/cella-winery-llc/" class="infowindow basic"><h4>cella winery l.l.c.</h4><h5>6927 e brooks blvd kingman az</h5></a>', 35.440101, -113.873076,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ca/united-states/hopland/jeriko-vineyards-llc/" class="infowindow basic"><h4>jeriko vineyards llc</h4><h5>12140 hewlitt & sturtevant rd hopland ca</h5></a>', 38.992742, -123.126439,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ca/united-states/livermore/rosa-fierro-cellars/" class="infowindow basic"><h4>rosa fierro cellars</h4><h5>633 kalthoff cmn livermore ca</h5></a>', 37.629491, -121.790778,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ca/united-states/lompoc/hudson-bellamy-wines-llc/" class="infowindow basic"><h4>hudson bellamy wines llc</h4><h5>1633 w central ave lompoc ca</h5></a>', 34.661918, -120.477303,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ca/united-states/sacramento/rail-bridge-cellars/" class="infowindow basic"><h4>rail bridge cellars</h4><h5>400 n 16th st sacramento ca</h5></a>', 38.591354, -121.479909,'/images/icons/gps/circle.png'],
+		
+			['<a href="/co/united-states/aurora/dragon-meadery-llc/" class="infowindow basic"><h4>dragon meadery llc</h4><h5>2708 s helena way aurora co</h5></a>', 39.667225, -104.806006,'/images/icons/gps/circle.png'],
+		
+			['<a href="/co/united-states/cripple-creek/byerscellars-wines/" class="infowindow basic"><h4>byerscellars wines</h4><h5>109 w galena ave cripple creek co</h5></a>', 38.751745, -105.180403,'/images/icons/gps/circle.png'],
+		
+			['<a href="/co/united-states/denver/golden-valley-winery-llc/" class="infowindow basic"><h4>golden valley winery llc</h4><h5>5131 franklin st denver co</h5></a>', 39.79071, -104.968957,'/images/icons/gps/circle.png'],
+		
+			['<a href="/co/united-states/louisville/culture-club-llc/" class="infowindow basic"><h4>culture club llc</h4><h5>686 s taylor ave louisville co</h5></a>', 39.960436, -105.121093,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ga/united-states/perry/coffee-cup--red-barn-vineyards-inc/" class="infowindow basic"><h4>coffee cup- red barn vineyards inc.</h4><h5>1301 forest hill dr perry ga</h5></a>', 32.458341, -83.723737,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ga/united-states/west-point/rivers-bend-winery-and-vineyard/" class="infowindow basic"><h4>river&#39;s bend winery and vineyard</h4><h5>692 adams rd west point ga</h5></a>', 32.891563, -85.085731,'/images/icons/gps/circle.png'],
+		
+			['<a href="/in/united-states/chesterton/running-vines/" class="infowindow basic"><h4>running vines</h4><h5>119 s calumet rd chesterton in</h5></a>', 41.610781, -87.052042,'/images/icons/gps/circle.png'],
+		
+			['<a href="/in/united-states/marion/downing-vineyard-and-winery-llc/" class="infowindow basic"><h4>downing vineyard and winery llc</h4><h5>310 e 11th st marion in</h5></a>', 40.551015, -85.657197,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ia/united-states/anamosa/grant-wood-hills-winery-llc/" class="infowindow basic"><h4>grant wood hills winery llc</h4><h5>14385 hwy 64 hwy anamosa ia</h5></a>', 42.104025, -91.267722,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ia/united-states/rock-rapids/blonde-hill-vineyard/" class="infowindow basic"><h4>blonde hill vineyard</h4><h5>3294 170th st rock rapids ia</h5></a>', 43.404285, -96.13711,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ky/united-states/lebanon/green-acres-vineyard-&-winery/" class="infowindow basic"><h4>green acres vineyard &amp; winery</h4><h5>25 arthur mattingly rd lebanon ky</h5></a>', 37.609009, -85.347415,'/images/icons/gps/circle.png'],
+		
+			['<a href="/md/united-states/hagerstown/cool-ridge-vineyard/" class="infowindow basic"><h4>cool ridge vineyard</h4><h5>19638 cool hollow rd hagerstown md</h5></a>', 39.575375, -77.683703,'/images/icons/gps/circle.png'],
+		
+			['<a href="/mi/united-states/fennville/cranes-winery/" class="infowindow basic"><h4>crane&#39;&#39;s winery</h4><h5>6054 124th ave fennville mi</h5></a>', 42.59363, -86.136888,'/images/icons/gps/circle.png'],
+		
+			['<a href="/mi/united-states/saint-joseph/lazy-ballerina-winery-llc/" class="infowindow basic"><h4>lazy ballerina winery llc</h4><h5>315 state st saint joseph mi</h5></a>', 42.108916, -86.481873,'/images/icons/gps/circle.png'],
+		
+			['<a href="/nm/united-states/la-luz/coronado-lodge-winery-inc/" class="infowindow basic"><h4>coronado lodge winery inc.</h4><h5>137 cottonwood canyon rd la luz nm</h5></a>', 33.005995, -105.849241,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ny/united-states/andes/wayside-cider/" class="infowindow basic"><h4>wayside cider</h4><h5>55 redden ln andes ny</h5></a>', 42.188346, -74.785124,'/images/icons/gps/circle.png'],
+		
+			['<a href="/nc/united-states/durham/sourwood-brewing-company/" class="infowindow basic"><h4>sourwood brewing company</h4><h5>607 ellis rd durham nc</h5></a>', 35.970836, -78.866842,'/images/icons/gps/circle.png'],
+		
+			['<a href="/oh/united-states/lake-milton/lil-paws-winery/" class="infowindow basic"><h4>lil paws winery</h4><h5>17574 a mahoning ave lake milton oh</h5></a>', 41.095631, -80.986402,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ok/united-states/caddo/blue-river-valley-winery/" class="infowindow basic"><h4>blue river valley winery</h4><h5>3565 sawmill rd caddo ok</h5></a>', 34.033204, -96.338004,'/images/icons/gps/circle.png'],
+		
+			['<a href="/or/united-states/dundee/durant-vineyards/" class="infowindow basic"><h4>durant vineyards</h4><h5>4500 ne blanchard ln dundee or</h5></a>', 45.248363, -123.045177,'/images/icons/gps/circle.png'],
+		
+			['<a href="/or/united-states/dundee/roy-vineyard-llc/" class="infowindow basic"><h4>roy vineyard llc</h4><h5>8351 ne worden hill rd dundee or</h5></a>', 45.27833, -123.031425,'/images/icons/gps/circle.png'],
+		
+			['<a href="/or/united-states/portland/fringe-mead-llc/" class="infowindow basic"><h4>fringe mead llc</h4><h5>6719 ne 18th ave portland or</h5></a>', 45.571678, -122.646858,'/images/icons/gps/circle.png'],
+		
+			['<a href="/or/united-states/salem/coria-estate-wines-inc/" class="infowindow basic"><h4>coria estate wines inc.</h4><h5>8252 redstone ave se salem or</h5></a>', 44.83632, -123.050947,'/images/icons/gps/circle.png'],
+		
+			['<a href="/or/united-states/salem/walter-scott-wines/" class="infowindow basic"><h4>walter scott wines</h4><h5>6130 bethel heights rd. nw salem or</h5></a>', 45.033815, -123.151444,'/images/icons/gps/circle.png'],
+		
+			['<a href="/pa/united-states/andreas/blue-lizard-vineyard-&-winery-llc/" class="infowindow basic"><h4>blue lizard vineyard &amp; winery llc</h4><h5>133 ash cir andreas pa</h5></a>', 40.727607, -75.814286,'/images/icons/gps/circle.png'],
+		
+			['<a href="/pa/united-states/blairsville/raspberry-acres-winery-llc/" class="infowindow basic"><h4>raspberry acres winery llc</h4><h5>250 clawson rd blairsville pa</h5></a>', 40.521807, -79.270819,'/images/icons/gps/circle.png'],
+		
+			['<a href="/pa/united-states/portage/germantown-winery/" class="infowindow basic"><h4>germantown winery</h4><h5>3568 frankstown road portage pa</h5></a>', 40.3471, -78.633282,'/images/icons/gps/circle.png'],
+		
+			['<a href="/pa/united-states/punxsutawney/groundhog-winery/" class="infowindow basic"><h4>groundhog winery</h4><h5>13273 route 36 punxsutawney pa</h5></a>', 40.923454, -78.866052,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/united-states/johnson-city/longhorn-hills-vineyard-&-winery/" class="infowindow basic"><h4>longhorn hills vineyard &amp; winery</h4><h5>555 klappenbach rd johnson city tx</h5></a>', 30.244894, -98.441428,'/images/icons/gps/circle.png'],
+		
+			['<a href="/tx/united-states/spring-branch/holy-archangles-greek-orthodox-monastery/" class="infowindow basic"><h4>holy archangles greek orthodox monastery</h4><h5>2191 twin sisters dr spring branch tx</h5></a>', 29.96972, -98.428833,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ut/united-states/west-valley-city/planet-party!-cocktail-company/" class="infowindow basic"><h4>planet party! cocktail company</h4><h5>2500 decker lake blvd west valley city ut</h5></a>', 40.717405, -111.951958,'/images/icons/gps/circle.png'],
+		
+			['<a href="/wa/united-states/la-center/matranga-vineyards/" class="infowindow basic"><h4>matranga vineyards</h4><h5>2414 nw 369th st la center wa</h5></a>', 45.889087, -122.697216,'/images/icons/gps/circle.png'],
+		
+			['<a href="/wa/united-states/mountlake-terrace/prestangelo-winery/" class="infowindow basic"><h4>prestangelo winery</h4><h5>4200 219th st sw mountlake terrace wa</h5></a>', 47.800234, -122.289376,'/images/icons/gps/circle.png'],
+		
+			['<a href="/wa/united-states/seattle/sonny-daze-cellars/" class="infowindow basic"><h4>sonny daze cellars</h4><h5>346 nw 52nd st seattle wa</h5></a>', 47.666677, -122.36268,'/images/icons/gps/circle.png'],
+		
+			['<a href="/wa/united-states/snoqualmie/mount-si-winery/" class="infowindow basic"><h4>mount si winery</h4><h5>8463 maple ave se snoqualmie wa</h5></a>', 47.524782, -121.824009,'/images/icons/gps/circle.png'],
+		
+			['<a href="/wa/united-states/spokane/cider-archeticts-llc/" class="infowindow basic"><h4>cider archeticts llc</h4><h5>164 s washington st spokane wa</h5></a>', 47.655356, -117.418438,'/images/icons/gps/circle.png'],
+		
+    ];
+    
+    
+    
+    
+	// Map options
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: new google.maps.LatLng(39.5,-98.35),
+      zoom: 2,
+      zoomControl: true,
+      zoomControlOptions: {
+          style: google.maps.ZoomControlStyle.DEFAULT,
+          position: google.maps.ControlPosition.RIGHT_TOP
+      },
+      disableDoubleClickZoom: true,
+      mapTypeControl: false,
+      mapTypeControlOptions: {
+          style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+      },
+      scaleControl: false,
+      scrollwheel: false,
+      panControl: true,
+      streetViewControl: false,
+      draggable : true,
+      overviewMapControl: false,
+      overviewMapControlOptions: {
+          opened: false,
+      },
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles:[{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative.country","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.locality","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":"-100"},{"lightness":"30"}]},{"featureType":"administrative.neighborhood","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"simplified"},{"gamma":"0.00"},{"lightness":"74"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"lightness":"3"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+      maxWidth: 240
+    });
+
+    var markers = new Array();
+    
+    // Add the markers and infowindows to the map
+    for (var i = 0; i < locations.length; i++) {  
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map,
+        icon: locations[i][3]
+      });
+      
+
+      markers.push(marker);
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+
+    function autoCenter() {
+      //  Create a new viewpoint bound
+      var bounds = new google.maps.LatLngBounds();
+      //  Go through each...
+      for (var i = 0; i < markers.length; i++) {  
+				bounds.extend(markers[i].position);
+      }
+      //  Fit these bounds to the map
+      map.fitBounds(bounds);
+    }
+    autoCenter();
+  </script> 
+			<footer class="footer">
+	<section>
+		<a href="/"><img src="/images/logos/logo.png" alt="Custom Cut Shirts Logo" class="footer-logo"/></a>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+		<div class="social">
+			<a href="https://www.facebook.com/wineryguild" target="_blank"><span class="fa fa-facebook-official"></span></a>
+			<a href="https://instagram.com/wineryguild/" target="_blank"><span class="fa fa-instagram"></span></a>
+			<a href="https://www.pinterest.com/wineryguild/" target="_blank"><span class="fa fa-pinterest"></span></a>
+			<a href="https://twitter.com/wineryguild" target="_blank"><span class="fa fa-twitter"></span></a>
+			<a href="https://www.youtube.com/channel/UCwgdbeR916av8TWQoZ4F_lA" target="_blank"><span class="fa fa-youtube"></span></a>
+			<a href="#" class="snapchat-button"><span class="fa fa-snapchat-square"></span></a>
+		</div>
+		
+		<!--<nav>
+	<a href="/">Home</a>
+	
+	
+	<a href="/blog/" >Blog</a>
+	
+</nav>-->
+		
+		<p class="copyright">© Copyright 2016. Winery Guild. All Rights Reserved.</p>
+		
+		<div class="contact">
+			<p>Winery Guild</p>
+			<!--<p><i class="fa fa-map-marker" aria-hidden="true"></i><br /></p>-->
+			<p><i class="fa fa-phone" aria-hidden="true"></i>1 (858) 609-9394</p>
+			<p><i class="fa fa-envelope" aria-hidden="true"></i>kevin@wineryguild.com</p>
+			<!--<p><i class="fa fa-fax" aria-hidden="true"></i></p>-->
+		</div>
+	</section>
+</footer>
+		</div>
+	</body>
+</html>
