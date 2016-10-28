@@ -1,0 +1,416 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Mason Wineries</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/style.css">
+        <!--<link rel="stylesheet" href="/css/flickity.css">-->
+        <!--<link rel="stylesheet" href="">-->
+		
+		<!-- load js scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+		<!--<script type="text/javascript" src="/scripts/jquery-1.11.3.min.js"></script>-->
+		<script src="/scripts/main.js"></script>
+		<!--<script type="text/javascript" src="/scripts/querytolocalstore.js"></script>-->
+		
+		<!--<script src="/scripts/flickity.js"></script>-->
+		
+		<!--[if lt IE 9] -->
+		<script type="text/javascript">
+			document.createElement('header');
+			document.createElement('nav');
+			document.createElement('section');
+			document.createElement('article');
+			document.createElement('aside');
+			document.createElement('footer');
+			document.createElement('hgroup');
+		</script>
+		
+		
+		<!-- Google Analytics -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			
+			ga('create', 'UA-2461133-23', 'auto');
+			ga('require', 'displayfeatures');
+			ga('send', 'pageview');
+		
+		</script>
+		
+		<!-- start Mixpanel -->
+		<!--<script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+		for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+		mixpanel.init("a6e16b825ae307f81762c094dc8bcdeb");</script>-->
+		
+	
+	<body>
+		<div class="content ">
+			<header>
+	<div class="menu-button">
+		<span class="one"></span>
+		<span class="two"></span>
+		<span class="three"></span>
+	</div>
+	<div class="logo">
+		<a href="/">
+			<img src="/images/logos/logo.png" alt="" />
+			<!--Utah<div>Big Trucks</div>-->
+		</a>
+	</div>
+	<nav>
+	<a href="/">Home</a>
+	
+	
+	<a href="/blog/" >Blog</a>
+	
+</nav>
+	<!--<div class="base">
+		<p>Provided by: <img src="/images/logos/mimis-logo.jpg" alt="mimis dispatch" /></p>
+	</div>-->
+</header>
+				
+
+
+<div id='map'></div>
+
+<div class="wineries disable-selection">
+	<h1 class="disable-selection">Mason Wineries</h1>
+	<nav class="disable-selection">
+		
+		<!-- USA -->
+		<a href="/">USA</a>
+		
+		<!-- States -->
+				
+		
+			<a href="/illinois/">illinois</a>
+		
+		
+		<!-- County -->
+		<a href="#">mason</a>
+		
+		<!-- Cities -->
+		<a class="pop-up-toggle"> Cities</a>
+	</nav>
+	
+	<div class="pop-up-menu">
+		<ul>
+			<span class="pop-up-toggle">X</span>
+			
+					
+			
+			<li>
+				<a href="/illinois/mason/manito/">
+					manito
+					(
+								
+						
+							
+							   <span>1</span>
+							
+						
+					)
+				</a>
+			</li>
+			
+		</ul>
+	</div>
+	
+	<script type="text/javascript">
+		$(function() {  
+			$(".pop-up-toggle").click(function(){
+				$(".pop-up-menu").toggleClass("visible"); 
+			});
+		});
+		
+	</script>
+				
+	<ul class="disable-selection">
+		<!-- Featured -->
+				
+		
+		
+		
+		<div></div>
+		
+		
+		<!-- Premium -->
+				
+		
+		
+		
+		
+		
+		<div></div>
+		
+		
+		
+		<!-- Claimed -->
+				
+		
+		
+		
+		<div></div>
+		
+		
+		<!-- Basic -->
+				
+		
+			<li class="basic">
+				<a href="/michigan/mason/ludington/big-sable-winery/">
+					big sable winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/mason/shelton/cloquallum-vineyard/">
+					cloquallum vineyard
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/texas/mason/mason/fly-gap-roots/">
+					fly gap roots
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/mason/hoodsport/hoodsport/">
+					hoodsport
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/michigan/mason/pentwater/jomagrha-vineyards/">
+					jomagrha vineyards
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/michigan/mason/free-soil/krolczyk-cellars/">
+					krolczyk cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/mason/belfair/long-road-winery/">
+					long road winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/michigan/mason/ludington/love-wines-llc/">
+					love wines llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/mason/grapeview/mcgavick-nanstad/">
+					mcgavick nanstad
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/mason/belfair/mosquito-fleet-winery/">
+					mosquito fleet winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/texas/mason/pontotoc/pontotoc-vineyard/">
+					pontotoc vineyard
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/texas/mason/mason/sandstone-cellars-winery/">
+					sandstone cellars winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/mason/belfair/sunlit-canyon-cellars/">
+					sunlit canyon cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/mason/shelton/walter-dacon-wines/">
+					walter dacon wines
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/illinois/mason/manito/willetts-wine-inc/">
+					willett's wine inc.
+				</a>
+			</li>
+		
+	</ul>
+</div>
+<div class="infowindow"></div>
+
+
+
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyCcJFPhkoOBXSK_JPqpIyHXfQlPIQGI5ag&sensor=false"></script>
+<script>
+    // Define your locations: HTML content for the info window, latitude, longitude
+    var locations = [
+		// Featured
+			
+		
+		
+		// Premium
+			
+		
+		
+		// Claimed
+			
+		
+		
+		// Basic
+			
+		
+			['<a href="/illinois/mason/manito/willetts-wine-inc/" class="infowindow basic"><h4>willett&#39;s wine inc.</h4><h5>105 e market st manito il</h5></a>', 40.425835, -89.779593,'/images/icons/gps/circle.png'],
+		
+			['<a href="/michigan/mason/free-soil/krolczyk-cellars/" class="infowindow basic"><h4>krolczyk cellars</h4><h5>9042 n darr rd free soil mi</h5></a>', 44.11977, -86.26162,'/images/icons/gps/circle.png'],
+		
+			['<a href="/michigan/mason/ludington/big-sable-winery/" class="infowindow basic"><h4>big sable winery</h4><h5>717 e ludington ave e ludington mi</h5></a>', 43.955653, -86.438897,'/images/icons/gps/circle.png'],
+		
+			['<a href="/michigan/mason/ludington/love-wines-llc/" class="infowindow basic"><h4>love wines llc</h4><h5>319 s james st ludington mi</h5></a>', 43.953097, -86.447794,'/images/icons/gps/circle.png'],
+		
+			['<a href="/michigan/mason/pentwater/jomagrha-vineyards/" class="infowindow basic"><h4>jomagrha vineyards</h4><h5>7397 s pere marquette hwy pentwater mi</h5></a>', 43.823126, -86.398585,'/images/icons/gps/circle.png'],
+		
+			['<a href="/texas/mason/mason/fly-gap-roots/" class="infowindow basic"><h4>fly gap roots</h4><h5>2851 hickory grove rd mason tx</h5></a>', 30.839547, -98.978519,'/images/icons/gps/circle.png'],
+		
+			['<a href="/texas/mason/mason/sandstone-cellars-winery/" class="infowindow basic"><h4>sandstone cellars winery</h4><h5>211 san antonio mason tx</h5></a>', 30.746544, -99.229118,'/images/icons/gps/circle.png'],
+		
+			['<a href="/texas/mason/pontotoc/pontotoc-vineyard/" class="infowindow basic"><h4>pontotoc vineyard</h4><h5>13044 n willis st pontotoc tx</h5></a>', 30.910354, -98.979717,'/images/icons/gps/circle.png'],
+		
+			['<a href="/washington/mason/belfair/long-road-winery/" class="infowindow basic"><h4>long road winery</h4><h5>550 ne lakeridge dr belfair wa</h5></a>', 47.51482, -122.944144,'/images/icons/gps/circle.png'],
+		
+			['<a href="/washington/mason/belfair/mosquito-fleet-winery/" class="infowindow basic"><h4>mosquito fleet winery</h4><h5>ne 21 olld belfair hwy belfair wa</h5></a>', 47.454509, -122.827641,'/images/icons/gps/circle.png'],
+		
+			['<a href="/washington/mason/belfair/sunlit-canyon-cellars/" class="infowindow basic"><h4>sunlit canyon cellars</h4><h5>21926 e state route 3 belfair wa</h5></a>', 47.428882, -122.843751,'/images/icons/gps/circle.png'],
+		
+			['<a href="/washington/mason/grapeview/mcgavick-nanstad/" class="infowindow basic"><h4>mcgavick nanstad</h4><h5>e 171 okonek grapeview wa</h5></a>', 47.325032, -122.837416,'/images/icons/gps/circle.png'],
+		
+			['<a href="/washington/mason/hoodsport/hoodsport/" class="infowindow basic"><h4>hoodsport</h4><h5>23501 n highway 101 hoodsport wa</h5></a>', 47.393974, -123.146678,'/images/icons/gps/circle.png'],
+		
+			['<a href="/washington/mason/shelton/cloquallum-vineyard/" class="infowindow basic"><h4>cloquallum vineyard</h4><h5>3905 w cloquallum rd shelton wa</h5></a>', 47.166962, -123.140858,'/images/icons/gps/circle.png'],
+		
+			['<a href="/washington/mason/shelton/walter-dacon-wines/" class="infowindow basic"><h4>walter dacon wines</h4><h5>50 se skookum inlet rd shelton wa</h5></a>', 47.149333, -123.064334,'/images/icons/gps/circle.png'],
+		
+    ];
+    
+    
+    
+    
+	// Map options
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: new google.maps.LatLng(39.5,-98.35),
+      zoom: 2,
+      zoomControl: true,
+      zoomControlOptions: {
+          style: google.maps.ZoomControlStyle.DEFAULT,
+          position: google.maps.ControlPosition.RIGHT_TOP
+      },
+      disableDoubleClickZoom: true,
+      mapTypeControl: false,
+      mapTypeControlOptions: {
+          style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+      },
+      scaleControl: false,
+      scrollwheel: false,
+      panControl: true,
+      streetViewControl: false,
+      draggable : true,
+      overviewMapControl: false,
+      overviewMapControlOptions: {
+          opened: false,
+      },
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles:[{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative.country","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.locality","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":"-100"},{"lightness":"30"}]},{"featureType":"administrative.neighborhood","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"simplified"},{"gamma":"0.00"},{"lightness":"74"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"lightness":"3"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+      maxWidth: 240
+    });
+
+    var markers = new Array();
+    
+    // Add the markers and infowindows to the map
+    for (var i = 0; i < locations.length; i++) {  
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map,
+        icon: locations[i][3]
+      });
+      
+
+      markers.push(marker);
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+
+    function autoCenter() {
+      //  Create a new viewpoint bound
+      var bounds = new google.maps.LatLngBounds();
+      //  Go through each...
+      for (var i = 0; i < markers.length; i++) {  
+				bounds.extend(markers[i].position);
+      }
+      //  Fit these bounds to the map
+      map.fitBounds(bounds);
+    }
+    autoCenter();
+  </script> 
+			<footer class="footer">
+	<section>
+		<a href="/"><img src="/images/logos/logo.png" alt="Custom Cut Shirts Logo" class="footer-logo"/></a>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+		<div class="social">
+			<a href="https://www.facebook.com/wineryguild" target="_blank"><span class="fa fa-facebook-official"></span></a>
+			<a href="https://instagram.com/wineryguild/" target="_blank"><span class="fa fa-instagram"></span></a>
+			<a href="https://www.pinterest.com/wineryguild/" target="_blank"><span class="fa fa-pinterest"></span></a>
+			<a href="https://twitter.com/wineryguild" target="_blank"><span class="fa fa-twitter"></span></a>
+			<a href="https://www.youtube.com/channel/UCwgdbeR916av8TWQoZ4F_lA" target="_blank"><span class="fa fa-youtube"></span></a>
+			<a href="#" class="snapchat-button"><span class="fa fa-snapchat-square"></span></a>
+		</div>
+		
+		<!--<nav>
+	<a href="/">Home</a>
+	
+	
+	<a href="/blog/" >Blog</a>
+	
+</nav>-->
+		
+		<p class="copyright">© Copyright 2016. Winery Guild. All Rights Reserved.</p>
+		
+		<div class="contact">
+			<p>Winery Guild</p>
+			<!--<p><i class="fa fa-map-marker" aria-hidden="true"></i><br /></p>-->
+			<p><i class="fa fa-phone" aria-hidden="true"></i>1 (858) 609-9394</p>
+			<p><i class="fa fa-envelope" aria-hidden="true"></i>kevin@wineryguild.com</p>
+			<!--<p><i class="fa fa-fax" aria-hidden="true"></i></p>-->
+		</div>
+	</section>
+</footer>
+		</div>
+	</body>
+</html>

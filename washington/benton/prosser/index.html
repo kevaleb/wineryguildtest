@@ -1,0 +1,560 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Prosser Wineries</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/style.css">
+        <!--<link rel="stylesheet" href="/css/flickity.css">-->
+        <!--<link rel="stylesheet" href="">-->
+		
+		<!-- load js scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+		<!--<script type="text/javascript" src="/scripts/jquery-1.11.3.min.js"></script>-->
+		<script src="/scripts/main.js"></script>
+		<!--<script type="text/javascript" src="/scripts/querytolocalstore.js"></script>-->
+		
+		<!--<script src="/scripts/flickity.js"></script>-->
+		
+		<!--[if lt IE 9] -->
+		<script type="text/javascript">
+			document.createElement('header');
+			document.createElement('nav');
+			document.createElement('section');
+			document.createElement('article');
+			document.createElement('aside');
+			document.createElement('footer');
+			document.createElement('hgroup');
+		</script>
+		
+		
+		<!-- Google Analytics -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			
+			ga('create', 'UA-2461133-23', 'auto');
+			ga('require', 'displayfeatures');
+			ga('send', 'pageview');
+		
+		</script>
+		
+		<!-- start Mixpanel -->
+		<!--<script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+		for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+		mixpanel.init("a6e16b825ae307f81762c094dc8bcdeb");</script>-->
+		
+	
+	<body>
+		<div class="content ">
+			<header>
+	<div class="menu-button">
+		<span class="one"></span>
+		<span class="two"></span>
+		<span class="three"></span>
+	</div>
+	<div class="logo">
+		<a href="/">
+			<img src="/images/logos/logo.png" alt="" />
+			<!--Utah<div>Big Trucks</div>-->
+		</a>
+	</div>
+	<nav>
+	<a href="/">Home</a>
+	
+	
+	<a href="/blog/" >Blog</a>
+	
+</nav>
+	<!--<div class="base">
+		<p>Provided by: <img src="/images/logos/mimis-logo.jpg" alt="mimis dispatch" /></p>
+	</div>-->
+</header>
+				
+
+<div id='map'></div>
+
+<div class="wineries disable-selection">
+	<h1 class="disable-selection">Prosser Wineries</h1>
+	<nav class="disable-selection">
+		<!-- USA -->
+		<a href="/">USA</a>
+		
+		<!-- State -->
+				
+		
+			<a href="/washington/">washington</a>
+		
+		
+		<!-- County -->
+				
+		
+			<a href="/indiana/benton/">benton</a>
+		
+			<a href="/oregon/benton/">benton</a>
+		
+			<a href="/washington/benton/">benton</a>
+		
+		
+		<!-- City -->
+		<a href="#" class="final">prosser</a>
+	</nav>
+		
+	<script type="text/javascript">
+		$(function() {  
+			$(".pop-up-toggle").click(function(){
+				$(".pop-up-menu").toggleClass("visible"); 
+			});
+		});
+		
+	</script>
+			
+	<ul class="disable-selection">
+		<!-- Featured -->
+				
+		
+		
+		
+		<div></div>
+		
+		
+		<!-- Premium -->
+				
+		
+		
+		
+		
+		
+		<div></div>
+		
+		
+		
+		<!-- Claimed -->
+				
+		
+		
+		
+		<div></div>
+		
+		
+		<!-- Basic -->
+				
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/airfield-estates/">
+					airfield estates
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/alder-ridge/">
+					alder ridge
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/alexandria-nicole-cellars/">
+					alexandria nicole cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/barrel-springs-winery/">
+					barrel springs winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/canyons-edge-winery/">
+					canyon's edge winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/chinook-wines/">
+					chinook wines
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/coyote-canyon-winery/">
+					coyote canyon winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/daven-lore-winery/">
+					daven lore winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/desert-wind-winery/">
+					desert wind winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/domanico-cellars/">
+					domanico cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/double-canyon-vineyards/">
+					double canyon vineyards
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/forsyth-family-vintners/">
+					forsyth family vintners
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/fries-family-winery/">
+					fries family winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/gamache-vintners-llc/">
+					gamache vintners llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/heavens-cave-cellars/">
+					heaven's cave cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/hinzerling-winery/">
+					hinzerling winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/hogue-cellars/">
+					hogue cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/kestrel-vintners/">
+					kestrel vintners
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/martinez-&-martinez-winery/">
+					martinez & martinez winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/mckinley-springs/">
+					mckinley springs
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/mercer-wine-estates/">
+					mercer wine estates
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/milbrandt-winery/">
+					milbrandt winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/northwest-cellars/">
+					northwest cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/olsen-estates/">
+					olsen estates
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/pontin-del-roza-winery/">
+					pontin del roza winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/prosser-vineyard-and-winery/">
+					prosser vineyard and winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/riveraerie-cellars/">
+					riveraerie cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/ste-michelle-wine-estates-ltd/">
+					ste. michelle wine estates ltd.
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/the-bunnell-family-cellar/">
+					the bunnell family cellar
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/thurston-wolfe/">
+					thurston wolfe
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/vineheart-winery/">
+					vineheart winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/washington-state-hard-cider-company/">
+					washington state hard cider company
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/willow-crest-winery/">
+					willow crest winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/yakima-river-winery/">
+					yakima river winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/benton/prosser/zirkle-fruit-company/">
+					zirkle fruit company
+				</a>
+			</li>
+		
+	</ul>
+</div>
+<div class="infowindow"></div>
+
+
+
+
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyCcJFPhkoOBXSK_JPqpIyHXfQlPIQGI5ag&sensor=false"></script>
+<!--<script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCcJFPhkoOBXSK_JPqpIyHXfQlPIQGI5ag&callback=initialize"></script>-->
+<script>
+    // Define your locations: HTML content for the info window, latitude, longitude
+    var locations = [
+    	// Featured
+    		
+    	
+    	
+    	// Premium
+    		
+    	
+    	
+    	// Claimed
+    		
+    	
+    	
+    	// Basic
+    		
+    	
+    		['<a href="/washington/benton/prosser/airfield-estates/" class="infowindow basic"><h4>airfield estates</h4><h5>560 merlot dr prosser wa</h5></a>', 46.220451, -119.776984,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/alder-ridge/" class="infowindow basic"><h4>alder ridge</h4><h5>103 columbia ridge rd prosser wa</h5></a>', 45.880796, -119.873649,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/alexandria-nicole-cellars/" class="infowindow basic"><h4>alexandria nicole cellars</h4><h5>2880 lee rd prosser wa</h5></a>', 46.218879, -119.728743,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/barrel-springs-winery/" class="infowindow basic"><h4>barrel springs winery</h4><h5>46601 n gap rd prosser wa</h5></a>', 46.283119, -119.787717,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/canyons-edge-winery/" class="infowindow basic"><h4>canyon&#39;s edge winery</h4><h5>357 port st prosser wa</h5></a>', 46.218725, -119.776196,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/chinook-wines/" class="infowindow basic"><h4>chinook wines</h4><h5>220 wittkopf loop prosser wa</h5></a>', 46.214639, -119.737417,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/coyote-canyon-winery/" class="infowindow basic"><h4>coyote canyon winery</h4><h5>357 port st prosser wa</h5></a>', 46.218725, -119.776196,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/daven-lore-winery/" class="infowindow basic"><h4>daven lore winery</h4><h5>23103 davlor prsw prosser wa</h5></a>', 46.2068, -119.768922,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/desert-wind-winery/" class="infowindow basic"><h4>desert wind winery</h4><h5>2255 chapman ln prosser wa</h5></a>', 46.214441, -119.747856,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/domanico-cellars/" class="infowindow basic"><h4>domanico cellars</h4><h5>24901 n crosby rd prosser wa</h5></a>', 46.250135, -119.745133,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/double-canyon-vineyards/" class="infowindow basic"><h4>double canyon vineyards</h4><h5>3100 lee rd prosser wa</h5></a>', 46.219871, -119.72394,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/forsyth-family-vintners/" class="infowindow basic"><h4>forsyth family vintners</h4><h5>3100 lee rd prosser wa</h5></a>', 46.219871, -119.72394,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/fries-family-winery/" class="infowindow basic"><h4>fries family winery</h4><h5>2255 chapman ln prosser wa</h5></a>', 46.214441, -119.747856,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/gamache-vintners-llc/" class="infowindow basic"><h4>gamache vintners llc</h4><h5>505 cabernet ct prosser wa</h5></a>', 46.218837, -119.778485,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/heavens-cave-cellars/" class="infowindow basic"><h4>heaven&#39;s cave cellars</h4><h5>2880 lee rd prosser wa</h5></a>', 46.218879, -119.728743,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/hinzerling-winery/" class="infowindow basic"><h4>hinzerling winery</h4><h5>1520 sheridan ave prosser wa</h5></a>', 46.210757, -119.768314,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/hogue-cellars/" class="infowindow basic"><h4>hogue cellars</h4><h5>2800 lee rd prosser wa</h5></a>', 46.215535, -119.743753,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/kestrel-vintners/" class="infowindow basic"><h4>kestrel vintners</h4><h5>2890 lee rd prosser wa</h5></a>', 46.219088, -119.727682,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/martinez-&-martinez-winery/" class="infowindow basic"><h4>martinez &amp; martinez winery</h4><h5>357 port st prosser wa</h5></a>', 46.218725, -119.776196,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/mckinley-springs/" class="infowindow basic"><h4>mckinley springs</h4><h5>1201 alderdale rd prosser wa</h5></a>', 46.001026, -119.909019,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/mercer-wine-estates/" class="infowindow basic"><h4>mercer wine estates</h4><h5>3100 lee rd prosser wa</h5></a>', 46.219871, -119.72394,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/milbrandt-winery/" class="infowindow basic"><h4>milbrandt winery</h4><h5>508 cabernet ct prosser wa</h5></a>', 46.219077, -119.776218,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/northwest-cellars/" class="infowindow basic"><h4>northwest cellars</h4><h5>28126 n hansen rd prosser wa</h5></a>', 46.255111, -119.628735,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/olsen-estates/" class="infowindow basic"><h4>olsen estates</h4><h5>500 merlot dr prosser wa</h5></a>', 46.220413, -119.778528,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/pontin-del-roza-winery/" class="infowindow basic"><h4>pontin del roza winery</h4><h5>35502 n hinzerling rd prosser wa</h5></a>', 46.266783, -119.768523,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/prosser-vineyard-and-winery/" class="infowindow basic"><h4>prosser vineyard and winery</h4><h5>25334 s 1545 pr sw prosser wa</h5></a>', 46.181001, -119.829322,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/riveraerie-cellars/" class="infowindow basic"><h4>riveraerie cellars</h4><h5>87203 w 134 park nw prosser wa</h5></a>', 46.233944, -119.677575,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/ste-michelle-wine-estates-ltd/" class="infowindow basic"><h4>ste. michelle wine estates ltd.</h4><h5>660 frontier rd prosser wa</h5></a>', 46.210906, -119.746193,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/the-bunnell-family-cellar/" class="infowindow basic"><h4>the bunnell family cellar</h4><h5>548 cabernet ct prosser wa</h5></a>', 46.219077, -119.776218,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/thurston-wolfe/" class="infowindow basic"><h4>thurston wolfe</h4><h5>588 cabernet ct prosser wa</h5></a>', 46.21946, -119.776218,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/vineheart-winery/" class="infowindow basic"><h4>vineheart winery</h4><h5>44209 n mcdonald rd prosser wa</h5></a>', 46.278627, -119.719628,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/washington-state-hard-cider-company/" class="infowindow basic"><h4>washington state hard cider company</h4><h5>158422 w sonova rd prosser wa</h5></a>', 45.880154, -119.876141,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/willow-crest-winery/" class="infowindow basic"><h4>willow crest winery</h4><h5>590 merlot dr prosser wa</h5></a>', 46.220484, -119.776244,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/yakima-river-winery/" class="infowindow basic"><h4>yakima river winery</h4><h5>143302 w north river rd prosser wa</h5></a>', 46.202254, -119.796021,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/benton/prosser/zirkle-fruit-company/" class="infowindow basic"><h4>zirkle fruit company</h4><h5>101 benitz rd prosser wa</h5></a>', 46.220224, -119.731208,'/images/icons/gps/circle.png'],
+    	
+    ];
+    
+    
+    
+    
+	// Map options
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: new google.maps.LatLng(39.5,-98.35),
+      zoom: 2,
+      zoomControl: true,
+      zoomControlOptions: {
+          style: google.maps.ZoomControlStyle.DEFAULT,
+          position: google.maps.ControlPosition.RIGHT_TOP
+      },
+      disableDoubleClickZoom: true,
+      mapTypeControl: false,
+      mapTypeControlOptions: {
+          style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+      },
+      scaleControl: false,
+      scrollwheel: false,
+      panControl: true,
+      streetViewControl: false,
+      draggable : true,
+      overviewMapControl: false,
+      overviewMapControlOptions: {
+          opened: false,
+      },
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles:[{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative.country","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.locality","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":"-100"},{"lightness":"30"}]},{"featureType":"administrative.neighborhood","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"simplified"},{"gamma":"0.00"},{"lightness":"74"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"lightness":"3"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+      maxWidth: 240
+    });
+
+    var markers = new Array();
+    
+    // Add the markers and infowindows to the map
+    for (var i = 0; i < locations.length; i++) {  
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map,
+        icon: locations[i][3]
+      });
+      
+
+      markers.push(marker);
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+
+    function autoCenter() {
+      //  Create a new viewpoint bound
+      var bounds = new google.maps.LatLngBounds();
+      //  Go through each...
+      for (var i = 0; i < markers.length; i++) {  
+				bounds.extend(markers[i].position);
+      }
+      //  Fit these bounds to the map
+      map.fitBounds(bounds);
+    }
+    autoCenter();
+  </script> 
+			<footer class="footer">
+	<section>
+		<a href="/"><img src="/images/logos/logo.png" alt="Custom Cut Shirts Logo" class="footer-logo"/></a>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+		<div class="social">
+			<a href="https://www.facebook.com/wineryguild" target="_blank"><span class="fa fa-facebook-official"></span></a>
+			<a href="https://instagram.com/wineryguild/" target="_blank"><span class="fa fa-instagram"></span></a>
+			<a href="https://www.pinterest.com/wineryguild/" target="_blank"><span class="fa fa-pinterest"></span></a>
+			<a href="https://twitter.com/wineryguild" target="_blank"><span class="fa fa-twitter"></span></a>
+			<a href="https://www.youtube.com/channel/UCwgdbeR916av8TWQoZ4F_lA" target="_blank"><span class="fa fa-youtube"></span></a>
+			<a href="#" class="snapchat-button"><span class="fa fa-snapchat-square"></span></a>
+		</div>
+		
+		<!--<nav>
+	<a href="/">Home</a>
+	
+	
+	<a href="/blog/" >Blog</a>
+	
+</nav>-->
+		
+		<p class="copyright">© Copyright 2016. Winery Guild. All Rights Reserved.</p>
+		
+		<div class="contact">
+			<p>Winery Guild</p>
+			<!--<p><i class="fa fa-map-marker" aria-hidden="true"></i><br /></p>-->
+			<p><i class="fa fa-phone" aria-hidden="true"></i>1 (858) 609-9394</p>
+			<p><i class="fa fa-envelope" aria-hidden="true"></i>kevin@wineryguild.com</p>
+			<!--<p><i class="fa fa-fax" aria-hidden="true"></i></p>-->
+		</div>
+	</section>
+</footer>
+		</div>
+	</body>
+</html>

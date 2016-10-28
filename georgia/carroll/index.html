@@ -1,0 +1,504 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Carroll Wineries</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/style.css">
+        <!--<link rel="stylesheet" href="/css/flickity.css">-->
+        <!--<link rel="stylesheet" href="">-->
+		
+		<!-- load js scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+		<!--<script type="text/javascript" src="/scripts/jquery-1.11.3.min.js"></script>-->
+		<script src="/scripts/main.js"></script>
+		<!--<script type="text/javascript" src="/scripts/querytolocalstore.js"></script>-->
+		
+		<!--<script src="/scripts/flickity.js"></script>-->
+		
+		<!--[if lt IE 9] -->
+		<script type="text/javascript">
+			document.createElement('header');
+			document.createElement('nav');
+			document.createElement('section');
+			document.createElement('article');
+			document.createElement('aside');
+			document.createElement('footer');
+			document.createElement('hgroup');
+		</script>
+		
+		
+		<!-- Google Analytics -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			
+			ga('create', 'UA-2461133-23', 'auto');
+			ga('require', 'displayfeatures');
+			ga('send', 'pageview');
+		
+		</script>
+		
+		<!-- start Mixpanel -->
+		<!--<script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+		for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+		mixpanel.init("a6e16b825ae307f81762c094dc8bcdeb");</script>-->
+		
+	
+	<body>
+		<div class="content ">
+			<header>
+	<div class="menu-button">
+		<span class="one"></span>
+		<span class="two"></span>
+		<span class="three"></span>
+	</div>
+	<div class="logo">
+		<a href="/">
+			<img src="/images/logos/logo.png" alt="" />
+			<!--Utah<div>Big Trucks</div>-->
+		</a>
+	</div>
+	<nav>
+	<a href="/">Home</a>
+	
+	
+	<a href="/blog/" >Blog</a>
+	
+</nav>
+	<!--<div class="base">
+		<p>Provided by: <img src="/images/logos/mimis-logo.jpg" alt="mimis dispatch" /></p>
+	</div>-->
+</header>
+				
+
+
+<div id='map'></div>
+
+<div class="wineries disable-selection">
+	<h1 class="disable-selection">Carroll Wineries</h1>
+	<nav class="disable-selection">
+		
+		<!-- USA -->
+		<a href="/">USA</a>
+		
+		<!-- States -->
+				
+		
+			<a href="/georgia/">georgia</a>
+		
+		
+		<!-- County -->
+		<a href="#">carroll</a>
+		
+		<!-- Cities -->
+		<a class="pop-up-toggle"> Cities</a>
+	</nav>
+	
+	<div class="pop-up-menu">
+		<ul>
+			<span class="pop-up-toggle">X</span>
+			
+					
+			
+			<li>
+				<a href="/georgia/carroll/villa-rica/">
+					villa rica
+					(
+								
+						
+							
+							   <span>1</span>
+							
+						
+					)
+				</a>
+			</li>
+			
+		</ul>
+	</div>
+	
+	<script type="text/javascript">
+		$(function() {  
+			$(".pop-up-toggle").click(function(){
+				$(".pop-up-menu").toggleClass("visible"); 
+			});
+		});
+		
+	</script>
+				
+	<ul class="disable-selection">
+		<!-- Featured -->
+				
+		
+		
+		
+		<div></div>
+		
+		
+		<!-- Premium -->
+				
+		
+		
+		
+		
+		
+		<div></div>
+		
+		
+		
+		<!-- Claimed -->
+				
+		
+		
+		
+		<div></div>
+		
+		
+		<!-- Basic -->
+				
+		
+			<li class="basic">
+				<a href="/ohio/carroll/dellroy/al-bi-winery-company/">
+					al-bi winery company
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/virginia/carroll/dugspur/blacksnake-meadery/">
+					blacksnake meadery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/maryland/carroll/manchester/cygnus-wine-cellars/">
+					cygnus wine cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/maryland/carroll/detour/detour-vineyard-and-winery-inc/">
+					detour vineyard and winery inc.
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/new-hampshire/carroll/tamworth/dube-&-robinson-llc/">
+					dube & robinson llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/virginia/carroll/dugspur/foggy-ridge-cider/">
+					foggy ridge cider
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/indiana/carroll/monticello/fruitshine-wine/">
+					fruitshine wine
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/maryland/carroll/hampstead/galloping-goose-vineyards-llc/">
+					galloping goose vineyards llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/maryland/carroll/westminster/great-shoals-winery/">
+					great shoals winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/maryland/carroll/westminster/hidden-hills-winery-home-of-fine-wines-llc/">
+					hidden hills winery-home of fine wines llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/arkansas/carroll/eureka-springs/keels-creek-winery/">
+					keels creek winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/maryland/carroll/westminster/links-bridge-vineyards-llc/">
+					links bridge vineyards llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/georgia/carroll/villa-rica/little-vine-vineyards-inc/">
+					little vine vineyards inc.
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/maryland/carroll/westminster/maryland-wine-cellars-llc/">
+					maryland wine cellars llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/maryland/carroll/westminster/old-westminster-vineyard/">
+					old westminster vineyard
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/arkansas/carroll/eureka-springs/railway-winery/">
+					railway winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/kentucky/carroll/carrollton/river-valley-winery/">
+					river valley winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/iowa/carroll/carroll/santa-maria-vineyard-&-winery/">
+					santa maria vineyard & winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/new-hampshire/carroll/center-ossipee/sap-house-meadery-llc/">
+					sap house meadery llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/illinois/carroll/lanark/silver-moon-winery/">
+					silver moon winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/iowa/carroll/arcadia/spotted-horse-vineyards/">
+					spotted horse vineyards
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/illinois/carroll/mount-carroll/sqz-bevsllc/">
+					sqz bevsllc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ohio/carroll/malvern/the-bluebird-winery/">
+					the bluebird winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ohio/carroll/dellroy/tnt-winery-llc/">
+					tnt winery llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ohio/carroll/mechanicstown/twigg-winery/">
+					twigg winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/new-hampshire/carroll/north-conway/white-mountain-winery/">
+					white mountain winery
+				</a>
+			</li>
+		
+	</ul>
+</div>
+<div class="infowindow"></div>
+
+
+
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyCcJFPhkoOBXSK_JPqpIyHXfQlPIQGI5ag&sensor=false"></script>
+<script>
+    // Define your locations: HTML content for the info window, latitude, longitude
+    var locations = [
+		// Featured
+			
+		
+		
+		// Premium
+			
+		
+		
+		// Claimed
+			
+		
+		
+		// Basic
+			
+		
+			['<a href="/arkansas/carroll/eureka-springs/keels-creek-winery/" class="infowindow basic"><h4>keels creek winery</h4><h5>3185 e van buren eureka springs ar</h5></a>', 36.390211, -93.71316,'/images/icons/gps/circle.png'],
+		
+			['<a href="/arkansas/carroll/eureka-springs/railway-winery/" class="infowindow basic"><h4>railway winery</h4><h5>4937 highway 187 eureka springs ar</h5></a>', 36.42646, -93.785221,'/images/icons/gps/circle.png'],
+		
+			['<a href="/georgia/carroll/villa-rica/little-vine-vineyards-inc/" class="infowindow basic"><h4>little vine vineyards inc.</h4><h5>665 n hulett rd villa rica ga</h5></a>', 33.62548, -84.921008,'/images/icons/gps/circle.png'],
+		
+			['<a href="/illinois/carroll/lanark/silver-moon-winery/" class="infowindow basic"><h4>silver moon winery</h4><h5>21305 zier rd lanark il</h5></a>', 42.156564, -89.889276,'/images/icons/gps/circle.png'],
+		
+			['<a href="/illinois/carroll/mount-carroll/sqz-bevsllc/" class="infowindow basic"><h4>sqz bevsllc</h4><h5>409 n main street st mount carroll il</h5></a>', 42.101399, -89.978836,'/images/icons/gps/circle.png'],
+		
+			['<a href="/indiana/carroll/monticello/fruitshine-wine/" class="infowindow basic"><h4>fruitshine wine</h4><h5>11752 w 1100 n monticello in</h5></a>', 40.707645, -86.7491,'/images/icons/gps/circle.png'],
+		
+			['<a href="/iowa/carroll/arcadia/spotted-horse-vineyards/" class="infowindow basic"><h4>spotted horse vineyards</h4><h5>12687 170th st arcadia ia</h5></a>', 42.109686, -95.040729,'/images/icons/gps/circle.png'],
+		
+			['<a href="/iowa/carroll/carroll/santa-maria-vineyard-&-winery/" class="infowindow basic"><h4>santa maria vineyard &amp; winery</h4><h5>218 w 6th st carroll ia</h5></a>', 42.066568, -94.869567,'/images/icons/gps/circle.png'],
+		
+			['<a href="/kentucky/carroll/carrollton/river-valley-winery/" class="infowindow basic"><h4>river valley winery</h4><h5>1279 mound hill rd carrollton ky</h5></a>', 38.667271, -85.205643,'/images/icons/gps/circle.png'],
+		
+			['<a href="/maryland/carroll/detour/detour-vineyard-and-winery-inc/" class="infowindow basic"><h4>detour vineyard and winery inc.</h4><h5>7933 forest stream club rd detour md</h5></a>', 39.611605, -77.283039,'/images/icons/gps/circle.png'],
+		
+			['<a href="/maryland/carroll/hampstead/galloping-goose-vineyards-llc/" class="infowindow basic"><h4>galloping goose vineyards llc</h4><h5>4326 maple grove rd hampstead md</h5></a>', 39.655295, -76.84035,'/images/icons/gps/circle.png'],
+		
+			['<a href="/maryland/carroll/manchester/cygnus-wine-cellars/" class="infowindow basic"><h4>cygnus wine cellars</h4><h5>3130 long st manchester md</h5></a>', 39.659453, -76.882864,'/images/icons/gps/circle.png'],
+		
+			['<a href="/maryland/carroll/westminster/great-shoals-winery/" class="infowindow basic"><h4>great shoals winery</h4><h5>1550 old westminster rd westminster md</h5></a>', 39.589054, -77.029033,'/images/icons/gps/circle.png'],
+		
+			['<a href="/maryland/carroll/westminster/hidden-hills-winery-home-of-fine-wines-llc/" class="infowindow basic"><h4>hidden hills winery-home of fine wines llc</h4><h5>1550 old westminster rd westminster md</h5></a>', 39.589054, -77.029033,'/images/icons/gps/circle.png'],
+		
+			['<a href="/maryland/carroll/westminster/links-bridge-vineyards-llc/" class="infowindow basic"><h4>links bridge vineyards llc</h4><h5>1550 old westminster rd westminster md</h5></a>', 39.589054, -77.029033,'/images/icons/gps/circle.png'],
+		
+			['<a href="/maryland/carroll/westminster/maryland-wine-cellars-llc/" class="infowindow basic"><h4>maryland wine cellars llc</h4><h5>1550 old westminster rd westminster md</h5></a>', 39.589054, -77.029033,'/images/icons/gps/circle.png'],
+		
+			['<a href="/maryland/carroll/westminster/old-westminster-vineyard/" class="infowindow basic"><h4>old westminster vineyard</h4><h5>1550 old westminster rd westminster md</h5></a>', 39.589054, -77.029033,'/images/icons/gps/circle.png'],
+		
+			['<a href="/new-hampshire/carroll/center-ossipee/sap-house-meadery-llc/" class="infowindow basic"><h4>sap house meadery llc</h4><h5>6 folsom rd center ossipee nh</h5></a>', 43.755424, -71.152803,'/images/icons/gps/circle.png'],
+		
+			['<a href="/new-hampshire/carroll/north-conway/white-mountain-winery/" class="infowindow basic"><h4>white mountain winery</h4><h5>2724 white mountain hwy north conway nh</h5></a>', 44.053846, -71.12882,'/images/icons/gps/circle.png'],
+		
+			['<a href="/new-hampshire/carroll/tamworth/dube-&-robinson-llc/" class="infowindow basic"><h4>dube &amp; robinson llc</h4><h5>55 chocorua rd tamworth nh</h5></a>', 43.860483, -71.26077,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ohio/carroll/dellroy/al-bi-winery-company/" class="infowindow basic"><h4>al-bi winery company</h4><h5>29 main st dellroy oh</h5></a>', 40.554486, -81.196505,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ohio/carroll/dellroy/tnt-winery-llc/" class="infowindow basic"><h4>tnt winery llc</h4><h5>1165 granada rd nw dellroy oh</h5></a>', 40.601695, -81.208325,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ohio/carroll/malvern/the-bluebird-winery/" class="infowindow basic"><h4>the bluebird winery</h4><h5>5252 alliance rd malvern oh</h5></a>', 40.690186, -81.193935,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ohio/carroll/mechanicstown/twigg-winery/" class="infowindow basic"><h4>twigg winery</h4><h5>4155 meter rd mechanicstown oh</h5></a>', 40.669495, -80.99778,'/images/icons/gps/circle.png'],
+		
+			['<a href="/virginia/carroll/dugspur/blacksnake-meadery/" class="infowindow basic"><h4>blacksnake meadery</h4><h5>605 buffalo rd dugspur va</h5></a>', 36.776915, -80.54289,'/images/icons/gps/circle.png'],
+		
+			['<a href="/virginia/carroll/dugspur/foggy-ridge-cider/" class="infowindow basic"><h4>foggy ridge cider</h4><h5>1328 pineview rd dugspur va</h5></a>', 36.766748, -80.52828,'/images/icons/gps/circle.png'],
+		
+    ];
+    
+    
+    
+    
+	// Map options
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: new google.maps.LatLng(39.5,-98.35),
+      zoom: 2,
+      zoomControl: true,
+      zoomControlOptions: {
+          style: google.maps.ZoomControlStyle.DEFAULT,
+          position: google.maps.ControlPosition.RIGHT_TOP
+      },
+      disableDoubleClickZoom: true,
+      mapTypeControl: false,
+      mapTypeControlOptions: {
+          style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+      },
+      scaleControl: false,
+      scrollwheel: false,
+      panControl: true,
+      streetViewControl: false,
+      draggable : true,
+      overviewMapControl: false,
+      overviewMapControlOptions: {
+          opened: false,
+      },
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles:[{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative.country","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.locality","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":"-100"},{"lightness":"30"}]},{"featureType":"administrative.neighborhood","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"simplified"},{"gamma":"0.00"},{"lightness":"74"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"lightness":"3"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+      maxWidth: 240
+    });
+
+    var markers = new Array();
+    
+    // Add the markers and infowindows to the map
+    for (var i = 0; i < locations.length; i++) {  
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map,
+        icon: locations[i][3]
+      });
+      
+
+      markers.push(marker);
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+
+    function autoCenter() {
+      //  Create a new viewpoint bound
+      var bounds = new google.maps.LatLngBounds();
+      //  Go through each...
+      for (var i = 0; i < markers.length; i++) {  
+				bounds.extend(markers[i].position);
+      }
+      //  Fit these bounds to the map
+      map.fitBounds(bounds);
+    }
+    autoCenter();
+  </script> 
+			<footer class="footer">
+	<section>
+		<a href="/"><img src="/images/logos/logo.png" alt="Custom Cut Shirts Logo" class="footer-logo"/></a>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+		<div class="social">
+			<a href="https://www.facebook.com/wineryguild" target="_blank"><span class="fa fa-facebook-official"></span></a>
+			<a href="https://instagram.com/wineryguild/" target="_blank"><span class="fa fa-instagram"></span></a>
+			<a href="https://www.pinterest.com/wineryguild/" target="_blank"><span class="fa fa-pinterest"></span></a>
+			<a href="https://twitter.com/wineryguild" target="_blank"><span class="fa fa-twitter"></span></a>
+			<a href="https://www.youtube.com/channel/UCwgdbeR916av8TWQoZ4F_lA" target="_blank"><span class="fa fa-youtube"></span></a>
+			<a href="#" class="snapchat-button"><span class="fa fa-snapchat-square"></span></a>
+		</div>
+		
+		<!--<nav>
+	<a href="/">Home</a>
+	
+	
+	<a href="/blog/" >Blog</a>
+	
+</nav>-->
+		
+		<p class="copyright">© Copyright 2016. Winery Guild. All Rights Reserved.</p>
+		
+		<div class="contact">
+			<p>Winery Guild</p>
+			<!--<p><i class="fa fa-map-marker" aria-hidden="true"></i><br /></p>-->
+			<p><i class="fa fa-phone" aria-hidden="true"></i>1 (858) 609-9394</p>
+			<p><i class="fa fa-envelope" aria-hidden="true"></i>kevin@wineryguild.com</p>
+			<!--<p><i class="fa fa-fax" aria-hidden="true"></i></p>-->
+		</div>
+	</section>
+</footer>
+		</div>
+	</body>
+</html>

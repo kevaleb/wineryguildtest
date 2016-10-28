@@ -1,0 +1,496 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Wayne Wineries</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/style.css">
+        <!--<link rel="stylesheet" href="/css/flickity.css">-->
+        <!--<link rel="stylesheet" href="">-->
+		
+		<!-- load js scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+		<!--<script type="text/javascript" src="/scripts/jquery-1.11.3.min.js"></script>-->
+		<script src="/scripts/main.js"></script>
+		<!--<script type="text/javascript" src="/scripts/querytolocalstore.js"></script>-->
+		
+		<!--<script src="/scripts/flickity.js"></script>-->
+		
+		<!--[if lt IE 9] -->
+		<script type="text/javascript">
+			document.createElement('header');
+			document.createElement('nav');
+			document.createElement('section');
+			document.createElement('article');
+			document.createElement('aside');
+			document.createElement('footer');
+			document.createElement('hgroup');
+		</script>
+		
+		
+		<!-- Google Analytics -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			
+			ga('create', 'UA-2461133-23', 'auto');
+			ga('require', 'displayfeatures');
+			ga('send', 'pageview');
+		
+		</script>
+		
+		<!-- start Mixpanel -->
+		<!--<script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+		for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+		mixpanel.init("a6e16b825ae307f81762c094dc8bcdeb");</script>-->
+		
+	
+	<body>
+		<div class="content ">
+			<header>
+	<div class="menu-button">
+		<span class="one"></span>
+		<span class="two"></span>
+		<span class="three"></span>
+	</div>
+	<div class="logo">
+		<a href="/">
+			<img src="/images/logos/logo.png" alt="" />
+			<!--Utah<div>Big Trucks</div>-->
+		</a>
+	</div>
+	<nav>
+	<a href="/">Home</a>
+	
+	
+	<a href="/blog/" >Blog</a>
+	
+</nav>
+	<!--<div class="base">
+		<p>Provided by: <img src="/images/logos/mimis-logo.jpg" alt="mimis dispatch" /></p>
+	</div>-->
+</header>
+				
+
+
+<div id='map'></div>
+
+<div class="wineries disable-selection">
+	<h1 class="disable-selection">Wayne Wineries</h1>
+	<nav class="disable-selection">
+		
+		<!-- USA -->
+		<a href="/">USA</a>
+		
+		<!-- States -->
+				
+		
+			<a href="/kentucky/">kentucky</a>
+		
+		
+		<!-- County -->
+		<a href="#">wayne</a>
+		
+		<!-- Cities -->
+		<a class="pop-up-toggle"> Cities</a>
+	</nav>
+	
+	<div class="pop-up-menu">
+		<ul>
+			<span class="pop-up-toggle">X</span>
+			
+					
+			
+			<li>
+				<a href="/kentucky/wayne/monticello/">
+					monticello
+					(
+								
+						
+							
+							   <span>1</span>
+							
+						
+					)
+				</a>
+			</li>
+			
+		</ul>
+	</div>
+	
+	<script type="text/javascript">
+		$(function() {  
+			$(".pop-up-toggle").click(function(){
+				$(".pop-up-menu").toggleClass("visible"); 
+			});
+		});
+		
+	</script>
+				
+	<ul class="disable-selection">
+		<!-- Featured -->
+				
+		
+		
+		
+		<div></div>
+		
+		
+		<!-- Premium -->
+				
+		
+		
+		
+		
+		
+		<div></div>
+		
+		
+		
+		<!-- Claimed -->
+				
+		
+		
+		
+		<div></div>
+		
+		
+		<!-- Basic -->
+				
+		
+			<li class="basic">
+				<a href="/north-carolina/wayne/pikeville/a-secret-garden-winery/">
+					a secret garden winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/michigan/wayne/canton/a-taste-of-time-llc/">
+					a taste of time llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/new-york/wayne/williamson/apple-country-spirits/">
+					apple country spirits
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ohio/wayne/doylestown/bent-ladder/">
+					bent ladder
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ohio/wayne/wooster/blue-barn-winery-and-vineyard/">
+					blue barn winery and vineyard
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/michigan/wayne/plymouth/cellar-849/">
+					cellar 849
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/new-york/wayne/north-rose/fleischmanns-vinegar-company-inc/">
+					fleischmanns vinegar company inc.
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/michigan/wayne/grosse-ile/island-winery-llc/">
+					island winery llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/indiana/wayne/richmond/j-&-j-winery-llc/">
+					j & j winery llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/new-york/wayne/macedon/jd-wine-cellars/">
+					jd wine cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/kentucky/wayne/monticello/lake-cumberland-winery-inc/">
+					lake cumberland winery inc.
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/michigan/wayne/plymouth/liberty-street-winery/">
+					liberty street winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/indiana/wayne/richmond/melton-renzulli-wines/">
+					melton renzulli wines
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/new-york/wayne/sodus/mizkan-americas-inc/">
+					mizkan americas inc.
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/michigan/wayne/detroit/motor-city-brewing-works-inc/">
+					motor city brewing works inc.
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/michigan/wayne/northville/obstbaum-orchards-limited/">
+					obstbaum orchards limited
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/new-york/wayne/ontario/ontario-barn-vineyards/">
+					ontario barn vineyards
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ohio/wayne/doylestown/silver-run-vineyard-&-winery/">
+					silver run vineyard & winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/new-york/wayne/williamson/ten-decade-enterprises-llc/">
+					ten decade enterprises llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/new-york/wayne/newark/the-apple-shed/">
+					the apple shed
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/michigan/wayne/northville/the-northville-winery/">
+					the northville winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/new-york/wayne/wolcott/thorpe-vineyard-inc/">
+					thorpe vineyard inc.
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/ohio/wayne/wooster/troutman-vineyards/">
+					troutman vineyards
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/michigan/wayne/northville/vine-2-wine-custom-winemaking/">
+					vine 2 wine custom winemaking
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/new-york/wayne/williamson/young-sommer-winery/">
+					young sommer winery
+				</a>
+			</li>
+		
+	</ul>
+</div>
+<div class="infowindow"></div>
+
+
+
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyCcJFPhkoOBXSK_JPqpIyHXfQlPIQGI5ag&sensor=false"></script>
+<script>
+    // Define your locations: HTML content for the info window, latitude, longitude
+    var locations = [
+		// Featured
+			
+		
+		
+		// Premium
+			
+		
+		
+		// Claimed
+			
+		
+		
+		// Basic
+			
+		
+			['<a href="/indiana/wayne/richmond/j-&-j-winery-llc/" class="infowindow basic"><h4>j &amp; j winery llc</h4><h5>3403 national rd w richmond in</h5></a>', 39.82071, -84.947672,'/images/icons/gps/circle.png'],
+		
+			['<a href="/indiana/wayne/richmond/melton-renzulli-wines/" class="infowindow basic"><h4>melton renzulli wines</h4><h5>185 1/2 fort wayne ave richmond in</h5></a>', 39.833758, -84.892062,'/images/icons/gps/circle.png'],
+		
+			['<a href="/kentucky/wayne/monticello/lake-cumberland-winery-inc/" class="infowindow basic"><h4>lake cumberland winery inc.</h4><h5>122 cedar lane farm monticello ky</h5></a>', 36.943229, -84.846938,'/images/icons/gps/circle.png'],
+		
+			['<a href="/michigan/wayne/canton/a-taste-of-time-llc/" class="infowindow basic"><h4>a taste of time llc</h4><h5>8515 n lilley rd canton mi</h5></a>', 42.348969, -83.459954,'/images/icons/gps/circle.png'],
+		
+			['<a href="/michigan/wayne/detroit/motor-city-brewing-works-inc/" class="infowindow basic"><h4>motor city brewing works inc.</h4><h5>470 w canfield st detroit mi</h5></a>', 42.351831, -83.066087,'/images/icons/gps/circle.png'],
+		
+			['<a href="/michigan/wayne/grosse-ile/island-winery-llc/" class="infowindow basic"><h4>island winery llc</h4><h5>8400 concord rd grosse ile mi</h5></a>', 42.15052, -83.148143,'/images/icons/gps/circle.png'],
+		
+			['<a href="/michigan/wayne/northville/obstbaum-orchards-limited/" class="infowindow basic"><h4>obstbaum orchards limited</h4><h5>9252 currie rd northville mi</h5></a>', 42.422895, -83.586983,'/images/icons/gps/circle.png'],
+		
+			['<a href="/michigan/wayne/northville/the-northville-winery/" class="infowindow basic"><h4>the northville winery</h4><h5>630 baseline rd northville mi</h5></a>', 42.437271, -83.475242,'/images/icons/gps/circle.png'],
+		
+			['<a href="/michigan/wayne/northville/vine-2-wine-custom-winemaking/" class="infowindow basic"><h4>vine 2 wine custom winemaking</h4><h5>446 s main st northville mi</h5></a>', 42.426898, -83.475192,'/images/icons/gps/circle.png'],
+		
+			['<a href="/michigan/wayne/plymouth/cellar-849/" class="infowindow basic"><h4>cellar 849</h4><h5>849 penniman ave plymouth mi</h5></a>', 42.371153, -83.470108,'/images/icons/gps/circle.png'],
+		
+			['<a href="/michigan/wayne/plymouth/liberty-street-winery/" class="infowindow basic"><h4>liberty street winery</h4><h5>149 w liberty plymouth mi</h5></a>', 42.379228, -83.461228,'/images/icons/gps/circle.png'],
+		
+			['<a href="/new-york/wayne/macedon/jd-wine-cellars/" class="infowindow basic"><h4>jd wine cellars</h4><h5>1342 eddy rd macedon ny</h5></a>', 43.11663, -77.313961,'/images/icons/gps/circle.png'],
+		
+			['<a href="/new-york/wayne/newark/the-apple-shed/" class="infowindow basic"><h4>the apple shed</h4><h5>3391 fairville maple ridge rd newark ny</h5></a>', 43.129274, -77.097955,'/images/icons/gps/circle.png'],
+		
+			['<a href="/new-york/wayne/north-rose/fleischmanns-vinegar-company-inc/" class="infowindow basic"><h4>fleischmanns vinegar company inc.</h4><h5>4754 state route 414 north rose ny</h5></a>', 43.177196, -76.883999,'/images/icons/gps/circle.png'],
+		
+			['<a href="/new-york/wayne/ontario/ontario-barn-vineyards/" class="infowindow basic"><h4>ontario barn vineyards</h4><h5>513 whitney rd ontario ny</h5></a>', 43.203208, -77.353617,'/images/icons/gps/circle.png'],
+		
+			['<a href="/new-york/wayne/sodus/mizkan-americas-inc/" class="infowindow basic"><h4>mizkan americas inc.</h4><h5>7673 sodus center rd sodus ny</h5></a>', 43.206526, -77.020298,'/images/icons/gps/circle.png'],
+		
+			['<a href="/new-york/wayne/williamson/apple-country-spirits/" class="infowindow basic"><h4>apple country spirits</h4><h5>3274 eddy rd williamson ny</h5></a>', 43.20168, -77.224955,'/images/icons/gps/circle.png'],
+		
+			['<a href="/new-york/wayne/williamson/ten-decade-enterprises-llc/" class="infowindow basic"><h4>ten decade enterprises llc</h4><h5>6895 lake ave williamson ny</h5></a>', 43.248082, -77.191073,'/images/icons/gps/circle.png'],
+		
+			['<a href="/new-york/wayne/williamson/young-sommer-winery/" class="infowindow basic"><h4>young sommer winery</h4><h5>4287 jersey rd williamson ny</h5></a>', 43.257207, -77.177537,'/images/icons/gps/circle.png'],
+		
+			['<a href="/new-york/wayne/wolcott/thorpe-vineyard-inc/" class="infowindow basic"><h4>thorpe vineyard inc.</h4><h5>8150 chimney heights blvd wolcott ny</h5></a>', 43.29091, -76.898944,'/images/icons/gps/circle.png'],
+		
+			['<a href="/north-carolina/wayne/pikeville/a-secret-garden-winery/" class="infowindow basic"><h4>a secret garden winery</h4><h5>1018 airport rd ne pikeville nc</h5></a>', 35.479598, -77.965826,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ohio/wayne/doylestown/bent-ladder/" class="infowindow basic"><h4>bent ladder</h4><h5>13550 mt. eaton rd doylestown oh</h5></a>', 40.964806, -81.738208,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ohio/wayne/doylestown/silver-run-vineyard-&-winery/" class="infowindow basic"><h4>silver run vineyard &amp; winery</h4><h5>376 eastern rd doylestown oh</h5></a>', 40.988179, -81.702942,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ohio/wayne/wooster/blue-barn-winery-and-vineyard/" class="infowindow basic"><h4>blue barn winery and vineyard</h4><h5>4407 columbus rd wooster oh</h5></a>', 40.745701, -82.015114,'/images/icons/gps/circle.png'],
+		
+			['<a href="/ohio/wayne/wooster/troutman-vineyards/" class="infowindow basic"><h4>troutman vineyards</h4><h5>4243 columbus rd wooster oh</h5></a>', 40.748144, -82.011036,'/images/icons/gps/circle.png'],
+		
+    ];
+    
+    
+    
+    
+	// Map options
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: new google.maps.LatLng(39.5,-98.35),
+      zoom: 2,
+      zoomControl: true,
+      zoomControlOptions: {
+          style: google.maps.ZoomControlStyle.DEFAULT,
+          position: google.maps.ControlPosition.RIGHT_TOP
+      },
+      disableDoubleClickZoom: true,
+      mapTypeControl: false,
+      mapTypeControlOptions: {
+          style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+      },
+      scaleControl: false,
+      scrollwheel: false,
+      panControl: true,
+      streetViewControl: false,
+      draggable : true,
+      overviewMapControl: false,
+      overviewMapControlOptions: {
+          opened: false,
+      },
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles:[{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative.country","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.locality","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":"-100"},{"lightness":"30"}]},{"featureType":"administrative.neighborhood","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"simplified"},{"gamma":"0.00"},{"lightness":"74"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"lightness":"3"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+      maxWidth: 240
+    });
+
+    var markers = new Array();
+    
+    // Add the markers and infowindows to the map
+    for (var i = 0; i < locations.length; i++) {  
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map,
+        icon: locations[i][3]
+      });
+      
+
+      markers.push(marker);
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+
+    function autoCenter() {
+      //  Create a new viewpoint bound
+      var bounds = new google.maps.LatLngBounds();
+      //  Go through each...
+      for (var i = 0; i < markers.length; i++) {  
+				bounds.extend(markers[i].position);
+      }
+      //  Fit these bounds to the map
+      map.fitBounds(bounds);
+    }
+    autoCenter();
+  </script> 
+			<footer class="footer">
+	<section>
+		<a href="/"><img src="/images/logos/logo.png" alt="Custom Cut Shirts Logo" class="footer-logo"/></a>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+		<div class="social">
+			<a href="https://www.facebook.com/wineryguild" target="_blank"><span class="fa fa-facebook-official"></span></a>
+			<a href="https://instagram.com/wineryguild/" target="_blank"><span class="fa fa-instagram"></span></a>
+			<a href="https://www.pinterest.com/wineryguild/" target="_blank"><span class="fa fa-pinterest"></span></a>
+			<a href="https://twitter.com/wineryguild" target="_blank"><span class="fa fa-twitter"></span></a>
+			<a href="https://www.youtube.com/channel/UCwgdbeR916av8TWQoZ4F_lA" target="_blank"><span class="fa fa-youtube"></span></a>
+			<a href="#" class="snapchat-button"><span class="fa fa-snapchat-square"></span></a>
+		</div>
+		
+		<!--<nav>
+	<a href="/">Home</a>
+	
+	
+	<a href="/blog/" >Blog</a>
+	
+</nav>-->
+		
+		<p class="copyright">© Copyright 2016. Winery Guild. All Rights Reserved.</p>
+		
+		<div class="contact">
+			<p>Winery Guild</p>
+			<!--<p><i class="fa fa-map-marker" aria-hidden="true"></i><br /></p>-->
+			<p><i class="fa fa-phone" aria-hidden="true"></i>1 (858) 609-9394</p>
+			<p><i class="fa fa-envelope" aria-hidden="true"></i>kevin@wineryguild.com</p>
+			<!--<p><i class="fa fa-fax" aria-hidden="true"></i></p>-->
+		</div>
+	</section>
+</footer>
+		</div>
+	</body>
+</html>

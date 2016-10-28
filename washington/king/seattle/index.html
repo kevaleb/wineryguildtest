@@ -1,0 +1,572 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Seattle Wineries</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/style.css">
+        <!--<link rel="stylesheet" href="/css/flickity.css">-->
+        <!--<link rel="stylesheet" href="">-->
+		
+		<!-- load js scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+		<!--<script type="text/javascript" src="/scripts/jquery-1.11.3.min.js"></script>-->
+		<script src="/scripts/main.js"></script>
+		<!--<script type="text/javascript" src="/scripts/querytolocalstore.js"></script>-->
+		
+		<!--<script src="/scripts/flickity.js"></script>-->
+		
+		<!--[if lt IE 9] -->
+		<script type="text/javascript">
+			document.createElement('header');
+			document.createElement('nav');
+			document.createElement('section');
+			document.createElement('article');
+			document.createElement('aside');
+			document.createElement('footer');
+			document.createElement('hgroup');
+		</script>
+		
+		
+		<!-- Google Analytics -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			
+			ga('create', 'UA-2461133-23', 'auto');
+			ga('require', 'displayfeatures');
+			ga('send', 'pageview');
+		
+		</script>
+		
+		<!-- start Mixpanel -->
+		<!--<script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+		for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+		mixpanel.init("a6e16b825ae307f81762c094dc8bcdeb");</script>-->
+		
+	
+	<body>
+		<div class="content ">
+			<header>
+	<div class="menu-button">
+		<span class="one"></span>
+		<span class="two"></span>
+		<span class="three"></span>
+	</div>
+	<div class="logo">
+		<a href="/">
+			<img src="/images/logos/logo.png" alt="" />
+			<!--Utah<div>Big Trucks</div>-->
+		</a>
+	</div>
+	<nav>
+	<a href="/">Home</a>
+	
+	
+	<a href="/blog/" >Blog</a>
+	
+</nav>
+	<!--<div class="base">
+		<p>Provided by: <img src="/images/logos/mimis-logo.jpg" alt="mimis dispatch" /></p>
+	</div>-->
+</header>
+				
+
+<div id='map'></div>
+
+<div class="wineries disable-selection">
+	<h1 class="disable-selection">Seattle Wineries</h1>
+	<nav class="disable-selection">
+		<!-- USA -->
+		<a href="/">USA</a>
+		
+		<!-- State -->
+				
+		
+			<a href="/washington/">washington</a>
+		
+		
+		<!-- County -->
+				
+		
+			<a href="/washington/king/">king</a>
+		
+		
+		<!-- City -->
+		<a href="#" class="final">seattle</a>
+	</nav>
+		
+	<script type="text/javascript">
+		$(function() {  
+			$(".pop-up-toggle").click(function(){
+				$(".pop-up-menu").toggleClass("visible"); 
+			});
+		});
+		
+	</script>
+			
+	<ul class="disable-selection">
+		<!-- Featured -->
+				
+		
+		
+		
+		<div></div>
+		
+		
+		<!-- Premium -->
+				
+		
+		
+		
+		
+		
+		<div></div>
+		
+		
+		
+		<!-- Claimed -->
+				
+		
+		
+		
+		<div></div>
+		
+		
+		<!-- Basic -->
+				
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/509-wine-company/">
+					509 wine company
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/ambrosia-meadery/">
+					ambrosia meadery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/animale/">
+					animale
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/anthony-cellars/">
+					anthony cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/bartholomew-winery-inc/">
+					bartholomew winery inc.
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/cadence/">
+					cadence
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/chatter-creek/">
+					chatter creek
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/cloudlift-cellars/">
+					cloudlift cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/corkhouse/">
+					corkhouse
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/double-dougs/">
+					double dougs
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/eight-bells-winery/">
+					eight bells winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/elsom-cellars/">
+					elsom cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/fall-line-winery/">
+					fall line winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/fallng-rain-cellars/">
+					fallng rain cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/graves-cellars/">
+					graves cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/jammd-llc/">
+					jammd llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/kerloo-cellars/">
+					kerloo cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/laurelhurst-cellars/">
+					laurelhurst cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/locus-wines/">
+					locus wines
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/northwest-wine-academy/">
+					northwest wine academy
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/nota-bene-cellars/">
+					nota bene cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/os-winery/">
+					o.s. winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/paul-rin-wines/">
+					paul rin wines
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/pura-vida-create-good-inc/">
+					pura vida create good inc.
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/queen-anne-winery/">
+					queen anne winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/riley-sexton-vintners/">
+					riley sexton vintners
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/royal-city/">
+					royal city
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/scarborough-winery/">
+					scarborough winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/seattle-cider-company/">
+					seattle cider company
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/siren-song-wines/">
+					siren song wines
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/structure-cellars-llc/">
+					structure cellars llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/two-brothers-winery/">
+					two brothers winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/vin-co/">
+					vin co
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/viscon-cellars/">
+					viscon cellars
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/ward-johnson-winery/">
+					ward johnson winery
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/welcome-road-winery-llc/">
+					welcome road winery llc
+				</a>
+			</li>
+		
+			<li class="basic">
+				<a href="/washington/king/seattle/wilridge-winery/">
+					wilridge winery
+				</a>
+			</li>
+		
+	</ul>
+</div>
+<div class="infowindow"></div>
+
+
+
+
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyCcJFPhkoOBXSK_JPqpIyHXfQlPIQGI5ag&sensor=false"></script>
+<!--<script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCcJFPhkoOBXSK_JPqpIyHXfQlPIQGI5ag&callback=initialize"></script>-->
+<script>
+    // Define your locations: HTML content for the info window, latitude, longitude
+    var locations = [
+    	// Featured
+    		
+    	
+    	
+    	// Premium
+    		
+    	
+    	
+    	// Claimed
+    		
+    	
+    	
+    	// Basic
+    		
+    	
+    		['<a href="/washington/king/seattle/509-wine-company/" class="infowindow basic"><h4>509 wine company</h4><h5>1300 n northlake way seattle wa</h5></a>', 47.648268, -122.342372,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/ambrosia-meadery/" class="infowindow basic"><h4>ambrosia meadery</h4><h5>2115 n 77th st seattle wa</h5></a>', 47.684903, -122.332409,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/animale/" class="infowindow basic"><h4>animale</h4><h5>7061 13th ave nw seattle wa</h5></a>', 47.681245, -122.372879,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/anthony-cellars/" class="infowindow basic"><h4>anthony cellars</h4><h5>8232 38th ave ne seattle wa</h5></a>', 47.689387, -122.287148,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/bartholomew-winery-inc/" class="infowindow basic"><h4>bartholomew winery inc.</h4><h5>10007 13th ave sw seattle wa</h5></a>', 47.51344, -122.351747,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/cadence/" class="infowindow basic"><h4>cadence</h4><h5>9320 15th ave s seattle wa</h5></a>', 47.519336, -122.313,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/chatter-creek/" class="infowindow basic"><h4>chatter creek</h4><h5>620 ne 55th st seattle wa</h5></a>', 47.668825, -122.320941,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/cloudlift-cellars/" class="infowindow basic"><h4>cloudlift cellars</h4><h5>312 s lucile st seattle wa</h5></a>', 47.553656, -122.330352,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/corkhouse/" class="infowindow basic"><h4>corkhouse</h4><h5>734 10th ave e seattle wa</h5></a>', 47.626351, -122.319879,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/double-dougs/" class="infowindow basic"><h4>double dougs</h4><h5>10015 lake city way ne seattle wa</h5></a>', 47.701714, -122.302612,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/eight-bells-winery/" class="infowindow basic"><h4>eight bells winery</h4><h5>6213-b roosevelt way ne seattle wa</h5></a>', 47.673717, -122.317664,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/elsom-cellars/" class="infowindow basic"><h4>elsom cellars</h4><h5>2960 4th ave s seattle wa</h5></a>', 47.576195, -122.328306,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/fall-line-winery/" class="infowindow basic"><h4>fall line winery</h4><h5>6122 sixth ave s seattle wa</h5></a>', 47.547241, -122.325805,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/fallng-rain-cellars/" class="infowindow basic"><h4>fallng rain cellars</h4><h5>825 nw 49th st seattle wa</h5></a>', 47.664096, -122.367408,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/graves-cellars/" class="infowindow basic"><h4>graves cellars</h4><h5>6310 phinney ave n seattle wa</h5></a>', 47.674953, -122.354048,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/jammd-llc/" class="infowindow basic"><h4>jammd llc</h4><h5>309 s 1st ave s seattle wa</h5></a>', 47.599672, -122.334423,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/kerloo-cellars/" class="infowindow basic"><h4>kerloo cellars</h4><h5>3911 1st ave s seattle wa</h5></a>', 47.567659, -122.33422,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/laurelhurst-cellars/" class="infowindow basic"><h4>laurelhurst cellars</h4><h5>5608 7th ave s seattle wa</h5></a>', 47.55198, -122.323967,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/locus-wines/" class="infowindow basic"><h4>locus wines</h4><h5>1515 madrona dr seattle wa</h5></a>', 47.613802, -122.283241,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/northwest-wine-academy/" class="infowindow basic"><h4>northwest wine academy</h4><h5>6000 16th ave sw seattle wa</h5></a>', 47.547708, -122.352708,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/nota-bene-cellars/" class="infowindow basic"><h4>nota bene cellars</h4><h5>9320 15th ave s seattle wa</h5></a>', 47.519336, -122.313,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/os-winery/" class="infowindow basic"><h4>o.s. winery</h4><h5>5319 4th ave s seattle wa</h5></a>', 47.554291, -122.32982,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/paul-rin-wines/" class="infowindow basic"><h4>paul rin wines</h4><h5>312 w lee st seattle wa</h5></a>', 47.631721, -122.361084,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/pura-vida-create-good-inc/" class="infowindow basic"><h4>pura vida create good inc.</h4><h5>5129 ne laurelcrest ln seattle wa</h5></a>', 47.656404, -122.271142,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/queen-anne-winery/" class="infowindow basic"><h4>queen anne winery</h4><h5>1415 2nd ave n seattle wa</h5></a>', 47.631542, -122.352907,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/riley-sexton-vintners/" class="infowindow basic"><h4>riley sexton vintners</h4><h5>16120 woodinville-redmond rd ne seattle wa</h5></a>', 47.744744, -122.158388,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/royal-city/" class="infowindow basic"><h4>royal city</h4><h5>1136 s albro pl seattle wa</h5></a>', 47.546439, -122.317083,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/scarborough-winery/" class="infowindow basic"><h4>scarborough winery</h4><h5>3933 1st ave s seattle wa</h5></a>', 47.567493, -122.334219,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/seattle-cider-company/" class="infowindow basic"><h4>seattle cider company</h4><h5>4660 ohio ave s seattle wa</h5></a>', 47.560971, -122.337672,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/siren-song-wines/" class="infowindow basic"><h4>siren song wines</h4><h5>1613 46th ave sw seattle wa</h5></a>', 47.588864, -122.390736,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/structure-cellars-llc/" class="infowindow basic"><h4>structure cellars llc</h4><h5>3849 1st ave s seattle wa</h5></a>', 47.568377, -122.334221,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/two-brothers-winery/" class="infowindow basic"><h4>two brothers winery</h4><h5>3902 california ave sw seattle wa</h5></a>', 47.56914, -122.386363,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/vin-co/" class="infowindow basic"><h4>vin co</h4><h5>198 nickerson st seattle wa</h5></a>', 47.648011, -122.352771,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/viscon-cellars/" class="infowindow basic"><h4>viscon cellars</h4><h5>1705 s 93rd st seattle wa</h5></a>', 47.519476, -122.311094,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/ward-johnson-winery/" class="infowindow basic"><h4>ward johnson winery</h4><h5>1445 elliott ave w seattle wa</h5></a>', 47.631188, -122.375088,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/welcome-road-winery-llc/" class="infowindow basic"><h4>welcome road winery llc</h4><h5>4415 sw stevens st seattle wa</h5></a>', 47.576807, -122.388798,'/images/icons/gps/circle.png'],
+    	
+    		['<a href="/washington/king/seattle/wilridge-winery/" class="infowindow basic"><h4>wilridge winery</h4><h5>1416 34th ave seattle wa</h5></a>', 47.61348, -122.289028,'/images/icons/gps/circle.png'],
+    	
+    ];
+    
+    
+    
+    
+	// Map options
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: new google.maps.LatLng(39.5,-98.35),
+      zoom: 2,
+      zoomControl: true,
+      zoomControlOptions: {
+          style: google.maps.ZoomControlStyle.DEFAULT,
+          position: google.maps.ControlPosition.RIGHT_TOP
+      },
+      disableDoubleClickZoom: true,
+      mapTypeControl: false,
+      mapTypeControlOptions: {
+          style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+      },
+      scaleControl: false,
+      scrollwheel: false,
+      panControl: true,
+      streetViewControl: false,
+      draggable : true,
+      overviewMapControl: false,
+      overviewMapControlOptions: {
+          opened: false,
+      },
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles:[{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative.country","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.locality","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":"-100"},{"lightness":"30"}]},{"featureType":"administrative.neighborhood","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"simplified"},{"gamma":"0.00"},{"lightness":"74"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"lightness":"3"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+      maxWidth: 240
+    });
+
+    var markers = new Array();
+    
+    // Add the markers and infowindows to the map
+    for (var i = 0; i < locations.length; i++) {  
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map,
+        icon: locations[i][3]
+      });
+      
+
+      markers.push(marker);
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+
+    function autoCenter() {
+      //  Create a new viewpoint bound
+      var bounds = new google.maps.LatLngBounds();
+      //  Go through each...
+      for (var i = 0; i < markers.length; i++) {  
+				bounds.extend(markers[i].position);
+      }
+      //  Fit these bounds to the map
+      map.fitBounds(bounds);
+    }
+    autoCenter();
+  </script> 
+			<footer class="footer">
+	<section>
+		<a href="/"><img src="/images/logos/logo.png" alt="Custom Cut Shirts Logo" class="footer-logo"/></a>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+		<div class="social">
+			<a href="https://www.facebook.com/wineryguild" target="_blank"><span class="fa fa-facebook-official"></span></a>
+			<a href="https://instagram.com/wineryguild/" target="_blank"><span class="fa fa-instagram"></span></a>
+			<a href="https://www.pinterest.com/wineryguild/" target="_blank"><span class="fa fa-pinterest"></span></a>
+			<a href="https://twitter.com/wineryguild" target="_blank"><span class="fa fa-twitter"></span></a>
+			<a href="https://www.youtube.com/channel/UCwgdbeR916av8TWQoZ4F_lA" target="_blank"><span class="fa fa-youtube"></span></a>
+			<a href="#" class="snapchat-button"><span class="fa fa-snapchat-square"></span></a>
+		</div>
+		
+		<!--<nav>
+	<a href="/">Home</a>
+	
+	
+	<a href="/blog/" >Blog</a>
+	
+</nav>-->
+		
+		<p class="copyright">© Copyright 2016. Winery Guild. All Rights Reserved.</p>
+		
+		<div class="contact">
+			<p>Winery Guild</p>
+			<!--<p><i class="fa fa-map-marker" aria-hidden="true"></i><br /></p>-->
+			<p><i class="fa fa-phone" aria-hidden="true"></i>1 (858) 609-9394</p>
+			<p><i class="fa fa-envelope" aria-hidden="true"></i>kevin@wineryguild.com</p>
+			<!--<p><i class="fa fa-fax" aria-hidden="true"></i></p>-->
+		</div>
+	</section>
+</footer>
+		</div>
+	</body>
+</html>
