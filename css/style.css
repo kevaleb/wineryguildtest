@@ -1827,7 +1827,8 @@ article > ul > li{
 	position: absolute;
 	top: 50%;
 	right: 6;
-	width: 48px;
+	max-width: 48px;
+	max-height: 48px;
 	margin: -24px 0 0 0;
 	border-radius: 96px;
 }
